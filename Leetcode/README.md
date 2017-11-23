@@ -514,6 +514,8 @@ Learned a lot about Java string operation.
         }
     }
 
+## 68.
+
 ## 69. Sqrt(x)
 
 Good problem!
@@ -527,3 +529,81 @@ Faults:
 4. **[TLE]** Not clear about the precision of float(6) and double(15). Double should be used here.
 5. **[WA]** When try (result + 1), its sqr maybe out of integer. You should convert type at this step.
 
+## 70. Climbing Stairs
+
+One simple dp problem.
+
+Stair N could be reached from (N - 1) or (N - 2), so the transfer equation is :
+
+    f[i] = f[i - 1] + f[i - 2];
+
+## 71.
+
+## 72.
+
+## 73.
+
+## 74.
+
+## 75.
+
+## 76.
+
+## 77.
+
+## 78.
+
+## 79.
+
+## 80.
+
+## 81.
+
+## 82.
+
+## 83. Remove Duplicates from Sorted List
+
+Use one pointer to record the last distinct node. Update it until you find a distinct one.
+
+## 84.
+
+## 85.
+
+## 86.
+
+## 87.
+
+## 88. Merge Sorted Array
+
+Merge sort. As long as the space is prepared for you in array 1, you could just merge 2 into 1. In order to avoid conflicts, the operations should be done backwards.
+
+## 89.
+
+## 90.
+
+## 91.
+
+## 92.
+
+## 93. 
+
+## 94.
+
+## 95.
+
+## 96.
+
+## 97.
+
+## 98.
+
+## 99.
+
+## 100. Same Tree
+
+DFS.
+
+Faults:
+
+1. **[WA]** The input maybe `null`. "Given two binary trees ..." so `null` is also a binary tree ???
+2. **[RE]** Same as above.
