@@ -607,3 +607,9 @@ Faults:
 
 1. **[WA]** The input maybe `null`. "Given two binary trees ..." so `null` is also a binary tree ???
 2. **[RE]** Same as above.
+
+## 101. Symmetric Tree
+
+1. Recursive solution: Build another function `mirror(l, r)` to test whether TreeNode l and r and symmetric, and do this recursively.
+
+2. Iterative solution: Put the inorder traversal in a List or a stack, check if this list/stack is palindrome.
