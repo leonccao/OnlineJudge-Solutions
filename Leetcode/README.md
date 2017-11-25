@@ -613,3 +613,16 @@ Faults:
 1. Recursive solution: Build another function `mirror(l, r)` to test whether TreeNode l and r and symmetric, and do this recursively.
 
 2. Iterative solution: Put the inorder traversal in a List or a stack, check if this list/stack is palindrome.
+
+## 101.
+
+## 102.
+
+## 103.
+
+## 104. Maximum Depth of Binary Tree
+
+DFS.
+
+
+
