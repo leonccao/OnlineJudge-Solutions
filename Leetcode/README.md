@@ -625,4 +625,14 @@ Faults:
 DFS.
 
 
+## 105.
 
+## 106.
+
+## 107. Binary Tree Level Order Traversal II
+
+DFS.
+
+Learned how to new 2-dimensional array in Java.
+
+## 108. 
