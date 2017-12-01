@@ -635,4 +635,6 @@ DFS.
 
 Learned how to new 2-dimensional array in Java.
 
-## 108. 
+## 108. Convert Sorted Array to Binary Search Tree
+
+DFS. Choose the middle one as root.
