@@ -638,3 +638,9 @@ Learned how to new 2-dimensional array in Java.
 ## 108. Convert Sorted Array to Binary Search Tree
 
 DFS. Choose the middle one as root.
+
+## 109.
+
+## 110. Balanced Binary Tree
+
+DFS. One function to return the depth of one node, return -1 instead if it is not height-balanced.
