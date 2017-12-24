@@ -644,3 +644,16 @@ DFS. Choose the middle one as root.
 ## 110. Balanced Binary Tree
 
 DFS. One function to return the depth of one node, return -1 instead if it is not height-balanced.
+
+## 111. Minimum Depth of Binary Tree
+
+DFS. If one node do not have left child, then its depth is its right child's depth plus one.
+
+## 112. Path Sum
+
+DFS. If you want to find a path with sum s in node r, search for s-r.val in r's child node.
+
+Faults:
+
+1. **[WA]** The null input with sum 0 should return false as the answer.
+2. **[WA]** The value could be negative.
