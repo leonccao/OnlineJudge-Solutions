@@ -665,3 +665,13 @@ Two for loops.
 ## 119. Pascal's Triangle II 
 
 Keep modifying on the same list.
+
+## 120.
+
+## 121. Best Time to Buy and Sell Stock
+
+Use one MIN to record the lowest price and one MAX to record the highest profit.
+
+## 122. Best Time to Buy and Sell Stock II
+
+Add (prices[i] - prices[i - 1]) when it is positive.
