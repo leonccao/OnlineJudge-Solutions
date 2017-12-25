@@ -657,3 +657,11 @@ Faults:
 
 1. **[WA]** The null input with sum 0 should return false as the answer.
 2. **[WA]** The value could be negative.
+
+## 118. Pascal's Triangle
+
+Two for loops.
+
+## 119. Pascal's Triangle II 
+
+Keep modifying on the same list.
