@@ -675,3 +675,15 @@ Use one MIN to record the lowest price and one MAX to record the highest profit.
 ## 122. Best Time to Buy and Sell Stock II
 
 Add (prices[i] - prices[i - 1]) when it is positive.
+
+## 123.
+
+## 124.
+
+## 125. Valid Palindrome
+
+First change all characters to uppercase or lowercase, then check characters one by one.
+
+Faults:
+
+1. **[WA]** Alphanumeric characters include both letters and numbers.
