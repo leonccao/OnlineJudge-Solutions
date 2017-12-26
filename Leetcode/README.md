@@ -687,3 +687,71 @@ First change all characters to uppercase or lowercase, then check characters one
 Faults:
 
 1. **[WA]** Alphanumeric characters include both letters and numbers.
+
+## 126.
+
+## 127.
+
+## 128.
+
+## 129.
+
+## 130.
+
+## 131.
+
+## 132.
+
+## 133.
+
+## 134.
+
+## 135.
+
+## 136. Single Number
+
+XOR! Amazing solution!
+
+## 137.
+
+## 138.
+
+## 139.
+
+## 140.
+
+## 141. Linked List Cycle
+
+Set one node's value to 0 after you visited it. When you visit one node that has been visited before, that means you reached one cycle.
+
+Faults:
+
+1. **[WA]** There is -1 but no 0 in this list.
+
+## 142.
+
+## 143.
+
+## 144.
+
+## 145.
+
+## 146.
+
+## 147.
+
+## 148.
+
+## 149.
+
+## 150.
+
+## 151. Min Stack
+
+Nice problem! How to get the min value in O(1) time without another stack is the tricky here.
+
+Use one variable to store the min value. If a new coming number change the min value, push the old min into stack together with the coming number.
+
+Faults:
+
+1. **[WA]** Should update the min value if it is the same as the coming letter. Whether you could not tell if the coming number changes min.
