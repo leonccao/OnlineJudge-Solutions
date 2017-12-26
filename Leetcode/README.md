@@ -772,9 +772,7 @@ Faults:
 
 ## 159.
 
-## 160.
-
-## 161. Intersection of Two Linked Lists
+## 160. Intersection of Two Linked Lists
 
 Start from headA and change all value to negative. Then start from headB and find the first negative one. Remember to change all value in listA back to positive.
 
@@ -785,3 +783,23 @@ Faults:
 1. **[CE]** 
 1. **[WA]** Two lists should not be changed.
 1. **[CE]**
+
+## 161.
+
+## 162.
+
+## 163.
+
+## 164.
+
+## 165.
+
+## 166.
+
+## 167. Two Sum II - Input array is sorted
+
+Let l start from head and r from tail. Just keep increasing l and decreasing r.
+
+## 168.
+
+## 169.
