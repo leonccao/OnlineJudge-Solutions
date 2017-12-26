@@ -800,6 +800,10 @@ Faults:
 
 Let l start from head and r from tail. Just keep increasing l and decreasing r.
 
-## 168.
+## 168. Excel Sheet Column Title
+
+Divide and mod.
+
+Use StringBuilder with reverse and toString.
 
 ## 169.
