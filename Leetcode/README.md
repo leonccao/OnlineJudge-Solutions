@@ -755,3 +755,33 @@ Use one variable to store the min value. If a new coming number change the min v
 Faults:
 
 1. **[WA]** Should update the min value if it is the same as the coming letter. Whether you could not tell if the coming number changes min.
+
+## 152.
+
+## 153.
+
+## 154.
+
+## 155.
+
+## 156.
+
+## 157.
+
+## 158.
+
+## 159.
+
+## 160.
+
+## 161. Intersection of Two Linked Lists
+
+Start from headA and change all value to negative. Then start from headB and find the first negative one. Remember to change all value in listA back to positive.
+
+But a better solution here is use two pointer and start for the same length left. Check one by one at the same time until find a same one.
+
+Faults:
+
+1. **[CE]** 
+1. **[WA]** Two lists should not be changed.
+1. **[CE]**
