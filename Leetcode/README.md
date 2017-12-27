@@ -853,4 +853,46 @@ Faults:
 
 Faults:
 
-1. **[WA]** The header should be renamed which could only be known from the test result.
+1. **[WA]** The header should be renamed.
+
+## 177.
+
+## 178.
+
+## 179.
+
+## 180.
+
+## 181. Employees Earning More Than Their Managers
+
+    SELECT E1.Name AS Employee
+    FROM Employee AS E1, Employee AS E2
+    WHERE E1.ManagerId = E2.Id and E1.Salary > E2.Salary
+
+## 182. Duplicate Emails
+
+Three ways:
+
+1. WHERE with distinct
+1. INNER JOIN with distinct
+1. GROUP with COUNT(*) > 1
+
+## 183. Customers Who Never Order
+
+JOIN there together and SELECT one of which the CustomerId is NULL.
+
+## 184.
+
+## 185.
+
+## 186.
+
+## 187.
+
+## 188. 
+
+## 189. Rotate Array
+
+This solution is amazing!
+
+If you want to rotate with k steps, first reverse the whole array, then reverse (0, k-1) and (k, length - 1) seperately.
