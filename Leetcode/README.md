@@ -806,4 +806,51 @@ Divide and mod.
 
 Use StringBuilder with reverse and toString.
 
-## 169.
+## 169. Majority Element
+
+Good problem!
+
+    for (int num : nums)
+        if (cnt == 0) {
+            cnt = 1;
+            maj = num;
+        } else if (num == maj)
+            cnt ++;
+        else cnt --;
+
+## 170.
+
+## 171. Excel Sheet Column Number
+
+The opposite of #168.
+
+## 172. Factorial Trailing Zeroes
+
+In other words, we are going to find how many 5s are there in n!.
+
+Faults:
+
+1. **[WA]** When you try to find how many 5 are there in n, remember to keep tmp >= 5.
+
+## 173.
+
+## 174.
+
+## 175. Combine Two Tables
+
+Try to solve a Mysql problem!
+
+Faults:
+
+1. **[WA]** `ON Person.PersonId = Address.PersonId`.
+
+## 176. Second Highest Salary
+
+    SELECT MAX(Salary)
+    AS SecondHighestSalary
+    FROM Employee
+    WHERE Salary < (SELECT MAX(Salary) FROM Employee)
+
+Faults:
+
+1. **[WA]** The header should be renamed which could only be known from the test result.
