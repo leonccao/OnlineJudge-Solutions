@@ -896,3 +896,37 @@ JOIN there together and SELECT one of which the CustomerId is NULL.
 This solution is amazing!
 
 If you want to rotate with k steps, first reverse the whole array, then reverse (0, k-1) and (k, length - 1) seperately.
+
+## 190. Reverse Bits
+
+Use bit computing will speed up the processing.
+
+Faults:
+
+1. **[WA]** 
+1. **[WA]** 
+1. **[WA]** 
+1. **[WA]** 
+1. **[WA]** 
+1. **[WA]** The input is actually unsigned int.
+
+## 191. Number of 1 Bits
+
+If you want to trade int as unsigned int, then no sign related operator should be used.
+
+Faults:
+
+1. **[WA]** We need to use bit shifting unsigned operation >>> (while >> depends on sign extension)
+1. **[WA]** `n != 0` should be used instead of `n > 0`.
+
+## 192.
+
+## 193.
+
+## 194.
+
+## 195.
+
+## 196. Delete Duplicate Emails
+
+DELETE operation.
