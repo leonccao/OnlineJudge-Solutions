@@ -921,12 +921,38 @@ Faults:
 
 ## 192.
 
-## 193.
+## 193. Valid Phone Numbers
+
+    grep -P '^([0-9]{3}-|\([0-9]{3}\) )[0-9]{3}-[0-9]{4}$' file.txt
+
+Faults:
+
+1. **[WA]** 
+1. **[WA]** 
+1. **[WA]** 
+1. **[WA]** 
+1. **[RE]** 
+1. **[RE]** Grammar errors.
 
 ## 194.
 
-## 195.
+## 195. Tenth Line
+
+    sed -n 10p file.txt
+
 
 ## 196. Delete Duplicate Emails
 
 DELETE operation.
+
+## 197. Rising Temperature
+
+TO_DAYS() operator.
+
+Faults:
+
+1. **[WA]** If use minus directly, there will be conditions like 2015-1-31 and 2015-2-1. So TO_DAYS is the best tool here.
+
+## 198. House Robber
+
+A basic dp.
