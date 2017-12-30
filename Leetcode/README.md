@@ -956,3 +956,13 @@ Faults:
 ## 198. House Robber
 
 A basic dp.
+
+## 199.
+
+## 200.
+
+## 201.
+
+## 202. Happy Number
+
+While loop.
