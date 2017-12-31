@@ -966,3 +966,11 @@ A basic dp.
 ## 202. Happy Number
 
 While loop.
+
+## 203. Remove Linked List Elements
+
+I was asked about this question in interviews for two times.
+
+Use one pointer (l) to point to last ListNode and another point (n) to this ListNode. If this ListNode needs to be deleted, points l to n's next.
+
+Add another blank ListNode to this list's head to facilitate processing.
