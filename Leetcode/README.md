@@ -974,3 +974,11 @@ I was asked about this question in interviews for two times.
 Use one pointer (l) to point to last ListNode and another point (n) to this ListNode. If this ListNode needs to be deleted, points l to n's next.
 
 Add another blank ListNode to this list's head to facilitate processing.
+
+## 204. Count Primes
+
+Count primes.
+
+Faults:
+
+1. **[TLE]** Optimization from O(N*N) to O(N).
