@@ -982,3 +982,7 @@ Count primes.
 Faults:
 
 1. **[TLE]** Optimization from O(N*N) to O(N).
+
+## 205. Isomorphic Strings
+
+ Practice to use HashMap.
