@@ -986,3 +986,7 @@ Faults:
 ## 205. Isomorphic Strings
 
  Practice to use HashMap.
+
+ #206. Reverse Linked List
+
+ Remember to set the next of head to "null".
