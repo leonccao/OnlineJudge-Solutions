@@ -990,3 +990,28 @@ Faults:
  #206. Reverse Linked List
 
  Remember to set the next of head to "null".
+
+ #207.
+
+ #208.
+
+ #209.
+
+ #210.
+
+ #211.
+
+ #212.
+
+ #213.
+
+ #214.
+
+ #215.
+
+ #216.
+
+ #217. Contains Duplicate
+
+ Use HashSet in Java. 
+ Set.add(num) will return false if num already exists.
