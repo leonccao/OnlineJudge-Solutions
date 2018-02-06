@@ -1015,3 +1015,9 @@ Faults:
 
  Use HashSet in Java. 
  Set.add(num) will return false if num already exists.
+
+ #218.
+
+ #219. Contains Duplicate II
+
+ Distinguish between Set (HashSet) and Map (HashMap).
