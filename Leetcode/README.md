@@ -1035,3 +1035,19 @@ Faults:
  #225. Implement Stack using Queues
 
  Operation of LinkedList. O(n) to push or poll, kind of stupid.
+
+ #226. Invert Binary Tree
+
+ Easy one.
+
+ #232.
+
+ #233.
+
+ #234.
+
+ #235.
+
+ #236. Implement Queue using Stacks
+
+ The inverted version of #225.
