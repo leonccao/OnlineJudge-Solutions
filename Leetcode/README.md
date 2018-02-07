@@ -1021,3 +1021,17 @@ Faults:
  #219. Contains Duplicate II
 
  Distinguish between Set (HashSet) and Map (HashMap).
+
+ #220.
+
+ #221.
+
+ #222.
+
+ #223.
+
+ #224.
+
+ #225. Implement Stack using Queues
+
+ Operation of LinkedList. O(n) to push or poll, kind of stupid.
