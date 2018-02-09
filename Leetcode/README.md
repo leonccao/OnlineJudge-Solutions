@@ -1040,14 +1040,28 @@ Faults:
 
  Easy one.
 
- #232.
+ #227.
+
+ #228.
+
+ #229.
+
+ #230.
+
+ #231.
+
+ #232. Implement Queue using Stacks
+
+ The inverted version of #225.
 
  #233.
 
- #234.
+ #234. Palindrome Linked List
+
+ > Could you do it in O(n) time and O(1) space?
+
+ Reverse the first half or last half, then compare each half front to end.
 
  #235.
 
- #236. Implement Queue using Stacks
-
- The inverted version of #225.
+ #236. 
