@@ -1062,6 +1062,8 @@ Faults:
 
  Reverse the first half or last half, then compare each half front to end.
 
- #235.
+ #235. Lowest Common Ancestor of a Binary Search Tree
+
+ The given BST structure makes it easy to solve.
 
  #236. 
