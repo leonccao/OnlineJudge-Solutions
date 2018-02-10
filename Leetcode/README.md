@@ -1067,3 +1067,9 @@ Faults:
  The given BST structure makes it easy to solve.
 
  #236. 
+
+ #237. Delete Node in a Linked List
+
+ Just move the val and next from next node to this one.
+
+ Actually I was asked about this question for twice during auditions.
