@@ -985,91 +985,91 @@ Faults:
 
 ## 205. Isomorphic Strings
 
- Practice to use HashMap.
+Practice to use HashMap.
 
- #206. Reverse Linked List
+##206. Reverse Linked List
 
- Remember to set the next of head to "null".
+Remember to set the next of head to "null".
 
- #207.
+##207.
 
- #208.
+##208.
 
- #209.
+##209.
 
- #210.
+##210.
 
- #211.
+##211.
 
- #212.
+##212.
 
- #213.
+##213.
 
- #214.
+##214.
 
- #215.
+##215.
 
- #216.
+##216.
 
- #217. Contains Duplicate
+##217. Contains Duplicate
 
- Use HashSet in Java. 
- Set.add(num) will return false if num already exists.
+Use HashSet in Java. 
+Set.add(num) will return false if num already exists.
 
- #218.
+##218.
 
- #219. Contains Duplicate II
+##219. Contains Duplicate II
 
- Distinguish between Set (HashSet) and Map (HashMap).
+Distinguish between Set (HashSet) and Map (HashMap).
 
- #220.
+##220.
 
- #221.
+##221.
 
- #222.
+##222.
 
- #223.
+##223.
 
- #224.
+##224.
 
- #225. Implement Stack using Queues
+##225. Implement Stack using Queues
 
- Operation of LinkedList. O(n) to push or poll, kind of stupid.
+Operation of LinkedList. O(n) to push or poll, kind of stupid.
 
- #226. Invert Binary Tree
+##226. Invert Binary Tree
 
- Easy one.
+Easy one.
 
- #227.
+##227.
 
- #228.
+##228.
 
- #229.
+##229.
 
- #230.
+##230.
 
- #231.
+##231.
 
- #232. Implement Queue using Stacks
+##232. Implement Queue using Stacks
 
- The inverted version of #225.
+The inverted version of #225.
 
- #233.
+##233.
 
- #234. Palindrome Linked List
+##234. Palindrome Linked List
 
- > Could you do it in O(n) time and O(1) space?
+> Could you do it in O(n) time and O(1) space?
 
- Reverse the first half or last half, then compare each half front to end.
+Reverse the first half or last half, then compare each half front to end.
 
- #235. Lowest Common Ancestor of a Binary Search Tree
+##235. Lowest Common Ancestor of a Binary Search Tree
 
- The given BST structure makes it easy to solve.
+The given BST structure makes it easy to solve.
 
- #236. 
+##236. 
 
- #237. Delete Node in a Linked List
+##237. Delete Node in a Linked List
 
- Just move the val and next from next node to this one.
+Just move the val and next from next node to this one.
 
- Actually I was asked about this question for twice during auditions.
+Actually I was asked about this question for twice during auditions.
