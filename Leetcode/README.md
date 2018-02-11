@@ -1124,3 +1124,13 @@ DFS. Update List<String> in the DFS function.
 > output: 0 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 …
 
 ## 259.
+
+## 260.
+
+## 261.
+
+## 262.
+
+## 263. Ugly Number
+
+Divide all 2, 3 and 5 then check whether the remaining is 1.
