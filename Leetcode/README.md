@@ -1134,3 +1134,15 @@ DFS. Update List<String> in the DFS function.
 ## 263. Ugly Number
 
 Divide all 2, 3 and 5 then check whether the remaining is 1.
+
+## 264.
+
+## 265.
+
+## 266.
+
+## 267.
+
+## 268. Missing Number
+
+Xor 0~n with all numbers in nums, the number left will be the result.
