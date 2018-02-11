@@ -1073,3 +1073,49 @@ The given BST structure makes it easy to solve.
 Just move the val and next from next node to this one.
 
 Actually I was asked about this question for twice during auditions.
+
+## 238.
+
+## 239.
+
+## 240.
+
+## 241.
+
+## 242.
+
+## 243.
+
+## 244.
+
+## 245.
+
+## 246.
+
+## 247.
+
+## 248.
+
+## 249.
+
+## 250.
+
+## 251.
+
+## 252.
+
+## 253.
+
+## 254.
+
+## 255.
+
+## 256.
+
+## 257. Binary Tree Paths
+
+DFS. Update List<String> in the DFS function.
+
+## 258.
+
+## 259.
