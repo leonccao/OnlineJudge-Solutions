@@ -1116,6 +1116,11 @@ Actually I was asked about this question for twice during auditions.
 
 DFS. Update List<String> in the DFS function.
 
-## 258.
+## 258. Add Digits
+
+> Output sequence for decimals (b = 10):
+
+> ~input: 0 1 2 3 4 …
+> output: 0 1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9 1 2 3 …
 
 ## 259.
