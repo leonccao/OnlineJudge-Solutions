@@ -1146,3 +1146,33 @@ Divide all 2, 3 and 5 then check whether the remaining is 1.
 ## 268. Missing Number
 
 Xor 0~n with all numbers in nums, the number left will be the result.
+
+## 269.
+
+## 270.
+
+## 271.
+
+## 272.
+
+## 273.
+
+## 274.
+
+## 275.
+
+## 276.
+
+## 277.
+
+## 278. First Bad Version
+
+Binary search. But the choose of l and r could be tricky here.
+
+Faults:
+
+1. **[TLE]** [,) will loop by [1,3)
+1. **[WA]** Change to (,] but with a wrong l to start. (Should be 0)
+1. **[TLE]** Test with [,) again and figure out the [1,3) problem.
+1. **[TLE]** When calculating mid = (l + r) / 2, overflow maybe happen.
+1. **[TLE]** Typo.
