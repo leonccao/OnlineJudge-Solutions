@@ -1188,3 +1188,20 @@ Faults:
 ## 283. Move Zeros
 
 Two pointers, one to find the non-zero numbers and one to store them from the beginning.
+
+## 284.
+
+## 285.
+
+## 286.
+
+## 287.
+
+## 288.
+
+## 289.
+
+## 290. Word Pattern
+
+When comparing two Strings, String.equals(s) should be used.
+Also notice that the match should be a bijection.
