@@ -1176,3 +1176,15 @@ Faults:
 1. **[TLE]** Test with [,) again and figure out the [1,3) problem.
 1. **[TLE]** When calculating mid = (l + r) / 2, overflow maybe happen.
 1. **[TLE]** Typo.
+
+## 279.
+
+## 280.
+
+## 281.
+
+## 282.
+
+## 283. Move Zeros
+
+Two pointers, one to find the non-zero numbers and one to store them from the beginning.
