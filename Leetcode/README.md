@@ -1205,3 +1205,9 @@ Two pointers, one to find the non-zero numbers and one to store them from the be
 
 When comparing two Strings, String.equals(s) should be used.
 Also notice that the match should be a bijection.
+
+## 291.
+
+## 292. Nim Game
+
+Check whether n % 4 equals 0.
