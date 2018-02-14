@@ -1211,3 +1211,27 @@ Also notice that the match should be a bijection.
 ## 292. Nim Game
 
 Check whether n % 4 equals 0.
+
+## 293.
+
+## 294.
+
+## 295.
+
+## 296.
+
+## 297.
+
+## 298.
+
+## 299.
+
+## 300.
+
+## 301.
+
+## 302.
+
+## 303. Range Sum Query - Immutable
+
+Prefix sum array.
