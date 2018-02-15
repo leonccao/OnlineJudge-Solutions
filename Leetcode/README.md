@@ -1235,3 +1235,7 @@ Check whether n % 4 equals 0.
 ## 303. Range Sum Query - Immutable
 
 Prefix sum array.
+
+## 344. Reverse String
+
+StringBuilder.reverse().toString()
