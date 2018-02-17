@@ -1239,3 +1239,11 @@ Prefix sum array.
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
+
+## 345. Reverse Vowels of a String
+
+Two pointers, one points to vowels forwards and another backwards. Swap them pair by pair.
+
+Faults:
+
+1. **[WA]** Forgot to minus the back pointer after swapping.
