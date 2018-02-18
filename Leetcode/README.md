@@ -1256,3 +1256,10 @@ Faults:
 
 ## 349. Intersection of Two Arrays
 Use HashSet.
+
+## 350. Intersection of Two Arrays II
+Use HashMap. The times of num should be right.
+
+Faults:
+
+1. **[WA]** Used HashSet.
