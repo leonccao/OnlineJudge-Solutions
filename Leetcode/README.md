@@ -1247,3 +1247,12 @@ Two pointers, one points to vowels forwards and another backwards. Swap them pai
 Faults:
 
 1. **[WA]** Forgot to minus the back pointer after swapping.
+
+## 346.
+
+## 347.
+
+## 348.
+
+## 349. Intersection of Two Arrays
+Use HashSet.
