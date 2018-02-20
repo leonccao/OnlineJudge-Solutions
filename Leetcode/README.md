@@ -1263,3 +1263,11 @@ Use HashMap. The times of num should be right.
 Faults:
 
 1. **[WA]** Used HashSet.
+
+## 367. Valid Perfect Square
+
+Binary search.
+
+Faults:
+
+1. **[TLE]** r + 1 and num * num maybe out of range. So use long instead.
