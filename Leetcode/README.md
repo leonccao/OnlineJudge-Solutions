@@ -1361,4 +1361,10 @@ Use an array to count the numbers of characters.
 
 Use an array to count the numbers of characters.
 
+## 388.
+
+## 389. Find the Difference
+
+Use an array to count the numbers of characters.
+
 
