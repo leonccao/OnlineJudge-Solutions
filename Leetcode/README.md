@@ -1350,3 +1350,15 @@ Binary search.
 ## 383. Ransom Note
 
 Use an array to count the numbers of characters.
+
+## 384.
+
+## 385.
+
+## 386.
+
+## 387. First Unique Character in a String
+
+Use an array to count the numbers of characters.
+
+
