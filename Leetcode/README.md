@@ -1330,3 +1330,23 @@ One short but meaningful code.
 ## 374. Guess Number Higher or Lower
 
 Binary search.
+
+## 375.
+
+## 376.
+
+## 377.
+
+## 378.
+
+## 379.
+
+## 380.
+
+## 381,
+
+## 382.
+
+## 383. Ransom Note
+
+Use an array to count the numbers of characters.
