@@ -1264,6 +1264,38 @@ Faults:
 
 1. **[WA]** Used HashSet.
 
+## 351.
+
+## 352.
+
+## 353.
+
+## 354.
+
+## 355.
+
+## 356.
+
+## 357.
+
+## 358.
+
+## 359.
+
+## 360.
+
+## 361.
+
+## 362.
+
+## 363.
+
+## 364.
+
+## 365.
+
+## 366.
+
 ## 367. Valid Perfect Square
 
 Binary search.
@@ -1271,3 +1303,22 @@ Binary search.
 Faults:
 
 1. **[TLE]** r + 1 and num * num maybe out of range. So use long instead.
+
+
+## 368. 
+
+## 369.
+
+## 370.
+
+## 371. Sum of Two Integers
+
+Bit manipulation.
+
+One short but meaningful code.
+
+    while (b != 0) {
+        int c = a & b;
+        a ^= b;
+        b = c << 1;
+    }
