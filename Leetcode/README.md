@@ -1322,3 +1322,11 @@ One short but meaningful code.
         a ^= b;
         b = c << 1;
     }
+
+## 372.
+
+## 373.
+
+## 374. Guess Number Higher or Lower
+
+Binary search.
