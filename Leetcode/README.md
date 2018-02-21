@@ -1367,4 +1367,6 @@ Use an array to count the numbers of characters.
 
 Use an array to count the numbers of characters.
 
+## 400. Nth Digit
 
+There are 9 numbers with 1 bit, 90 with 2 bits, etc.
