@@ -1370,3 +1370,7 @@ Use an array to count the numbers of characters.
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
+
+## 401. Binary Watch
+
+Enumerate all the time expression and calculate its bits.
