@@ -1374,3 +1374,15 @@ There are 9 numbers with 1 bit, 90 with 2 bits, etc.
 ## 401. Binary Watch
 
 Enumerate all the time expression and calculate its bits.
+
+## 402.
+
+## 403.
+
+## 404. Sum of Left Leaves
+
+DFS.
+
+Faults:
+
+1. **[WA]** The left son should also be searched if it is not a leaf.
