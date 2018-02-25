@@ -1410,3 +1410,14 @@ Calculate the number of letters.
 ## 412. Fizz Buzz
 
 For-loop.
+
+## 413.
+
+## 414. Third Maximum Number
+
+Record m1, m2 and m3.
+
+Faults:
+
+1. **[WA]** The minimum could me Integer.MIN_VALUE, so the default value should be less than Integer.MIN_VALUE.
+2. **[CE]** Type conversion errors.
