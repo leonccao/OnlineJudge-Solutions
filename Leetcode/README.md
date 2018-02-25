@@ -1394,3 +1394,15 @@ When you want to get a long by 1 << 32, should use (long)1 << 32, because number
 Faults:
 
 1. **[WA]** Two’s complement should not be used on zero.
+
+## 405.
+
+## 406.
+
+## 407.
+
+## 408.
+
+## 409. Longest Palindrome
+
+Calculate the number of letters.
