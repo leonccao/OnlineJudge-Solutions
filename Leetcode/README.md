@@ -1406,3 +1406,7 @@ Faults:
 ## 409. Longest Palindrome
 
 Calculate the number of letters.
+
+## 412. Fizz Buzz
+
+For-loop.
