@@ -1386,3 +1386,11 @@ DFS.
 Faults:
 
 1. **[WA]** The left son should also be searched if it is not a leaf.
+
+## 405. Convert a Number to Hexadecimal
+
+When you want to get a long by 1 << 32, should use (long)1 << 32, because number is default int.
+
+Faults:
+
+1. **[WA]** Two’s complement should not be used on zero.
