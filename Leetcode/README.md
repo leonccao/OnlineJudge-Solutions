@@ -1470,3 +1470,17 @@ Faults:
 
 String.trim()
 String.split("\\s+")
+
+## 435.
+
+## 436.
+
+## 437. Path Sum III
+
+Use DFS to push one element into the stack and poll it out.
+
+Use a mapset to find the prefix sum would achieve a better performance.
+
+Faults:
+
+1. **[WA]** If the sum is 0, you could not choose nothing.
