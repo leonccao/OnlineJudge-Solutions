@@ -1421,3 +1421,52 @@ Faults:
 
 1. **[WA]** The minimum could me Integer.MIN_VALUE, so the default value should be less than Integer.MIN_VALUE.
 2. **[CE]** Type conversion errors.
+
+## 415. Add Strings
+
+High precision plus.
+
+Faults:
+
+1. **[RE]** When the length of the two strings are not the same, index out of range may happen.
+
+## 416.
+
+## 417.
+
+## 418.
+
+## 419.
+
+## 420.
+
+## 421.
+
+## 422.
+
+## 423.
+
+## 424.
+
+## 425.
+
+## 426.
+
+## 427.
+
+## 428.
+
+## 429.
+
+## 430.
+
+## 431.
+
+## 432.
+
+## 433.
+
+## 434. Number of Segments in a String
+
+String.trim()
+String.split("\\s+")
