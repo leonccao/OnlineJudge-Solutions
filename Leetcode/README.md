@@ -1484,3 +1484,37 @@ Use a mapset to find the prefix sum would achieve a better performance.
 Faults:
 
 1. **[WA]** If the sum is 0, you could not choose nothing.
+
+
+
+
+
+## 792. Number of Matching Subsequences
+
+Subsequences matching.
+
+    public boolean match(String S, String str) {
+        int i = 0, j = 0;
+        while (i < S.length() && j < str.length()) {
+            if (S.charAt(i) == str.charAt(j)) {
+                i ++; j ++;
+            } else i ++;
+        }
+        return j == str.length();
+    }
+
+## 793. Preimage Size of Factorial Zeroes Function
+
+Multiples of 5 may have one 5 or several 5s. Check wether the number will drop at the number with one 5 or several 5s.
+...
+mod 156
+mod 31
+mod 6
+
+## 794. Valid Tic-Tac-Toe State
+
+Easy one.
+
+## 795. Number of Subarrays with Bounded Maximum
+
+O(n * n) Enumerate.
