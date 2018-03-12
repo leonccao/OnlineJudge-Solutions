@@ -1518,3 +1518,34 @@ Easy one.
 ## 795. Number of Subarrays with Bounded Maximum
 
 O(n * n) Enumerate.
+
+## 796. Rotate String
+
+StringBuilder.substring(start, end + 1);
+
+## 797. All Paths From Source to Target
+
+DFS.
+
+## 798. Smallest Rotation with Highest Score
+
+For each a[i], there is an interval [l, r] in which the value of K drops will bring one point. So the problem changes into: for [l1, r1], [l2, r2], [l3, r3] ... find the value of K could drop in the intervals as many as possible.
+
+Solution is quite tricky: use one array tag[]. For interval [li, ri], `tag[li] ++`, `tag[ri + 1] --`. Scan from left to right, add the value of tag[i], the result will be number of intervals collapse at this point.
+
+Faults:
+
+1. **[TLE]** Tried whether the O(N^2) solution would pass.
+
+## 799. Champagne Tower
+
+The same as number pyramid:
+    1
+    1 1
+    1 2 1
+    1 3 3 1
+    ...
+
+Faults:
+
+1. **[RE]** When pour the bottom layer of the glasses, index may be out of range if the array is not big enough.
