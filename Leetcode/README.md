@@ -477,7 +477,22 @@ The same as #62.
 
 The same as #63.
 
-## 65.
+## 65. Valid Number
+
+A challengable problem. Although the test cases are quite buggy, this problem encourage you to find corner cases as many as possible. In one word, its totally worth a try, but be prepared!
+
+However, when I finished my one-hundred-line ugly code, I found regular expression match was obviously a better solution.
+
+    Pattern.matches("(\\+|-)?(\\d+(\\.\\d*)?|\\.\\d+)(e(\\+|-)?\\d+)?", s);
+
+Faults:
+
+1. **[WA]** Oh, there are '+' and '-' sign.
+2. **[WA]** Some good error here, how to check if one string is empty? ` if (s == null || s.length()==0 || s.equals("") || s.trim().isEmpty());` would be the full answer. But `if(s == null || s.length() <= 0);` will be efficient and enough.
+3. **[WA]** Confused with one of the True and False.
+4. **[WA]** `"4e+"` There should be number followed when starts by one sign.
+5. **[WA]** `"+.8"` You call this a number ???
+6. **[WA]** `" -."` One good corner case.
 
 ## 66. Plus One
 
