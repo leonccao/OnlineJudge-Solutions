@@ -1566,7 +1566,7 @@ Faults:
 1. **[RE]** When pour the bottom layer of the glasses, index may be out of range if the array is not big enough.
 
 
-## 800. Similar RGB Color
+## 800. Similar RGB Color (Easy)
 
 The conversion between string, hexadecimal number and decimal number.
 
@@ -1581,7 +1581,7 @@ Faults:
 3. **[WA]** Inadequate description about output format.
 
 
-## 801. Minimum Swaps To Make Sequences Increasing
+## 801. Minimum Swaps To Make Sequences Increasing (Medium)
 
 An obvious dynamic programming problem. (The problem could be devided into different stages. The best solution from last stage could serve in best solution for next stage.)
 
@@ -1594,7 +1594,7 @@ s[i] means minimum swaps if i-th elements are swapped
 **Remember to check whether the strictly increasing rule is satisfied.**
 
 
-## 802. Find Eventual Safe States
+## 802. Find Eventual Safe States (Medium)
 
 ### Approach 1
 
@@ -1611,7 +1611,7 @@ Faults:
 1. **[TLE]** Not enough optimization for DFS.
 
 
-## 803. Bricks Falling When Hit
+## 803. Bricks Falling When Hit (Hard)
 
 A complicated and challengable problem.
 
