@@ -1564,3 +1564,66 @@ The same as number pyramid:
 Faults:
 
 1. **[RE]** When pour the bottom layer of the glasses, index may be out of range if the array is not big enough.
+
+
+## 800. Similar RGB Color
+
+The conversion between string, hexadecimal number and decimal number.
+
+Two useful method in java:
+1. `Integer hexNum = Integer.parseInt(st, 16);`
+2. `String hexStr = Integer.toHexString(num);`
+
+Faults:
+
+1. **[WA]** Inadequate description about output format.
+2. **[WA]** Inadequate description about output format.
+3. **[WA]** Inadequate description about output format.
+
+
+## 801. Minimum Swaps To Make Sequences Increasing
+
+An obvious dynamic programming problem. (The problem could be devided into different stages. The best solution from last stage could serve in best solution for next stage.)
+
+u[i] means minimum swaps if i-th elements are not swapped
+s[i] means minimum swaps if i-th elements are swapped
+
+    u[i] = min{c[i - 1], u[i - 1]}
+    c[i] = min{c[i - 1] + 1, u[i - 1] + 1}
+
+**Remember to check whether the strictly increasing rule is satisfied.**
+
+
+## 802. Find Eventual Safe States
+
+### Approach 1
+
+Find all nodes in a cycle and nodes could walk to a cycle, delete them from answer.
+
+There are several mature solutions to find cycles in both BFS and DFS. You should pay more attention when using a DFS approach.
+
+### Approach 2
+
+Start from definite safe nodes (has no outgoing edge), use reversed edges to find safe nodes connected to these node. Implemented by BFS. (Detail: https://leetcode.com/articles/find-eventual-safe-states/)
+
+Faults:
+
+1. **[TLE]** Not enough optimization for DFS.
+
+
+## 803. Bricks Falling When Hit
+
+A complicated and challengable problem.
+
+### Approach 1
+
+BFS. (My Solution https://github.com/mintycc/OnlineJudge-Solutions/blob/master/Leetcode/%23803_Bricks_Falling_When_Hit.java)
+
+### Approach 2
+
+Add bricks reversely and use disjoint-set-union to maintain the combination. (Detail: https://leetcode.com/articles/bricks-falling-when-hit/)
+
+Faults:
+
+1. **[WA]** Even though a brick will be erased, it may drop before the erasion.
+2. **[TLE]** Use one boolean array to record visited bricks.
