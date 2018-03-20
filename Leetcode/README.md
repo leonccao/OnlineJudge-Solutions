@@ -529,7 +529,13 @@ Learned a lot about Java string operation.
         }
     }
 
-## 68.
+## 68. Text Justification
+
+String processing problem with complicated cases.
+
+Faults:
+1. **[WA]** One line forget to delete in "space == 0" part, and didn't come up with test case for such condition.
+2. **[WA]** Format will be different for the last line of text.
 
 ## 69. Sqrt(x)
 
