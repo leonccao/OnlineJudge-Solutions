@@ -562,7 +562,29 @@ Stair N could be reached from (N - 1) or (N - 2), so the transfer equation is :
 
 Stack.
 
-## 72.
+## 72. Edit Distance
+
+### Approach 1
+
+BFS. But the time performance is so poor.
+
+### Approach 2
+
+O(NM) DP. f[i][j] means the edit distance between the first i characters of word1 and the first j characters of word2.
+
+    f[i][j] = min {
+        f[i - 1][j] + 1, 
+        f[i][j - 1] + 1,
+        f[i - 1][j - 1] + 1,
+        f[i - 1][j - 1] (if word1[i] == word2[j])
+        }
+
+Faults:
+1. **[WA]** One line of code forgot to delete.
+2. **[TLE]** Poor time performance of BFS.
+3. **[TLE]** Same as above.
+4. **[TLE]** Same as above.
+5. **[RE]** Input may be null.
 
 ## 73.
 
