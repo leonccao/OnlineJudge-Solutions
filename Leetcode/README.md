@@ -604,7 +604,23 @@ Faults:
 
 1. **[RE]** Input array maybe empty.
 
-## 75.
+## 75. Sort Colors (Medium)
+
+### Approach 1 (2 pass)
+
+Count the number of 0s, 1s and 2s, overwrite the array.
+
+### Approach 2 (1 pass)
+
+Scan the array, swap 0 to the head and 1 to tail.
+
+### Approach 3 (1 pass O(N) O(N))
+
+https://leetcode.com/problems/sort-colors/discuss/26700/My-C++-solution-with-one-pass-and-O(n)-time-and-O(n)-space
+
+Faults:
+
+1. **[WA]** Wrong for-loop range, there maybe no 2s.
 
 ## 76.
 
