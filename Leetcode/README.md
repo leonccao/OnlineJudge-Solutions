@@ -529,7 +529,7 @@ Learned a lot about Java string operation.
         }
     }
 
-## 68. Text Justification
+## 68. Text Justification (Hard)
 
 String processing problem with complicated cases.
 
@@ -558,7 +558,9 @@ Stair N could be reached from (N - 1) or (N - 2), so the transfer equation is :
 
     f[i] = f[i - 1] + f[i - 2];
 
-## 71.
+## 71. Simplify Path (Medium)
+
+Stack.
 
 ## 72.
 
