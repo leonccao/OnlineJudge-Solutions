@@ -562,7 +562,7 @@ Stair N could be reached from (N - 1) or (N - 2), so the transfer equation is :
 
 Stack.
 
-## 72. Edit Distance
+## 72. Edit Distance (Hard)
 
 ### Approach 1
 
@@ -586,7 +586,15 @@ Faults:
 4. **[TLE]** Same as above.
 5. **[RE]** Input may be null.
 
-## 73.
+## 73. Set Matrix Zeroes (Medium)
+
+Easy to find one solution with O(N+M) space, but a little tricky to solve it with O(1) space.
+
+Use the first row and column as the tag for zeroes. Scan them at first and change them at last.
+
+Faults:
+
+1. **[WA]** If (0, 0) is zero, you don't know it comes from row or column, or it is zero from the beginning. So another two variables are need to record if the first row and column contain any zeroes.
 
 ## 74.
 
