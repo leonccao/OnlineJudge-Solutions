@@ -596,7 +596,13 @@ Faults:
 
 1. **[WA]** If (0, 0) is zero, you don't know it comes from row or column, or it is zero from the beginning. So another two variables are need to record if the first row and column contain any zeroes.
 
-## 74.
+## 74. Search a 2D Matrix (Medium)
+
+Binary Search.
+
+Faults:
+
+1. **[RE]** Input array maybe empty.
 
 ## 75.
 
