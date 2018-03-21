@@ -652,7 +652,9 @@ DFS.
 
 Use one variable to count how many time this number has appeared. If already twice then go to the next one. The same if question is "at most k times".
 
-## 81.
+## 81. Search in Rotated Sorted Array II (Medium)
+
+Binary search. Find the start of array (the smallest one) and use it as be base for index conversion. Be careful with cases like [0, 1, 2, 0, 0].
 
 ## 82.
 
