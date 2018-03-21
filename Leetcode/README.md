@@ -630,6 +630,8 @@ One queue to maintain the substring. Push next character in. Keep polling head c
 
 Update answer when all characters are acquired.
 
+Notice: There maybe duplicate characters in string t. In such condition, the substring you found should contain as many as characters as the target string.
+
 Faults:
 
 1. **[TLE]** Remember check whether queue is empty before poll, otherwise it maybe keep poll.
