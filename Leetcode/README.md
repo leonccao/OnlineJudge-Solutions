@@ -656,7 +656,13 @@ Use one variable to count how many time this number has appeared. If already twi
 
 Binary search. Find the start of array (the smallest one) and use it as be base for index conversion. Be careful with cases like [0, 1, 2, 0, 0].
 
-## 82.
+## 82. Remove Duplicates from Sorted List II (Medium)
+
+Add one node to result if its value is different from last node or next one.
+
+Faults:
+
+1. **[WA]** I set the value for an empty head node to Integer.MIN_VALUE, but inputs also include this value. Better be careful for circumstances like this.
 
 ## 83. Remove Duplicates from Sorted List
 
