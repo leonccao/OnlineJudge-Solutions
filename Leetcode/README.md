@@ -644,7 +644,9 @@ DFS. Be careful about corner cases like k = 0 or k > n.
 
 Almost the same as #77.
 
-## 79.
+## 79. Word Search (Medium)
+
+DFS.
 
 ## 80.
 
