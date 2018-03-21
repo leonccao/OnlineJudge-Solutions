@@ -622,7 +622,17 @@ Faults:
 
 1. **[WA]** Wrong for-loop range, there maybe no 2s.
 
-## 76.
+## 76. Minimum Window Substring (Hard)
+
+Use one HashMap to store the characters in target string, another HashMap to store the characters you got in the substring.
+
+One queue to maintain the substring. Push next character in. Keep polling head character out if you got enough this character or it doesn't belong to target string.
+
+Update answer when all characters are acquired.
+
+Faults:
+
+1. **[TLE]** Remember check whether queue is empty before poll, otherwise it maybe keep poll.
 
 ## 77.
 
