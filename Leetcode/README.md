@@ -640,7 +640,9 @@ Faults:
 
 DFS. Be careful about corner cases like k = 0 or k > n.
 
-## 78.
+## 78. Subsets (Medium)
+
+Almost the same as #77.
 
 ## 79.
 
