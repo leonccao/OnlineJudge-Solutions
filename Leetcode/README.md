@@ -636,7 +636,9 @@ Faults:
 
 1. **[TLE]** Remember check whether queue is empty before poll, otherwise it maybe keep poll.
 
-## 77.
+## 77. Combinations (Medium)
+
+DFS. Be careful about corner cases like k = 0 or k > n.
 
 ## 78.
 
