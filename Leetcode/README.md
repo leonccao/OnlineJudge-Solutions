@@ -693,11 +693,29 @@ Faults:
 1. **[WA]** There may be no swap in one subtree.
 2. **[TLE]** Bare resursion is not fast enough to past the test.
 
-## 88. Merge Sorted Array
+## 88. Merge Sorted Array (Easy)
 
 Merge sort. As long as the space is prepared for you in array 1, you could just merge 2 into 1. In order to avoid conflicts, the operations should be done backwards.
 
-## 89.
+## 89. Gray Code (Medium)
+
+Write the answer in binary and look for pattern.
+    0000 ↑↑↑↑
+    0001 ↓|||
+    0011  |||
+    0010  ↓||
+    0110   ||
+    0111   ||
+    0101   ||
+    0100   ↓|
+    1100    |
+    1101    |
+    1111    |
+    1110    |
+    1010    |
+    1011    |
+    1001    |
+    1000    ↓
 
 ## 90.
 
