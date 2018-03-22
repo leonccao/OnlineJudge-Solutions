@@ -674,7 +674,9 @@ Use one stack to store rectangles. Before push one new rectangle in, pop all rec
 
 Push another zero or minus value at last to clear the whole stack.
 
-## 85.
+## 85. Maximal Rectangle (Hard)
+
+2D version of #84. Solve this problem row by row, use the same method as #84, the height could be inheritaged from last row.
 
 ## 86.
 
