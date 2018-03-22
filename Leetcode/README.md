@@ -678,7 +678,9 @@ Push another zero or minus value at last to clear the whole stack.
 
 2D version of #84. Solve this problem row by row, use the same method as #84, the height could be inheritaged from last row.
 
-## 86.
+## 86. Partition List (Medium)
+
+Another two ListNode head for classification.
 
 ## 87.
 
