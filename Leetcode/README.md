@@ -668,7 +668,11 @@ Faults:
 
 Use one pointer to record the last distinct node. Update it until you find a distinct one.
 
-## 84.
+## 84. Largest Rectangle in Histogram (Hard)
+
+Use one stack to store rectangles. Before push one new rectangle in, pop all rectangles taller than it out, calculate the largest area at the same time.
+
+Push another zero or minus value at last to clear the whole stack.
 
 ## 85.
 
