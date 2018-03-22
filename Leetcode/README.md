@@ -682,7 +682,16 @@ Push another zero or minus value at last to clear the whole stack.
 
 Another two ListNode head for classification.
 
-## 87.
+## 87. Scramble String (Hard)
+
+Recursion. But only recursion is not fast enough to pass the test. I added two HashMap, return false as long as two strings contain different characters.
+
+However, it is still not the best solution. We repeat to check some part in the recursion, so DP could be introduced to optimize the time performance.
+
+Faults:
+
+1. **[WA]** There may be no swap in one subtree.
+2. **[TLE]** Bare resursion is not fast enough to past the test.
 
 ## 88. Merge Sorted Array
 
