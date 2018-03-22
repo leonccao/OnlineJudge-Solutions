@@ -717,7 +717,9 @@ Write the answer in binary and look for pattern.
     1001    |
     1000    ↓
 
-## 90.
+## 90. Subsets II (Medium)
+
+DFS. To avoid duplicates, add next[] array which points to the next distinct number's pos. If you don't choose one number, jump directly to its next. In such a way, you can always make sure you picked numbers from left to right.
 
 ## 91.
 
