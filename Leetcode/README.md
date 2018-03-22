@@ -721,7 +721,13 @@ Write the answer in binary and look for pattern.
 
 DFS. To avoid duplicates, add next[] array which points to the next distinct number's pos. If you don't choose one number, jump directly to its next. In such a way, you can always make sure you picked numbers from left to right.
 
-## 91.
+## 91. Decode Ways (Medium)
+
+DP. Be careful with '0' conditions like 10, 20 ... 
+
+Faults:
+
+1. **[WA]** Input could be illegal like one 0.
 
 ## 92.
 
