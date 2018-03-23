@@ -749,7 +749,16 @@ DP.
 
 ## 97.
 
-## 98.
+## 98. Validate Binary Search Tree (Medium)
+
+DFS. Collect the maximum and minimum value of each subtree, and compare them with the subtree's root.
+
+Faults:
+
+1. **[WA]** Integer.MAX_VALUE and Integer.MIN_VALUE appear in the input.
+2. **[WA]** Same as above.
+3. **[WA]** Same as above.
+
 
 ## 99.
 
