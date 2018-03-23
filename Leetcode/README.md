@@ -737,7 +737,9 @@ Reverse ListNode.
 
 DFS. Mind leading zero issues.
 
-## 94.
+## 94. Binary Tree Inorder Traversal (Medium)
+
+Use stack to store nodes. When you pop one node for the first, push its right child in, push itself in, push its left child in. When you push one node for the second time, really pop it out and add it to the result.
 
 ## 95.
 
