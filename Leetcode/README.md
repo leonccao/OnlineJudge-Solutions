@@ -729,7 +729,9 @@ Faults:
 
 1. **[WA]** Input could be illegal like one 0.
 
-## 92.
+## 92. Reverse Linked List II (Medium)
+
+Reverse ListNode.
 
 ## 93. 
 
