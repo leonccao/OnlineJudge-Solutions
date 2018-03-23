@@ -743,7 +743,9 @@ Use stack to store nodes. When you pop one node for the first, push its right ch
 
 ## 95.
 
-## 96.
+## 96. Unique Bianry Search Trees (Medium)
+
+DP.
 
 ## 97.
 
