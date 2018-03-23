@@ -733,7 +733,9 @@ Faults:
 
 Reverse ListNode.
 
-## 93. 
+## 93. Restore IP Addresses (Medium)
+
+DFS. Mind leading zero issues.
 
 ## 94.
 
