@@ -753,7 +753,11 @@ First find the answer for i-1 nodes, then try to put one new TreeNode (val = i) 
 
 DP.
 
-## 97.
+## 97. Interleaving String (Hard)
+
+DP. f[i][j] means the first i characters of s3 matches with the first j characters of s1 and (i - j) characters of s2.
+
+BFS and DFS are not only feasible but also able to achieve a better time performance.
 
 ## 98. Validate Binary Search Tree (Medium)
 
