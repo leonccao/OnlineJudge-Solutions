@@ -745,7 +745,9 @@ Faults:
 
 Use stack to store nodes. When you pop one node for the first, push its right child in, push itself in, push its left child in. When you push one node for the second time, really pop it out and add it to the result.
 
-## 95.
+## 95. Unique Binary Search Trees II (Medium)
+
+First find the answer for i-1 nodes, then try to put one new TreeNode (val = i) in to makeup the answer for i nodes. The new node could be root's father, or the right child of nodes on the rightest side. If new node becomes node K's new right child, then make its original right child new node's left child.
 
 ## 96. Unique Bianry Search Trees (Medium)
 
