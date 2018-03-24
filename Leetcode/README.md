@@ -770,7 +770,12 @@ Faults:
 3. **[WA]** Same as above.
 
 
-## 99.
+## 99. Recover Binary Search Tree (Hard)
+
+1. Recursion is never O(1) space
+2. Morris Traversal http://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
+
+
 
 ## 100. Same Tree
 
