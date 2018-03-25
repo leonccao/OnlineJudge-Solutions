@@ -775,8 +775,6 @@ Faults:
 1. Recursion is never O(1) space
 2. Morris Traversal http://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html
 
-
-
 ## 100. Same Tree
 
 DFS.
@@ -1792,3 +1790,32 @@ Faults:
 
 1. **[WA]** Even though a brick will be erased, it may drop before the erasion.
 2. **[TLE]** Use one boolean array to record visited bricks.
+
+## 804. Unique Morse Code Words (Easy)
+
+HashSet.
+
+## 805. Split Array With Same Average (Hard)
+
+DFS. I didn't find strong enough optimization during the contest. 
+
+Notice that:
+    (avg * B + avg * C) / (B + C) = avg
+
+So both the two lists' average equals to the average of A.
+
+One feasible optimization is like IDDFS, set the sum and num (sum = num * avg) of one list, try to find the answer. If no answer exists, try another range.
+
+Faults:
+
+1. **[WA]** Misunderstand the problem description.
+1. **[WA]** x 4, test optimization.
+1. **[TLE]** x 3, test optimization.
+
+## 806. Number of Lines To Write String (Easy)
+
+Easier than #68.
+
+## 807. Max Increase to Keep City Skyline (Medium)
+
+Find the largest value in one row and column.
