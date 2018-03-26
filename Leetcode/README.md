@@ -807,7 +807,9 @@ DFS.
 
 Recursion.
 
-## 106.
+## 106. Construct Binary Tree from Inorder and Postorder Traversal (Medium)
+
+Same with #105.
 
 ## 107. Binary Tree Level Order Traversal II
 
@@ -819,7 +821,11 @@ Learned how to new 2-dimensional array in Java.
 
 DFS. Choose the middle one as root.
 
-## 109.
+## 109. Convert Sorted List to Binary Search Tree (Medium)
+
+Recursion. The recursion will cose O(log n) space and you will need O(n) space for the built tree. Other than these, the solution used O(1) extra space.
+
+If you do the building in inorder, the order you create one node will be the same order as its order in the linked list.
 
 ## 110. Balanced Binary Tree
 
