@@ -868,6 +868,10 @@ Notice that only constant extra space could be used, which means neither data st
 
 We can take advantage of "next" to go through the tree. In order to know the first element in next level, we need an variable to record the first child of this level. When completing one node's next attribute, search in its father's brothers until you find a brother has at least one child.
 
+## 117. Populating Next Right Pointers in Each Node II (Medium)
+
+Same as #116.
+
 ## 118. Pascal's Triangle
 
 Two for loops.
