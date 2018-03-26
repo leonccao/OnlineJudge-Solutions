@@ -880,7 +880,9 @@ Two for loops.
 
 Keep modifying on the same list.
 
-## 120.
+## 120. Triangle (Medium)
+
+DP. In order to use the same array all the time, you need to update the array from back in case the element you need will be covered.
 
 ## 121. Best Time to Buy and Sell Stock
 
