@@ -844,6 +844,14 @@ Faults:
 1. **[WA]** The null input with sum 0 should return false as the answer.
 2. **[WA]** The value could be negative.
 
+## 113. Path Sum II (Medium)
+
+Recursion.
+
+Faults:
+
+1. **[WA]** Node's value could be negative.
+
 ## 118. Pascal's Triangle
 
 Two for loops.
