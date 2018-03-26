@@ -856,6 +856,12 @@ Faults:
 
 Recursion. If root has left child L, then make his right child R L's rightest node's right child.
 
+## 115. Distinct Subsequences (Hard)
+
+DP. F[i][j] means the answer ends with s[i] match first j characters of string t.
+
+    f[i][j] = sum{f[k][j - 1] (k < i)}
+
 ## 118. Pascal's Triangle
 
 Two for loops.
