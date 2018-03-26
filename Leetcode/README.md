@@ -852,6 +852,10 @@ Faults:
 
 1. **[WA]** Node's value could be negative.
 
+## 114. Flatten Binary Tree to Linked List (Medium)
+
+Recursion. If root has left child L, then make his right child R L's rightest node's right child.
+
 ## 118. Pascal's Triangle
 
 Two for loops.
