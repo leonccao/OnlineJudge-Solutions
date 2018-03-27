@@ -916,7 +916,13 @@ Faults:
 
 ## 126.
 
-## 127.
+## 127. Word Ladder (Medium)
+
+Learned how to write two-end BFS.
+
+Faults:
+
+1. **[WA]** The endWord maybe not in the wordList.
 
 ## 128.
 
