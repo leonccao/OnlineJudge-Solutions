@@ -898,7 +898,13 @@ Add (prices[i] - prices[i - 1]) when it is positive.
 2. O(N) + O(N) Scan.
 3. O(N) + O(1) Scan. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/discuss/39611/Is-it-Best-Solution-with-O(n)-O(1).
 
-## 124.
+## 124. Binary Tree Maximum Path Sum
+
+Recursion. Merge two path from its children or carry one path to its father.
+
+Faults:
+
+1. **[WA]** You can choose to obtain no value from children because the value maybe negative.
 
 ## 125. Valid Palindrome
 
