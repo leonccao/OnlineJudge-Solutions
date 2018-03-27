@@ -914,7 +914,20 @@ Faults:
 
 1. **[WA]** Alphanumeric characters include both letters and numbers.
 
-## 126.
+## 126. Word Ladder II (Hard)
+
+BFS + DFS.
+
+BFS search for shortest path and DFS print out all paths with such a length.
+
+Build reverted edges during BFS, and search from end to start in the DFS.
+
+(I think two-end BFS is too complicated here, and time performance improvement it brings is not very obvious.)
+
+Faults:
+
+1. **[TLE]** It will be too slow if do not clear the way (build new edges).
+2. **[TLE]** Same as above.
 
 ## 127. Word Ladder (Medium)
 
