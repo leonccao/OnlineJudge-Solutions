@@ -884,15 +884,19 @@ Keep modifying on the same list.
 
 DP. In order to use the same array all the time, you need to update the array from back in case the element you need will be covered.
 
-## 121. Best Time to Buy and Sell Stock
+## 121. Best Time to Buy and Sell Stock (Easy)
 
 Use one MIN to record the lowest price and one MAX to record the highest profit.
 
-## 122. Best Time to Buy and Sell Stock II
+## 122. Best Time to Buy and Sell Stock II (Easy)
 
 Add (prices[i] - prices[i - 1]) when it is positive.
 
-## 123.
+## 123. Best Time to Buy and Sell Stock III (Hard)
+
+1. O(N^2) DP.
+2. O(N) + O(N) Scan.
+3. O(N) + O(1) Scan. https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/discuss/39611/Is-it-Best-Solution-with-O(n)-O(1).
 
 ## 124.
 
