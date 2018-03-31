@@ -1001,7 +1001,18 @@ Faults:
 
 1. **[WA]** Should update the min value if it is the same as the coming letter. Whether you could not tell if the coming number changes min.
 
-## 152.
+## 152. Maximum Product Subarray (Medium)
+
+Calculate the prefix product.
+
+Pay attention to zeros.
+
+Faults:
+
+1. **[WA]** One single zero maybe the answer.
+
+2. **[WA]** Same as above.
+
 
 ## 153.
 
