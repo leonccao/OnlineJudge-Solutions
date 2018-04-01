@@ -1899,3 +1899,26 @@ Easier than #68.
 ## 807. Max Increase to Keep City Skyline (Medium)
 
 Find the largest value in one row and column.
+
+## 808.
+
+## 809.
+
+## 810.
+
+## 811. Subdomain Visit Count (Easy)
+
+Two ways to go through a HashMap:
+
+    for (Map.Entry<String, Integer> entry : map.entrySet())
+        result.add(entry.getValue() + " " + entry.getKey());
+
+    Iterator iter = map.entrySet().iterator(); // map.ketSet().iterator()
+    while (iter.hasNext()) {
+        Map.Entry entry = (Map.Entry) iter.next();
+        result.add(entry.getValue() + " " + entry.getKey());
+    }
+
+Faults:
+
+1. **[WA]** Misplace key and value.
