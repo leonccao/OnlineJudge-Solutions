@@ -1902,7 +1902,14 @@ Find the largest value in one row and column.
 
 ## 808.
 
-## 809.
+## 809. Expressive Words (Medium)
+
+Could construct one regex and then use String.matches(regex) to match them.
+
+Faults:
+
+1. **[WA]** Didn't process the last character of S.
+1. **[WA]** Didn't process the last character of word.
 
 ## 810.
 
