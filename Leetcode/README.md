@@ -1014,7 +1014,9 @@ Faults:
 2. **[WA]** Same as above.
 
 
-## 153.
+## 153. Find Minimum in Rotated Sorted Array (Medium)
+
+Binary search.
 
 ## 154.
 
