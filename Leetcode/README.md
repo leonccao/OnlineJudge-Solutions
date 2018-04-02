@@ -937,7 +937,16 @@ Faults:
 
 1. **[WA]** The endWord maybe not in the wordList.
 
-## 128.
+## 128. Longest Consecutive Sequence (Hard)
+
+Use a HashMap, for some number num, search for (num + 1). 
+1. If (num + 1) not exists, return 1;
+2. If (num + 1) exists and has not been searched, search (num + 2);
+3. if (num + 1) has been searched, return len(num + 1) + 1;
+
+Faults:
+
+1. **[WA]** Not enough corner case: the number could be the same.
 
 ## 129.
 
