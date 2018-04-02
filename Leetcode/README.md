@@ -1915,7 +1915,9 @@ Faults:
 1. **[WA]** Didn't process the last character of S.
 1. **[WA]** Didn't process the last character of word.
 
-## 810.
+## 810. Chalkboard XOR Game (Hard)
+
+https://leetcode.com/problems/chalkboard-xor-game/solution/
 
 ## 811. Subdomain Visit Count (Easy)
 
