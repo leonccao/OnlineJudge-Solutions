@@ -970,7 +970,14 @@ DP + BFS.
 
 DP + DP.
 
-## 133.
+## 133. Clone Graph (Medium)
+
+BFS.
+
+Faults:
+
+1. **[CE]** Queue.
+2. **[RE]** Input maybe null.
 
 ## 134.
 
