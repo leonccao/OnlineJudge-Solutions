@@ -1900,7 +1900,11 @@ Easier than #68.
 
 Find the largest value in one row and column.
 
-## 808.
+## 808. Soup Servings (Medium)
+
+DP.
+
+The most conclusion in this problem is, when the N is so large (N / 25 > 500), the probability could be seen as 1
 
 ## 809. Expressive Words (Medium)
 
