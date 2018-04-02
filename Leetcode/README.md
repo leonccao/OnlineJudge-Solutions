@@ -952,7 +952,15 @@ Faults:
 
 Recursion.
 
-## 130.
+## 130. Surrounded Regions (Medium)
+
+BFS.
+
+Always mind wether the array will be empty when you get a 2D array's length.
+
+Faults:
+
+1. **[RE]** Input 2D array maybe empty.
 
 ## 131.
 
