@@ -962,7 +962,9 @@ Faults:
 
 1. **[RE]** Input 2D array maybe empty.
 
-## 131.
+## 131. Palindrome Partitioning (Medium)
+
+DP + BFS.
 
 ## 132.
 
