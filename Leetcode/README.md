@@ -948,7 +948,9 @@ Faults:
 
 1. **[WA]** Not enough corner case: the number could be the same.
 
-## 129.
+## 129. Sum Root to Leaf Numbers (Medium)
+
+Recursion.
 
 ## 130.
 
