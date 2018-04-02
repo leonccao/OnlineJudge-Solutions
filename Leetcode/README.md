@@ -966,7 +966,9 @@ Faults:
 
 DP + BFS.
 
-## 132.
+## 132. Palindrome Partitioning II (Hard)
+
+DP + DP.
 
 ## 133.
 
