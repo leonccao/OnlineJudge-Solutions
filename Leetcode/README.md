@@ -1965,3 +1965,35 @@ Two ways to go through a HashMap:
 Faults:
 
 1. **[WA]** Misplace key and value.
+
+# 812. Largest Triangle Area (Easy)
+
+Both Heron Formula and determinant are okay.
+
+Faults:
+
+1. **[WA]** Something wrong with `Math.max(double, double)`? Use `Double.max(double, double)` next time.
+
+# 813. Largest Sum of Averages (Medium)
+
+O(N*N) DP.
+
+1. Calculate prefix sum[];
+2. Calculate avg[][] by sum[];
+3. DP: res[i][k] k groups until the i-th number.
+
+# 814. Binary Tree Pruning (Medium)
+
+Recursion.
+
+# 815. Bus Routes (Hard)
+
+Convert the input array into map, then BFS.
+
+**The most important optimization:** once you took some route, you will never take this route again in the best answer.
+
+Faults:
+
+1. **[TLE]** Not fast enough.
+2. **[TLE]** Not fast enough.
+3. **[TLE]** Not fast enough.
