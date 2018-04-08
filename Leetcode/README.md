@@ -1665,7 +1665,11 @@ Enumerate all the time expression and calculate its bits.
 
 ## 402.
 
-## 403.
+## 403. Frog Jump (Hard)
+
+1. DFS: Actually, most of the fastest solutions are in DFS.
+2. DP: i(the i-th stone), k(width of the last step is k), reach[i][k] is true when such a condition is reachable. You have i and k, you can use a map to check whether the stone at (stones[i] - k) exists. Notice that the step increase at most 1 each time, so the largest jump width is (stones.length).
+3. Better DP: Use a map of sets to record the steps to each stone, we don't need to enumerate the width anymoew. If one stone's set is empty, then it is unreachable, which replaces the reach[][].
 
 ## 404. Sum of Left Leaves
 
