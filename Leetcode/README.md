@@ -979,7 +979,27 @@ Faults:
 1. **[CE]** Queue.
 2. **[RE]** Input maybe null.
 
-## 134.
+## 134. Gas Station (Medium)
+
+### 1. Deque (My solution, O(N) + O(N))
+
+Calculate price[] at first, according to `price[i] = price[i - 1] + gas[i] - cost[i]`.
+
+Maintain an ascending deque for the least price[i]: before push in some value price[i] at back, pop out any value larger than price[i]; index i of price[i] should also be recorded.
+
+First scan: push all price[] into deque.
+
+Second scan: If i is the head of the deque, pop it out. Push it to the back of the deque. Update all prices by one variable bias.
+
+### 2. Scan (Best solution, O(N) + O(1))
+
+Record `tank += gas[i] - cost[i]`, if `tank < 0` then `tank = 0, start = i + 1`.
+
+One question is, could some station k between the oldStart and newStart become the start of the solution? Answer is no. If k is the solution instead of oldStart, which means the sum between oldStart and k is negative, then k will become our newStart, which draws contradiction.
+
+Faults:
+
+1. **[WA]** The ascending order should also be maintained when you push one element in the second time.
 
 ## 135.
 
