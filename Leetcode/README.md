@@ -1001,7 +1001,11 @@ Faults:
 
 1. **[WA]** The ascending order should also be maintained when you push one element in the second time.
 
-## 135.
+## 135. Candy (Hard)
+
+Scan from left to right to make sure the number on the right is larger than left.
+
+Scan again from right to left to make sure number on the left is larger than right.
 
 ## 136. Single Number
 
@@ -1041,15 +1045,7 @@ Faults:
 
 ## 150.
 
-## 151. Min Stack
-
-Nice problem! How to get the min value in O(1) time without another stack is the tricky here.
-
-Use one variable to store the min value. If a new coming number change the min value, push the old min into stack together with the coming number.
-
-Faults:
-
-1. **[WA]** Should update the min value if it is the same as the coming letter. Whether you could not tell if the coming number changes min.
+## 151. 
 
 ## 152. Maximum Product Subarray (Medium)
 
@@ -1070,7 +1066,15 @@ Binary search.
 
 ## 154.
 
-## 155.
+## 155. Min Stack (Easy)
+
+Nice problem! How to get the min value in O(1) time without another stack is the tricky here.
+
+Use one variable to store the min value. If a new coming number change the min value, push the old min into stack together with the coming number.
+
+Faults:
+
+1. **[WA]** Should update the min value if it is the same as the coming letter. Whether you could not tell if the coming number changes min.
 
 ## 156.
 
