@@ -1011,7 +1011,11 @@ Scan again from right to left to make sure number on the left is larger than rig
 
 XOR! Amazing solution!
 
-## 137.
+## 137. Single Number II (Hard)
+
+Learn how to solve all this kind of problems by this analysis:
+
+https://leetcode.com/problems/single-number-ii/discuss/43296/An-General-Way-to-Handle-All-this-sort-of-questions.
 
 ## 138.
 
