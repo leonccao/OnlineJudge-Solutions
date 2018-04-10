@@ -1064,7 +1064,15 @@ Which solution's performance is better depends on the distribute of the data.
 
 This approach is even more violent. Don't use HashSet, just let the List provided by the system to do the searching.
 
-## 140.
+## 140. Word Break II (Hard)
+
+Memorized DFS.
+
+### Faults:
+
+1. **[WA]** Extra space in the output.
+2. **[TLE]** Not enough optimization.
+3. **[TLE]** Same as above.
 
 ## 141. Linked List Cycle
 
