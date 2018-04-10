@@ -1017,7 +1017,28 @@ Learn how to solve all this kind of problems by this analysis:
 
 https://leetcode.com/problems/single-number-ii/discuss/43296/An-General-Way-to-Handle-All-this-sort-of-questions.
 
-## 138.
+## 138. Copy List With Random Pointer (Medium)
+
+### 1. HashMap (O(N) + O(N))
+
+The most obvious solution is to use a HashMap to store the map between original node and duplicated node.
+
+### 2. Scan and Modify the Original Linked List (O(N) + O(1))
+
+This approach is much more interested. In order to save space, we modify the original linked list instead. 
+
+When copy a node, insert it into the linked list just after its origin. `dup = iter.next, iter.next = dup;` In such a way, the odd nodes in the list are original and the even nodes are duplicates.
+
+Next, complete the random pointers of the duplicates.
+
+At last, extract new list and restore the origin list.
+
+### Faults:
+
+1. **[TLE]** You need go to `iter.next.next` when you add a new node after `iter`.
+2. **[RE]** Forget to make a copy before some node is changed.
+3. **[RE]** Same as above.
+
 
 ## 139.
 
@@ -1027,7 +1048,7 @@ https://leetcode.com/problems/single-number-ii/discuss/43296/An-General-Way-to-H
 
 Set one node's value to 0 after you visited it. When you visit one node that has been visited before, that means you reached one cycle.
 
-Faults:
+### Faults:
 
 1. **[WA]** There is -1 but no 0 in this list.
 
