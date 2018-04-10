@@ -1019,11 +1019,11 @@ https://leetcode.com/problems/single-number-ii/discuss/43296/An-General-Way-to-H
 
 ## 138. Copy List With Random Pointer (Medium)
 
-### 1. HashMap (O(N) + O(N))
+### 1. HashMap (O(N), O(N))
 
 The most obvious solution is to use a HashMap to store the map between original node and duplicated node.
 
-### 2. Scan and Modify the Original Linked List (O(N) + O(1))
+### 2. Scan and Modify the Original Linked List (O(N), O(1))
 
 This approach is much more interested. In order to save space, we modify the original linked list instead. 
 
@@ -1040,7 +1040,29 @@ At last, extract new list and restore the origin list.
 3. **[RE]** Same as above.
 
 
-## 139.
+## 139. Word Break (Medium)
+
+(S is the length of string s, W is the longest length of words, and N is the number of words.)
+
+### 1. KMP + DP (O((S+W)\*N, O(S\*N))
+
+This is my solution.
+
+First use KMP to match each word and string s to calculate array m[k][i], which means  whether the k-th word will match the substring end by position i in string s.
+
+Then use DP to calculate f[i] (wether the first i characters in string could be matched) by enumerate the words in the wordDict.
+
+Array m[k][i] could be replaced by HashMap<String, HashSet>
+
+### 2. HashSet + DP (O(S\*S), O(W\*N))
+
+Instead of enumerate words during DP, this approach enumerate the length of substring to be matched. In such a way, you don't need to pretreat the strings by KMP, and you should put all the strings in a HashSet.
+
+Which solution's performance is better depends on the distribute of the data.
+
+### 3. DP (O(S\*S\*N), O(S))
+
+This approach is even more violent. Don't use HashSet, just let the List provided by the system to do the searching.
 
 ## 140.
 
