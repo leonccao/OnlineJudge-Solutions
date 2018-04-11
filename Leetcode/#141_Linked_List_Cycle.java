@@ -9,6 +9,7 @@
  *     }
  * }
  */
+/*
 public class Solution {
     public boolean hasCycle(ListNode head) {
         ListNode now = head;
@@ -17,6 +18,23 @@ public class Solution {
                 return true;
             now.val = 0;
             now = now.next;
+        }
+        return false;
+    }
+}
+*/
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        if (head == null) return false;
+        
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            
+            if (slow == fast)
+                return true;
         }
         return false;
     }

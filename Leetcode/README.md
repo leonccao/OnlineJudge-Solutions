@@ -1074,15 +1074,41 @@ Memorized DFS.
 2. **[TLE]** Not enough optimization.
 3. **[TLE]** Same as above.
 
-## 141. Linked List Cycle
+## 141. Linked List Cycle (Easy)
+
+### 1. Modify the linked list (O(N), O(1))
 
 Set one node's value to 0 after you visited it. When you visit one node that has been visited before, that means you reached one cycle.
+
+### 2. Two pointers with different speed (O(N), O(1))
+
+Two pointers, one fast one slow. The fast one move two steps forward at a time and the slow one move only step. If the two pointers meet together again, which means the fast pointer must walk through the cycle.
 
 ### Faults:
 
 1. **[WA]** There is -1 but no 0 in this list.
 
-## 142.
+## 142. Linked List Cycle II (Medium)
+
+### Two pointers with different speed + (O(N), O(1))
+
+Based on approach 2 from problem 141. 
+
+    S         P     M         P
+    |---------|-----+---------|
+    |←   a   →|← b →|← (c-b) →|
+
+S is the head of the linked list. P is the position where the cycle starts. M is the position where the fast pointer  meets the slow pointer.
+
+The dist from S to P is a. The length of the cycle is c. The dist from P to M is b.
+
+Because the speed of fast pointer is twice as the slow one, we have `a + b + c = 2a + 2b`. Thus, `a = c - b`. Which means if we start from S and M with the same speed, they will meet at P, the answer we want.
+
+(Only illustrated fast pointer passed one cycle. It may cost several cycles for the two pointers to meet, but the conclusions are the same.)
+
+### Faults:
+
+1. **[RE]** Input node maybe null.
 
 ## 143.
 
