@@ -1126,7 +1126,23 @@ Stack.
 
 Stack with some modification.
 
-## 146.
+## 146. LRU Cache (Hard)
+
+### 1. HashMap + Queue
+
+This is my solution. Record the number of operations on the side. 
+
+Whenever you do some operation, update the element in the HashMap to show when this element was visited lately, and push this key into the queue. 
+
+When the space is not enough and you poll one key out of the queue, check whether the time stamp is the latest. If so, set the value of the key to -1.
+
+### 2. HashMap + Double Linked List
+
+Use HashMap to store the map from key to  node in double linked list. If you visit one node, delete it from the list (O(1) because it is a double linked list) and add it to the tail. When size is not enough, delete from the head of the list.
+
+### 3. LinkedHashMap
+
+https://leetcode.com/problems/lru-cache/discuss/45939/Laziest-implementation:-Java's-LinkedHashMap-takes-care-of-everything
 
 ## 147. Insertion Sort List (Medium)
 
