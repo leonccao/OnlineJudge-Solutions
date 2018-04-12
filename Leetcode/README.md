@@ -1118,7 +1118,9 @@ Three steps:
 2. Reverse the second list.
 3. Merge two lists together.
 
-## 144.
+## 144. Binary Tree Preorder Traversal (Medium)
+
+Stack.
 
 ## 145.
 
