@@ -1110,7 +1110,13 @@ Because the speed of fast pointer is twice as the slow one, we have `a + b + c =
 
 1. **[RE]** Input node maybe null.
 
-## 143.
+## 143. Reorder List (Medium)
+
+Three steps:
+
+1. Split the list into two.
+2. Reverse the second list.
+3. Merge two lists together.
 
 ## 144.
 
