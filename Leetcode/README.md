@@ -1122,7 +1122,9 @@ Three steps:
 
 Stack.
 
-## 145.
+## 145. Binary Tree Postorder Traversal (Hard)
+
+Stack with some modification.
 
 ## 146.
 
