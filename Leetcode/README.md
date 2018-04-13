@@ -1148,7 +1148,9 @@ https://leetcode.com/problems/lru-cache/discuss/45939/Laziest-implementation:-Ja
 
 Linked list operation.
 
-## 148.
+## 148. Sort List (Medium)
+
+Merge sort.
 
 ## 149.
 
