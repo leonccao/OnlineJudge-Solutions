@@ -1152,7 +1152,21 @@ Linked list operation.
 
 Merge sort.
 
-## 149.
+### Faults:
+
+1. **[RE]** Wrong if statement.
+
+## 149. Max Points on a Line (Hard)
+
+### HashMap (O(N * N), O(N))
+
+Use gradient as the key of HashMap, enumerate the start point of the line, points with the same gradient will fall on the same line.
+
+But after added the latest test case, double gradient will not pass. Either use BigDecimal instead, or store both x0 and y0 at the same time, which means HashMap in a HashMap.
+
+### Faults:
+
+1. **[WA]** x 7.
 
 ## 150.
 
