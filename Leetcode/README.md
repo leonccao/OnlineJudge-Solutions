@@ -1170,9 +1170,13 @@ But after added the latest test case, double gradient will not pass. Either use 
 
 ## 150. Evaluate Reverse Polish Notation (Medium)
 
-Stack.
+String.trim()
+String.split("\\s+")
+StringBuilder
 
-## 151. 
+## 151. Reverse Words in a String (Medium)
+
+String.
 
 ## 152. Maximum Product Subarray (Medium)
 
