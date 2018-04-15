@@ -2180,3 +2180,10 @@ String manipulation.
 
 1. **[WA]** Wrong range to add the decimal point.
 
+## 817. Linked List Components (Medium)
+
+HashSet + Iteration.
+
+### Faults:
+
+1. **[RE]** Stack overflow if recursion.
