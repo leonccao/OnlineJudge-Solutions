@@ -2196,3 +2196,7 @@ Tricks:
     
     Arrays.fill(dp, Integer.MAX_VALUE);
     int k = 32 - Integer.numberOfLeadingZeros(t);
+
+## 819. Most Common Word (Easy)
+
+HashMap.
