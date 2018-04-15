@@ -2187,3 +2187,12 @@ HashSet + Iteration.
 ### Faults:
 
 1. **[RE]** Stack overflow if recursion.
+
+## 818. Race Car (Hard)
+
+https://leetcode.com/problems/race-car/solution/
+
+Tricks:
+    
+    Arrays.fill(dp, Integer.MAX_VALUE);
+    int k = 32 - Integer.numberOfLeadingZeros(t);
