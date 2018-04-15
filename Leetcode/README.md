@@ -1170,13 +1170,20 @@ But after added the latest test case, double gradient will not pass. Either use 
 
 ## 150. Evaluate Reverse Polish Notation (Medium)
 
+Stack.
+
+## 151. Reverse Words in a String (Medium)
+
 String.trim()
 String.split("\\s+")
 StringBuilder
 
-## 151. Reverse Words in a String (Medium)
+### Faults:
 
-String.
+1. **[CE]**
+2. **[CE]**
+3. **[RE]**
+4. **[WA]** 
 
 ## 152. Maximum Product Subarray (Medium)
 
@@ -1195,7 +1202,15 @@ Faults:
 
 Binary search.
 
-## 154.
+## 154. Find Minimum in Rotated Sorted Array II (Hard)
+
+At lease O(N).
+
+### Faults:
+
+1. **[WA]** Binary search is not avaliable here.
+2. **[WA]** Same as above.
+3. **[WA]** Same as above.
 
 ## 155. Min Stack (Easy)
 
@@ -2125,7 +2140,7 @@ Faults:
 
 1. **[WA]** Misplace key and value.
 
-# 812. Largest Triangle Area (Easy)
+## 812. Largest Triangle Area (Easy)
 
 Both Heron Formula and determinant are okay.
 
@@ -2133,7 +2148,7 @@ Faults:
 
 1. **[WA]** Something wrong with `Math.max(double, double)`? Use `Double.max(double, double)` next time.
 
-# 813. Largest Sum of Averages (Medium)
+## 813. Largest Sum of Averages (Medium)
 
 O(N*N) DP.
 
@@ -2141,18 +2156,27 @@ O(N*N) DP.
 2. Calculate avg[][] by sum[];
 3. DP: res[i][k] k groups until the i-th number.
 
-# 814. Binary Tree Pruning (Medium)
+## 814. Binary Tree Pruning (Medium)
 
 Recursion.
 
-# 815. Bus Routes (Hard)
+## 815. Bus Routes (Hard)
 
 Convert the input array into map, then BFS.
 
 **The most important optimization:** once you took some route, you will never take this route again in the best answer.
 
-Faults:
+### Faults:
 
 1. **[TLE]** Not fast enough.
 2. **[TLE]** Not fast enough.
 3. **[TLE]** Not fast enough.
+
+## 816. Ambiguous Coordinates (Medium)
+
+String manipulation.
+
+### Faults:
+
+1. **[WA]** Wrong range to add the decimal point.
+
