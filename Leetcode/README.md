@@ -1244,7 +1244,9 @@ Faults:
 
 ## 161.
 
-## 162.
+## 162. Find Peak Element (Medium)
+
+Binary Search.
 
 ## 163.
 
