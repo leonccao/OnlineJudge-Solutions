@@ -1250,7 +1250,11 @@ Binary Search.
 
 ## 163.
 
-## 164.
+## 164. Maximum Gap (Hard)
+
+Bucket sort.
+
+https://leetcode.com/problems/maximum-gap/discuss/50643/bucket-sort-JAVA-solution-with-explanation-O(N)-time-and-space
 
 ## 165.
 
