@@ -1236,7 +1236,7 @@ Start from headA and change all value to negative. Then start from headB and fin
 
 But a better solution here is use two pointer and start for the same length left. Check one by one at the same time until find a same one.
 
-Faults:
+### Faults:
 
 1. **[CE]** 
 1. **[WA]** Two lists should not be changed.
@@ -1256,7 +1256,13 @@ Bucket sort.
 
 https://leetcode.com/problems/maximum-gap/discuss/50643/bucket-sort-JAVA-solution-with-explanation-O(N)-time-and-space
 
-## 165.
+## 165. Compare Version Numbers (Medium)
+
+String.split("\\.");
+
+### Faults:
+
+1. **[WA]** Different read the question description carefully.
 
 ## 166.
 
