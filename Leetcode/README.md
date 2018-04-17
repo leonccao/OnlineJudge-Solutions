@@ -1264,7 +1264,17 @@ String.split("\\.");
 
 1. **[WA]** Different read the question description carefully.
 
-## 166.
+## 166. Fraction to Recurring Decimal (Medium)
+
+Use a hashtable to record where the remain appeared.
+
+This problem's test cases are quite strong.
+
+### Faults:
+
+1. **[WA]** Input integer may be negative.
+2. **[WA]** Answer maybe zero.
+3. **[WA]** Input value maybe Integer.MIN_VALUE which could not be stored in an integer if you transfer it to positive.
 
 ## 167. Two Sum II - Input array is sorted
 
