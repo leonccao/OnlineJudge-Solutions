@@ -1312,7 +1312,9 @@ Faults:
 
 1. **[WA]** When you try to find how many 5 are there in n, remember to keep tmp >= 5.
 
-## 173.
+## 173. Binary Search Tree Iterator (Medium)
+
+Use one stack to store the TreeNodes. First push the root and all its left children down to the bottom into to the stack. Every time you pop one element, push all the left children of its right child into the stack. This could make sure the length of stack will not surpass O(h).
 
 ## 174.
 
