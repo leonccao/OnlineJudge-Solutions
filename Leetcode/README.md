@@ -1316,7 +1316,15 @@ Faults:
 
 Use one stack to store the TreeNodes. First push the root and all its left children down to the bottom into to the stack. Every time you pop one element, push all the left children of its right child into the stack. This could make sure the length of stack will not surpass O(h).
 
-## 174.
+## 174. Dungeon Game (Hard)
+
+### 1. DP 
+
+### 2. Binary Search + DP
+
+### Faults:
+
+1. **[WA]** Knight may not survive the first block.
 
 ## 175. Combine Two Tables
 
