@@ -1345,7 +1345,9 @@ Faults:
 
 1. **[WA]** The header should be renamed.
 
-## 177.
+## 177. Nth Highest Salary (Medium)
+
+    SELECT DISTINCT Salary FROM Employee ORDER BY Salary DESC LIMIT M, 1
 
 ## 178.
 
