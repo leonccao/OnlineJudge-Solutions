@@ -1349,7 +1349,13 @@ Faults:
 
     SELECT DISTINCT Salary FROM Employee ORDER BY Salary DESC LIMIT M, 1
 
-## 178.
+## 178. Rank Scores (Medium)
+
+    SELECT
+        Score,
+        (SELECT COUNT(DISTINCT Score) FROM Scores WHERE Score >= s.Score) Rank
+    FROM Scores s
+    ORDER BY Score DESC
 
 ## 179.
 
