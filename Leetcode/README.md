@@ -1341,7 +1341,7 @@ Faults:
     FROM Employee
     WHERE Salary < (SELECT MAX(Salary) FROM Employee)
 
-Faults:
+### Faults:
 
 1. **[WA]** The header should be renamed.
 
@@ -1357,7 +1357,20 @@ Faults:
     FROM Scores s
     ORDER BY Score DESC
 
-## 179.
+## 179. Largest Number (Medium)
+
+### LCM (My solution)
+
+Extend two strings to their lcm length then compare them.
+
+### Connect
+
+Compare (s1 + s2) with (s2 + s1).
+
+### Faults:
+
+1. **[WA]** Compare until one string ends is not enough.
+2. **[WA]** The result maybe "00000..." but you should output "0" instead.
 
 ## 180. Consecutive Numbers (Medium)
 
