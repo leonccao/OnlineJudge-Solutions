@@ -1407,7 +1407,14 @@ JOIN there together and SELECT one of which the CustomerId is NULL.
     AND E.Salary = T.max
     AND E.DepartmentId = D.id
 
-## 185.
+## 185. Department Top Three Salaries (Hard)
+
+    SELECT D.Name AS Department, E.Name AS Employee, E.Salary 
+    FROM Department D, Employee E, Employee E2  
+    WHERE D.ID = E.DepartmentId AND E.DepartmentId = E2.DepartmentId AND 
+    E.Salary <= E2.Salary
+    GROUP BY D.ID,E.Name HAVING COUNT(DISTINCT E2.Salary) <= 3
+    ORDER BY D.Name, E.Salary DESC
 
 ## 186.
 
