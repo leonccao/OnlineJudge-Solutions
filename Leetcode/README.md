@@ -1418,7 +1418,9 @@ JOIN there together and SELECT one of which the CustomerId is NULL.
 
 ## 186.
 
-## 187.
+## 187. Repeated DNA Sequences (Medium)
+
+Store the string into hash tables. Both HashSet or HashMap is enough.
 
 ## 188. 
 
