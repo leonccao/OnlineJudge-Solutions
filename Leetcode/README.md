@@ -1396,7 +1396,16 @@ Three ways:
 
 JOIN there together and SELECT one of which the CustomerId is NULL.
 
-## 184.
+## 184. Department Highest Salary (Medium)
+
+    SELECT D.Name AS Department ,E.Name AS Employee ,E.Salary 
+    FROM
+        Employee E,
+        (SELECT DepartmentId,max(Salary) as max FROM Employee GROUP BY DepartmentId) T,
+        Department D
+    WHERE E.DepartmentId = T.DepartmentId 
+    AND E.Salary = T.max
+    AND E.DepartmentId = D.id
 
 ## 185.
 
