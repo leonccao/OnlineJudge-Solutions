@@ -1422,7 +1422,19 @@ JOIN there together and SELECT one of which the CustomerId is NULL.
 
 Store the string into hash tables. Both HashSet or HashMap is enough.
 
-## 188. 
+## 188. Best Time to Buy and Sell Stock IV (Hard)
+
+e[i][k] means how much we can earn if we had k transactions and finished the lastest one on day i.
+
+e[i][k] = max{max(e[j][k - 1]) - prices[l]} (j < l < i)
+
+However the input K maybe meaningless large. So we need to firgure out whats the largest number of transactions we could have? The answer is (prices.length / 2). In such a condition, there in no consecutive increasing prices in the input.
+
+### Faults:
+
+1. **[TLE]** K too large.
+2. **[TLE]** K too large.
+3. **[TLE]** K too large.
 
 ## 189. Rotate Array
 
