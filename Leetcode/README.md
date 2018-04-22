@@ -2296,3 +2296,9 @@ String.endsWith(StringB)
 ## 821. Shortest Distance to a Character (Easy)
 
 Scan forwards and backwards.
+
+## 822. Card Flipping Game
+
+Problem description is crap.
+
+Find the smallest number which doesn't appear on the front and back of the same card.
