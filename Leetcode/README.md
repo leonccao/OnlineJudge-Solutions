@@ -2297,8 +2297,22 @@ String.endsWith(StringB)
 
 Scan forwards and backwards.
 
-## 822. Card Flipping Game
+## 822. Card Flipping Game (Medium)
 
 Problem description is crap.
 
 Find the smallest number which doesn't appear on the front and back of the same card.
+
+
+### Faults:
+
+1. **[WA]** Crap description.
+2. **[WA]** Crap description.
+
+## 823. Binary Trees With Factors (Medium)
+
+Dynamic programming.
+
+wasy[i] means the ways of binary trees with i-th (sorted) value as the root.
+
+ways[i] += ways[j] * ways[i / j];
