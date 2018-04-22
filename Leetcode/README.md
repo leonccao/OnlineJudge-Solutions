@@ -2287,3 +2287,9 @@ Tricks:
 ## 819. Most Common Word (Easy)
 
 HashMap.
+
+## 820. Short Encoding of Words (Medium)
+
+Arrays.sort()
+String.endsWith(StringB)
+
