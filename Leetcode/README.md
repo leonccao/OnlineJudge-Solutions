@@ -2293,3 +2293,6 @@ HashMap.
 Arrays.sort()
 String.endsWith(StringB)
 
+## 821. Shortest Distance to a Character (Easy)
+
+Scan forwards and backwards.
