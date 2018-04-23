@@ -1522,7 +1522,11 @@ Faults:
 
 A basic dp.
 
-## 199.
+## 199. Binary Tree Right Side View (Medium)
+
+Recursion.
+
+Always keep updating because the node you visit later will always be on the right.
 
 ## 200.
 
