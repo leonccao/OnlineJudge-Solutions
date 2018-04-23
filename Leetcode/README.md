@@ -1464,7 +1464,11 @@ Faults:
 1. **[WA]** We need to use bit shifting unsigned operation >>> (while >> depends on sign extension)
 1. **[WA]** `n != 0` should be used instead of `n > 0`.
 
-## 192.
+## 192. Word Frequency (Medium)
+
+    cat words.txt | tr -s ' ' '\n' | sort | uniq -c | sort -r | awk '{ print $2, $1 }'
+
+https://leetcode.com/problems/word-frequency/discuss/55443/My-simple-solution-(one-line-with-pipe)
 
 ## 193. Valid Phone Numbers
 
