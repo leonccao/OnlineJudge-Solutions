@@ -1588,7 +1588,9 @@ First turn the input list of edges into Map from courses and List.
 
 Then use topo sort with queue to proceed all courses. If the number of courses we polled out of queue equals to the number of courses, the answer is "true".
 
-## 208.
+## 208. Implement Trie (Prefix Tree) (Medium)
+
+Trie.
 
 ## 209.
 
