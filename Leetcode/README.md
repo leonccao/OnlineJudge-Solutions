@@ -1290,13 +1290,15 @@ Use StringBuilder with reverse and toString.
 
 Good problem!
 
-    for (int num : nums)
-        if (cnt == 0) {
-            cnt = 1;
-            maj = num;
-        } else if (num == maj)
-            cnt ++;
-        else cnt --;
+``` java
+for (int num : nums)
+    if (cnt == 0) {
+        cnt = 1;
+        maj = num;
+    } else if (num == maj)
+        cnt ++;
+    else cnt --;
+```
 
 ## 170.
 
@@ -1336,10 +1338,12 @@ Faults:
 
 ## 176. Second Highest Salary
 
-    SELECT MAX(Salary)
-    AS SecondHighestSalary
-    FROM Employee
-    WHERE Salary < (SELECT MAX(Salary) FROM Employee)
+``` sql
+SELECT MAX(Salary)
+AS SecondHighestSalary
+FROM Employee
+WHERE Salary < (SELECT MAX(Salary) FROM Employee)
+```
 
 ### Faults:
 
@@ -1534,14 +1538,15 @@ FloodFill.
 
 ## 201. Bitwise AND of Numbers Range (Medium)
 
-
-    int offset = 0;
-    while(m != n){
-        m >>= 1;
-        n >>= 1;
-        offset++;
-    }
-    return m <<= offset;
+``` java
+int offset = 0;
+while (m != n) {
+    m >>= 1;
+    n >>= 1;
+    offset ++;
+}
+return m <<= offset;
+```
 
 ### Faults:
 
@@ -1577,7 +1582,11 @@ Practice to use HashMap.
 
 Remember to set the next of head to "null".
 
-## 207.
+## 207. Course Schedule (Medium)
+
+First turn the input list of edges into Map from courses and List.
+
+Then use topo sort with queue to proceed all courses. If the number of courses we polled out of queue equals to the number of courses, the answer is "true".
 
 ## 208.
 
