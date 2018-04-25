@@ -1538,7 +1538,7 @@ FloodFill.
 
 ## 201. Bitwise AND of Numbers Range (Medium)
 
-``` java
+```
 int offset = 0;
 while (m != n) {
     m >>= 1;
