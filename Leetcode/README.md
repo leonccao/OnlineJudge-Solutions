@@ -1607,7 +1607,14 @@ Same as #207.
 
 Same as #208.
 
-## 212.
+## 212. Word Search II (Hard)
+
+Search the trie while go through the board.
+Break when there is no succeeding node in the trie. 
+
+### Faults:
+1. **[WA]** Confusing DFS code.
+1. **[WA]** Return before recover the array.
 
 ## 213.
 
