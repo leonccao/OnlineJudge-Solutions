@@ -1538,7 +1538,7 @@ FloodFill.
 
 ## 201. Bitwise AND of Numbers Range (Medium)
 
-```
+``` java
 int offset = 0;
 while (m != n) {
     m >>= 1;
@@ -1596,7 +1596,12 @@ Trie.
 
 Slide window.
 
-## 210.
+## 210. Course Schedule II (Medium)
+
+Same as #207.
+
+### Faults:
+1. **[CE]** Extra bracket.
 
 ## 211.
 
