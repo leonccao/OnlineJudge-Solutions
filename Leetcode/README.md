@@ -1603,7 +1603,9 @@ Same as #207.
 ### Faults:
 1. **[CE]** Extra bracket.
 
-## 211.
+## 211. Add and Search Word - Data structure design (Medium)
+
+Same as #208.
 
 ## 212.
 
