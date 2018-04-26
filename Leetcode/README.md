@@ -1620,7 +1620,11 @@ Break when there is no succeeding node in the trie.
 
 Same as #198. Do the same process for twice, once rob the first houst, once not.
 
-## 214.
+## 214. Shortest Palindrome (Hard)
+
+Match string s with its reverse r.
+
+The length of matched string till the last char of t will be the part of palindrome we could make use of. Add the left part.
 
 ## 215.
 
