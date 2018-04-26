@@ -1616,7 +1616,9 @@ Break when there is no succeeding node in the trie.
 1. **[WA]** Confusing DFS code.
 1. **[WA]** Return before recover the array.
 
-## 213.
+## 213. House Robber II (Medium)
+
+Same as #198. Do the same process for twice, once rob the first houst, once not.
 
 ## 214.
 
