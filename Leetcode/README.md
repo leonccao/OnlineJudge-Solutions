@@ -1626,7 +1626,11 @@ Match string s with its reverse r.
 
 The length of matched string till the last char of t will be the part of palindrome we could make use of. Add the left part.
 
-## 215.
+## 215. Kth Largest Element in an Array (Medium)
+
+### 1. QuickSort O(nlogn)
+### 2. Heap O(nlogn)
+### 3. QuickSelect O(n) https://en.wikipedia.org/wiki/Quickselect
 
 ## 216.
 
