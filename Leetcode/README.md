@@ -2408,4 +2408,6 @@ StringBuilder.
 
 Special treatment for the same ages.
 
-## 826. Most Profit Assigning Work
+## 826. Most Profit Assigning Work (Medium)
+
+Sort + Delete Duplicates + Binary Search.
