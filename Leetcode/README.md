@@ -2396,3 +2396,8 @@ Dynamic programming.
 wasy[i] means the ways of binary trees with i-th (sorted) value as the root.
 
 ways[i] += ways[j] * ways[i / j];
+
+## 824. Goat Latin (Easy)
+
+StringBuilder.
+
