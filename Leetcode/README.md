@@ -2411,3 +2411,7 @@ Special treatment for the same ages.
 ## 826. Most Profit Assigning Work (Medium)
 
 Sort + Delete Duplicates + Binary Search.
+
+## 827. Making A Large Island (Medium)
+
+Floodfill, dye the islands with different colors, use one map to record the size of each island, then enumerate the block to change.
