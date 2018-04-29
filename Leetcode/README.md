@@ -2401,3 +2401,11 @@ ways[i] += ways[j] * ways[i / j];
 
 StringBuilder.
 
+## 825. Friends Of Appropriate Ages (Medium)
+
+### 1. Scan O(N * N)
+### 2. Queue Optimization O(N)
+
+Special treatment for the same ages.
+
+## 826. Most Profit Assigning Work
