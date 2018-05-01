@@ -2114,7 +2114,9 @@ Faults:
 
 1. **[WA]** If the sum is 0, you could not choose nothing.
 
+## 461. Hamming Distance (Medium)
 
+Bit Manipulation.
 
 
 
