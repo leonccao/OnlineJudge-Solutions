@@ -1641,7 +1641,9 @@ Recursion.
 Use HashSet in Java. 
 Set.add(num) will return false if num already exists.
 
-## 218.
+## 218. The Skyline Problem (Hard) 
+
+The turn points appear only when one building starts or ends. So we split each building into two turn points. And use priority queue to maintain the highest height. When one building start, push it into heap. When the heap top building has already ended, pop it out.
 
 ## 219. Contains Duplicate II
 
