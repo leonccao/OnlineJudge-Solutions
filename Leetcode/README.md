@@ -1658,7 +1658,9 @@ Distinguish between Set (HashSet) and Map (HashMap).
 ### Faults:
 1. **[WA]** The divider should also be long type, otherwise error will appear.
 
-## 221.
+## 221. Maximal Square (Medium)
+
+Dynamic Programming.
 
 ## 222.
 
