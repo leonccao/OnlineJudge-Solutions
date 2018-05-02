@@ -1645,11 +1645,18 @@ Set.add(num) will return false if num already exists.
 
 The turn points appear only when one building starts or ends. So we split each building into two turn points. And use priority queue to maintain the highest height. When one building start, push it into heap. When the heap top building has already ended, pop it out.
 
-## 219. Contains Duplicate II
+## 219. Contains Duplicate II (Easy)
 
 Distinguish between Set (HashSet) and Map (HashMap).
 
-## 220.
+## 220. Contains Duplicate III (Medium)
+
+### TreeSet O(NlogN)
+
+### Bucket Sort O(N)
+
+### Faults:
+1. **[WA]** The divider should also be long type, otherwise error will appear.
 
 ## 221.
 
