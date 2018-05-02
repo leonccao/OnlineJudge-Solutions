@@ -1662,7 +1662,15 @@ Distinguish between Set (HashSet) and Map (HashMap).
 
 Dynamic Programming.
 
-## 222.
+## 222. Count Complete Tree Nodes (Medium)
+
+### Iteration O(N)
+
+Somtimes iteration will be faster than recursion, and somtimes just the opposite.
+
+### depthLeft & depthRight O(logN * logN)
+
+If one tree is full binary tree (depthLeft == depthRight, which are all the way down to left and all the way down to right), return ((1 << depth) + 1). Else return countNodes(leftChild) + countNodes(rightChild) + 1.
 
 ## 223.
 
