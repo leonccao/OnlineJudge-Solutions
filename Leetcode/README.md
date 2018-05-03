@@ -1694,7 +1694,9 @@ Easy one.
 
 Same as #224.
 
-## 228.
+## 228. Summary Ranges (Medium)
+
+Scan.
 
 ## 229.
 
