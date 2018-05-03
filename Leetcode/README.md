@@ -1704,7 +1704,11 @@ Boyer-Moore Majority Vote
 
 https://leetcode.com/problems/majority-element-ii/discuss/63520/Boyer-Moore-Majority-Vote-algorithm-and-my-elaboration
 
-## 230.
+## 230. Kth Smallest Element in a BST (Medium)
+
+### 1. count nodes of each subtree
+### 2. recursion
+### 3. iteration
 
 ## 231.
 
