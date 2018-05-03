@@ -1682,15 +1682,17 @@ Convert the infix expression to postfix expression (with stack), then calculate 
 
 This approach maybe complicated, but it could achieve a much more powerful calculator in a practical way.
 
-## 225. Implement Stack using Queues
+## 225. Implement Stack using Queues (Easy)
 
 Operation of LinkedList. O(n) to push or poll, kind of stupid.
 
-## 226. Invert Binary Tree
+## 226. Invert Binary Tree (Easy)
 
 Easy one.
 
-## 227.
+## 227. Basic Calculator II (Medium)
+
+Same as #224.
 
 ## 228.
 
