@@ -1676,7 +1676,11 @@ If one tree is full binary tree (depthLeft == depthRight, which are all the way 
 
 The sum of two rectangles minus the overlap part.
 
-## 224.
+## 224. Basic Calculator (Hard)
+
+Convert the infix expression to postfix expression (with stack), then calculate the value of this postfix expression.
+
+This approach maybe complicated, but it could achieve a much more powerful calculator in a practical way.
 
 ## 225. Implement Stack using Queues
 
