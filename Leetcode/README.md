@@ -1698,7 +1698,11 @@ Same as #224.
 
 Scan.
 
-## 229.
+## 229. Majority Element II (Medium)
+
+Boyer-Moore Majority Vote
+
+https://leetcode.com/problems/majority-element-ii/discuss/63520/Boyer-Moore-Majority-Vote-algorithm-and-my-elaboration
 
 ## 230.
 
