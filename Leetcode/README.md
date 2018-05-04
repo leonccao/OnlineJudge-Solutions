@@ -1716,7 +1716,12 @@ https://leetcode.com/problems/majority-element-ii/discuss/63520/Boyer-Moore-Majo
 
 The inverted version of #225.
 
-## 233.
+## 233. Number of Digit One (Hard)
+
+Count the ones bit by bit.
+
+### Faults:
+1. **[WA]** Will not be negative necessarilly after overflow.
 
 ## 234. Palindrome Linked List
 
