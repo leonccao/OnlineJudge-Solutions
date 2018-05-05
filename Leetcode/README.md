@@ -1733,7 +1733,18 @@ Reverse the first half or last half, then compare each half front to end.
 
 The given BST structure makes it easy to solve.
 
-## 236. 
+## 236. Lowest Common Ancestor of a Binary Tree (Medium)
+
+### 1. Recursion O(N) + O(1)
+
+Like #235, if p and q appear in two different children of root, then root is the answer. Otherwise search for answer in its children.
+
+### 2. Fathers O(N) + O(N)
+
+First find all nodes' fathers and store them in a map. Then keep going up from p and q until meet at some node (adjust them to the same depth at first).
+
+### Faults:
+1. **[WA]** Stop when p and q are the same, not the depth is zero.
 
 ## 237. Delete Node in a Linked List
 
