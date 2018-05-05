@@ -1682,6 +1682,10 @@ Convert the infix expression to postfix expression (with stack), then calculate 
 
 This approach maybe complicated, but it could achieve a much more powerful calculator in a practical way.
 
+``` java
+for (char ch : s.toCharArray())
+```
+
 ## 225. Implement Stack using Queues (Easy)
 
 Operation of LinkedList. O(n) to push or poll, kind of stupid.
@@ -1758,13 +1762,13 @@ Scan twice.
 
 ## 239. Sliding Window Maximum (Hard)
 
-### Deque O(N) + O(N)
+### 1. Deque O(N) + O(N)
 
 Maintain a descending deque with capacity k. Push new element into the end, pop smaller elements out before. Pop out the head element if its index is out of size k.
 
 Finally, the element at head will be our answer here.
 
-### LeftMax[] & RightMax O(N) + O(N)
+### 2. LeftMax[] & RightMax O(N) + O(N)
 
 Cut the array into blocks with size k. Use leftMax[i] and RightMax[i - k + 1] to make up the window we want.
 
@@ -1780,7 +1784,11 @@ https://leetcode.com/problems/sliding-window-maximum/discuss/65881/O(n)-solution
 ### Faults:
 1. **[WA]** Wrong while loop range.
 
-## 241.
+## 241. Different Ways to Add Parentheses (Medium)
+
+### 1. Recursion O(N^2) + O(N^2)
+
+### 2. DP O(N^2) + O(N^2)
 
 ## 242.
 
