@@ -1752,7 +1752,9 @@ Just move the val and next from next node to this one.
 
 Actually I was asked about this question for twice during auditions.
 
-## 238.
+## 238. Product of Array Except Self (Medium)
+
+Scan twice.
 
 ## 239.
 
