@@ -1760,7 +1760,7 @@ Scan twice.
 
 ### Deque O(N) + O(N)
 
-Maintain a descreasing deque with capacity k. Push new element into the end, pop smaller elements out before. Pop out the head element if its index is out of size k.
+Maintain a descending deque with capacity k. Push new element into the end, pop smaller elements out before. Pop out the head element if its index is out of size k.
 
 Finally, the element at head will be our answer here.
 
@@ -1768,10 +1768,17 @@ Finally, the element at head will be our answer here.
 
 Cut the array into blocks with size k. Use leftMax[i] and RightMax[i - k + 1] to make up the window we want.
 
+https://leetcode.com/problems/sliding-window-maximum/discuss/65881/O(n)-solution-in-Java-with-two-simple-pass-in-the-array (One reply below with graph is much more clear than the post itself.)
+
 ### Faults:
 1. **[WA]** Stupid question description. Input maybe invalid even guranteed in the description.
 
-## 240.
+## 240. Search a 2D Matrix II (Medium)
+
+> We start search the matrix from top right corner, initialize the current position to top right corner, if the target is greater than the value in current position, then the target can not be in entire row of current position because the row is sorted, if the target is less than the value in current position, then the target can not in the entire column because the column is sorted too. We can rule out one row or one column each time, so the time complexity is O(m+n).
+
+### Faults:
+1. **[WA]** Wrong while loop range.
 
 ## 241.
 
