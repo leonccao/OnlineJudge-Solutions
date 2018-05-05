@@ -1756,7 +1756,20 @@ Actually I was asked about this question for twice during auditions.
 
 Scan twice.
 
-## 239.
+## 239. Sliding Window Maximum (Hard)
+
+### Deque O(N) + O(N)
+
+Maintain a descreasing deque with capacity k. Push new element into the end, pop smaller elements out before. Pop out the head element if its index is out of size k.
+
+Finally, the element at head will be our answer here.
+
+### LeftMax[] & RightMax O(N) + O(N)
+
+Cut the array into blocks with size k. Use leftMax[i] and RightMax[i - k + 1] to make up the window we want.
+
+### Faults:
+1. **[WA]** Stupid question description. Input maybe invalid even guranteed in the description.
 
 ## 240.
 
