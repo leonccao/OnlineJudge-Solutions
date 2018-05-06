@@ -1790,6 +1790,10 @@ https://leetcode.com/problems/sliding-window-maximum/discuss/65881/O(n)-solution
 
 ### 2. DP O(N^2) + O(N^2)
 
+``` java
+ArrayList<Integer>[][] rec = (ArrayList<Integer>[][]) new ArrayList[len][len];
+```
+
 ## 242.
 
 ## 243.
@@ -2500,3 +2504,7 @@ Sort + Delete Duplicates + Binary Search.
 ## 827. Making A Large Island (Medium)
 
 Floodfill, dye the islands with different colors, use one map to record the size of each island, then enumerate the block to change.
+
+## 828. Unique Letter String (Hard)
+
+For character ch, find the nearest same letter before it and after it, then all substrings between these two letters will have ch as unique letter. How to calculate it? Multiply the length on left and right together.
