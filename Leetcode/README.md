@@ -2513,3 +2513,7 @@ For character ch, find the nearest same letter before it and after it, then all 
 
 Actually we need to find x, y such that x * y == N.
 
+## 830. Positions of Large Groups (Medium)
+
+Scan.
+
