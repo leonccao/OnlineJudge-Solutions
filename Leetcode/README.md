@@ -2508,3 +2508,8 @@ Floodfill, dye the islands with different colors, use one map to record the size
 ## 828. Unique Letter String (Hard)
 
 For character ch, find the nearest same letter before it and after it, then all substrings between these two letters will have ch as unique letter. How to calculate it? Multiply the length on left and right together.
+
+## 829. Consecutive Numbers Sum (Medium)
+
+Actually we need to find x, y such that x * y == N.
+
