@@ -1856,11 +1856,13 @@ WHERE (Request_at BETWEEN '2013-10-01' AND '2013-10-03')
 GROUP BY Request_at;
 ```
 
-## 263. Ugly Number
+## 263. Ugly Number (Easy)
 
 Divide all 2, 3 and 5 then check whether the remaining is 1.
 
-## 264.
+## 264. Ugly Number II (Medium)
+
+Hold all ugly numbers we got in a list. Use three different pointers for 2, 3 and 5 point to the list seperately. Every time add min{ugly[2] * 2, ugly[3] * 3, ugly[5] * 5} to the list and update these pointers.
 
 ## 265.
 
