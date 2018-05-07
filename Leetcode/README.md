@@ -1837,7 +1837,11 @@ DFS. Update List<String> in the DFS function.
 
 ## 259.
 
-## 260.
+## 260. Single Number III (Medium)
+
+Amazing solution!
+
+https://leetcode.com/problems/single-number-iii/discuss/68900/Accepted-C++Java-O(n)-time-O(1)-space-Easy-Solution-with-Detail-Explanations
 
 ## 261.
 
