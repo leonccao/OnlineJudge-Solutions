@@ -1882,7 +1882,15 @@ Xor 0~n with all numbers in nums, the number left will be the result.
 
 ## 272.
 
-## 273.
+## 273. Integer to English Words (Hard)
+
+Interpret it bit by bit ...
+Pay attention to special occasions like 11-19 or zero.
+
+One very useful method here:
+``` java
+    String.join("-", ans);
+```
 
 ## 274. H-Index (Medium)
 
