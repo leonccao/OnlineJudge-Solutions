@@ -1896,12 +1896,12 @@ One very useful method here:
 
 Sort the array. Scan the array to find some entry that its value equals to the number of entries larger or equal to it.
 
-Be careful of the numbers with same value.
-
 ### Faults:
 1. **[WA]** The ans h may not appear in the array.
 
-## 275.
+## 275. H-Index II (Medium)
+
+Easier than #274.
 
 ## 276.
 
