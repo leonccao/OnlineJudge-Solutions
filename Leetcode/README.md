@@ -1919,7 +1919,13 @@ Faults:
 1. **[TLE]** When calculating mid = (l + r) / 2, overflow maybe happen.
 1. **[TLE]** Typo.
 
-## 279.
+## 279. Perfect Squares (Medium)
+
+Dynamic programming.
+
+``` java
+ans[k] = Math.min(ans[k], ans[k - j * j] + 1)
+```
 
 ## 280.
 
