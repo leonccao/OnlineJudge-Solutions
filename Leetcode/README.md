@@ -1937,7 +1937,12 @@ ans[k] = Math.min(ans[k], ans[k - j * j] + 1)
 
 Two pointers, one to find the non-zero numbers and one to store them from the beginning.
 
-## 284.
+## 284. Peeking Iterator (Medium)
+
+When you do peek(), just do next(), but use a variable to store the value. Keep returning this value to peek() until next next() request appears.
+
+### Faults:
+1.**[CE]** Confused 'left' and 'flag'.
 
 ## 285.
 
