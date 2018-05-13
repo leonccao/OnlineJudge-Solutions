@@ -2566,3 +2566,8 @@ String processing.
 
 Swap an array.
 
+## 833. Find And Replace in String (Medium)
+
+The only problem is if you replace some substring and its length is not the same, it will effect other replacements after.
+
+So we could do the replacments backwards, just sort the index in ascending order in advance.
