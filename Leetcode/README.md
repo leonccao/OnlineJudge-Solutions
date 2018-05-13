@@ -2571,3 +2571,14 @@ Swap an array.
 The only problem is if you replace some substring and its length is not the same, it will effect other replacements after.
 
 So we could do the replacments backwards, just sort the index in ascending order in advance.
+
+## 834. Sum of Distances in Tree (Hard)
+
+Firstly, calculate `size[r]` (the size of subtree which has r as the root) and `collect[r]` (sum the distance from each node to root r) through recursion from bottom to top. Notice that `collect[r] += collect[son] + size[son]`.
+
+Then, we could calculate the answer `dist[]` by `size[]` and `collect[root]` (`collect[root] == dist[root]`). Here is one important conclusion (`son` is one child of `r`'s ):
+
+``` java
+dist[son] = dist[root] - size[son] + (N - size[son]);
+dist[son] = dist[root] + N - 2 * size[son]; // they are the same
+```
