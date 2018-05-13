@@ -2561,3 +2561,8 @@ Scan.
 ## 831. Masking Personal Information (Medium)
 
 String processing.
+
+## 832. Flipping an Image (Easy)
+
+Swap an array.
+
