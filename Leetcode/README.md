@@ -2582,3 +2582,10 @@ Then, we could calculate the answer `dist[]` by `size[]` and `collect[root]` (`c
 dist[son] = dist[root] - size[son] + (N - size[son]);
 dist[son] = dist[root] + N - 2 * size[son]; // they are the same
 ```
+
+## 835. Image Overlap (Medium)
+
+Damn question.
+
+### Faults:
+1. **[WA]** Mind the difference between sliding, translation and rotation.
