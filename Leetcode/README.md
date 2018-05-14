@@ -1948,7 +1948,11 @@ When you do peek(), just do next(), but use a variable to store the value. Keep 
 
 ## 286.
 
-## 287.
+## 287. Find the Duplicate Number (Medium)
+
+Consider each number an linkedlist from the value of its index to the number. Then there will be several linkedlists point to the same node. In other words, we need to find a cycle in a linked list.
+
+Then it is the same as #142.
 
 ## 288.
 
