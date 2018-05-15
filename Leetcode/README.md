@@ -1981,7 +1981,9 @@ Check whether n % 4 equals 0.
 
 ## 298.
 
-## 299.
+## 299. Bulls and Cows (Medium)
+
+Use one array to count characters.
 
 ## 300.
 
