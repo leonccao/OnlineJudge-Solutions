@@ -1931,7 +1931,19 @@ ans[k] = Math.min(ans[k], ans[k - j * j] + 1)
 
 ## 281.
 
-## 282.
+## 282. Expression Add Operators (Hard)
+
+### 1. Recursion with the record of last successive multiplys
+
+Easier and clearer way.
+
+### 2. Generate the whole and calculate by convert infix to postfix
+
+One recursion to cut the nums, another recursion to generate operators.
+
+Then use convert infix expression to postfix to calculate the value.
+
+Compared with above solution, this one is quite complicated. I spent a lot of time on nearly 100 lines of code.
 
 ## 283. Move Zeros
 
