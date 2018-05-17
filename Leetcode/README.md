@@ -1989,7 +1989,16 @@ Check whether n % 4 equals 0.
 
 ## 294.
 
-## 295.
+## 295. Find Median from Data Stream (Hard)
+
+### 1. Two Priority Queue
+
+Two priority queue, one for the left half and one for the right.
+Maintain the capacity of each priority queue according to sum size.
+
+### 2. Binary Search Tree
+
+Always search for the middle one or two in the BST.
 
 ## 296.
 
