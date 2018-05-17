@@ -2012,7 +2012,9 @@ Convert the tree to preorder traversal, put "null" for null TreeNodes.
 
 Use one array to count characters.
 
-## 300.
+## 300. Longest Increasing Subsequence (Medium)
+
+The classical optimization (nlog(n) by binary search) for longest increasing subsequence.
 
 ## 301.
 
