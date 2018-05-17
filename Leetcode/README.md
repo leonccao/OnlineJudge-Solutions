@@ -1968,7 +1968,11 @@ Then it is the same as #142.
 
 ## 288.
 
-## 289.
+## 289. Game of Life (Medium)
+
+The problem is we could not display the two status with one bit at the same time.
+
+Then we could use two bits! Last bit for status at this turn, and first bit for status at next turn!
 
 ## 290. Word Pattern
 
