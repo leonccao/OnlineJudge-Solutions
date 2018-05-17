@@ -2002,7 +2002,9 @@ Always search for the middle one or two in the BST.
 
 ## 296.
 
-## 297.
+## 297. Serialize and Deserialize Binary Tree (Hard)
+
+Convert the tree to preorder traversal, put "null" for null TreeNodes.
 
 ## 298.
 
