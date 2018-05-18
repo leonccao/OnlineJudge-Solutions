@@ -2024,6 +2024,10 @@ The classical optimization (nlog(n) by binary search) for longest increasing sub
 
 Prefix sum array.
 
+## 304. Range Sum Query 2D - Immutable (Medium)
+
+Including excluding principle.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
