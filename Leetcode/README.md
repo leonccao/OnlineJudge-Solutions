@@ -2028,6 +2028,17 @@ Prefix sum array.
 
 Including excluding principle.
 
+## 309. Best Time to Buy and Sell Stock with Cooldown (Medium)
+
+``` java
+for (int i = 0; i < prices.length; i ++) {
+    int tmpCool = Math.max(cool, sell);
+    sell = buy + prices[i];
+    buy = Math.max(cool - prices[i], buy);
+    cool = tmpCool;
+}
+```
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
