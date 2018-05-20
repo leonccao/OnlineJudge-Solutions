@@ -2028,6 +2028,10 @@ Prefix sum array.
 
 Including excluding principle.
 
+## 307. Range Sum Query - Mutable (Medium)
+
+Binary indexed tree.
+
 ## 309. Best Time to Buy and Sell Stock with Cooldown (Medium)
 
 ``` java
