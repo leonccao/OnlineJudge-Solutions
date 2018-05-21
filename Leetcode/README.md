@@ -2016,7 +2016,15 @@ Use one array to count characters.
 
 The classical optimization (nlog(n) by binary search) for longest increasing subsequence.
 
-## 301.
+## 301. Remove Invalid Parentheses (Hard)
+
+Dynamic programming.
+
+A valid string could be made up by two ways:
+1. (string)
+2. or  stringa + stringb
+
+Then use DP or DFS based on these two rules.
 
 ## 302.
 
