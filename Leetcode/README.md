@@ -2036,6 +2036,23 @@ Prefix sum array.
 
 Including excluding principle.
 
+## 306. Additive Number (Medium)
+
+These methods are all very useful here:
+
+```java
+last = Long.parseLong(sa);
+next = Long.parseLong(sb);
+
+String tmps = Long.valueOf(tmp).toString();
+
+if (!num.substring(base, num.length()).startsWith(tmps))
+    break;
+```
+
+### Faults:
+1. **[RE]** Input maybe larger than integer.
+
 ## 307. Range Sum Query - Mutable (Medium)
 
 Binary indexed tree.
