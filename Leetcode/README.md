@@ -2068,6 +2068,17 @@ for (int i = 0; i < prices.length; i ++) {
 }
 ```
 
+## 310. Minimum Height Trees (Medium)
+
+For every node, to calculate its depth, there are two depths to compare with: the bottom-up depth of its deepest son, or the top-down depth from its father. The top-down depth of its father may come from two ways: its own father, or another child.
+
+Here is own solution:
+
+1. One DFS, calculate all bottom-up depth, record the deepest child and second deepest child for each node.
+2. Another DFS, calculate the top-down depth for each node and get the final depth. For each node, compare its top-down depth and bottom-up depth. And we need to pass its top-down depth to its children: the top-down depth of its own, or the depth of its son's brother. We recorded the two deepest children for each node, so the brother's depth will always be avaliable.
+
+Finally, find the nodes with shallowest depth.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
