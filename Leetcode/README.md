@@ -2079,6 +2079,18 @@ Here is own solution:
 
 Finally, find the nodes with shallowest depth.
 
+## 312. Burst Balloons (Hard)
+
+Dynamic programming.
+
+f[a][b] means all the balloons between a and b are burst. The last balloon be burst would be any balloon c between a and b. So we have:
+
+```java
+f[a][b] = Math.max(f[a][c] + f[c][b] + nums[a] * nums[c] * nums[b]);
+```
+nums[-1] and nums[n] would be helpful, add them in!
+
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
