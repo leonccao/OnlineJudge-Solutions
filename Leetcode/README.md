@@ -2090,6 +2090,9 @@ f[a][b] = Math.max(f[a][c] + f[c][b] + nums[a] * nums[c] * nums[b]);
 ```
 nums[-1] and nums[n] would be helpful, add them in!
 
+## 313. Super Ugly Number (Medium)
+
+The same as #264 but we got k primes here other than 3 primes. So instead of compare them by hand, we will use a priority queue to maintain the minimum next answer. Be careful will the duplicates.
 
 ## 344. Reverse String
 
