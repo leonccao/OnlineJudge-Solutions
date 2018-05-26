@@ -2094,6 +2094,10 @@ nums[-1] and nums[n] would be helpful, add them in!
 
 The same as #264 but we got k primes here other than 3 primes. So instead of compare them by hand, we will use a priority queue to maintain the minimum next answer. Be careful will the duplicates.
 
+## 315. Count of Smaller Numbers After Self (Hard)
+
+Sort numbers by them value and build binary indexed tree on there original index.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
