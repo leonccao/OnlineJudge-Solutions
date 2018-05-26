@@ -2098,6 +2098,10 @@ The same as #264 but we got k primes here other than 3 primes. So instead of com
 
 Sort numbers by them value and build binary indexed tree on there original index.
 
+## 316. Remove Duplicate Letters (Hard)
+
+Scan backwards. If every character already appeared at least once starts from position P, then any position before P is avaliable for an answer. So try to find the smallest character before P to get the best answer. After fix the position of this character, call the solve function again to fix the other ones.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
