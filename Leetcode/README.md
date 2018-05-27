@@ -2722,4 +2722,6 @@ Same as #306.
 ### Faults:
 1. **[RE]** Input maybe larger than long.
 
+## 843. Guess the Word (Hard)
 
+Record all the tries and randomize.
