@@ -2715,3 +2715,11 @@ Scan.
 
 BFS.
 
+## 842. Split Array into Fibonacci Sequence (Medium)
+
+Same as #306.
+
+### Faults:
+1. **[RE]** Input maybe larger than long.
+
+
