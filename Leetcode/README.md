@@ -2710,3 +2710,8 @@ Scan.
 ### Faults:
 1. **[WA]** Input maybe larger than 9.
 2. **[WA]** Input maybe smaller than 1.
+
+## 841. Keys and Rooms (Medium)
+
+BFS.
+
