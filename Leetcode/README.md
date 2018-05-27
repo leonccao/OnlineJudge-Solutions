@@ -2702,3 +2702,11 @@ Damn question.
 
 ### Faults:
 1. **[WA]** Mind the difference between sliding, translation and rotation.
+
+## 840. Magic Squares In Grid (Easy)
+
+Scan.
+
+### Faults:
+1. **[WA]** Input maybe larger than 9.
+2. **[WA]** Input maybe smaller than 1.
