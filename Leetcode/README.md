@@ -2102,6 +2102,11 @@ Sort numbers by them value and build binary indexed tree on there original index
 
 Scan backwards. If every character already appeared at least once starts from position P, then any position before P is avaliable for an answer. So try to find the smallest character before P to get the best answer. After fix the position of this character, call the solve function again to fix the other ones.
 
+## 318. Maximum Product of Word Lengths (Medium)
+
+Use bit to stand wether one word contains some characters or not (26 bits which is less than 31 bits).
+When comparing two words, just do and operation to these two numbers.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
