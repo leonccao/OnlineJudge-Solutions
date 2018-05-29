@@ -2107,6 +2107,10 @@ Scan backwards. If every character already appeared at least once starts from po
 Use bit to stand wether one word contains some characters or not (26 bits which is less than 31 bits).
 When comparing two words, just do and operation to these two numbers.
 
+## 319. Bulb Switcher (Medium)
+
+All the numbers with even factors will be off at last, left only those odd factors ones: square numbers.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
