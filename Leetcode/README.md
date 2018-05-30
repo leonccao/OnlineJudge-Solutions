@@ -2111,6 +2111,10 @@ When comparing two words, just do and operation to these two numbers.
 
 All the numbers with even factors will be off at last, left only those odd factors ones: square numbers.
 
+## 321. Create Maximum Number (Hard)
+
+Enumerate how many digits we select from each array and merge them together. During merging, we should compare whole postfix subarray instead of two single digits.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
