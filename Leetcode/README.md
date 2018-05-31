@@ -1628,9 +1628,10 @@ The length of matched string till the last char of t will be the part of palindr
 
 ## 215. Kth Largest Element in an Array (Medium)
 
-### 1. QuickSort O(nlogn)
-### 2. Heap O(nlogn)
-### 3. QuickSelect O(n) https://en.wikipedia.org/wiki/Quickselect
+### 1. QuickSort O(nlogn) + O(1)
+### 2. Heap O(nlogn) + O(n)
+### 3. QuickSelect O(n) + O(1) 
+Kind of like QuickSort. Instead of sorting both half sides, we only sort the half which k falls in.
 
 ## 216. Combination Sum III (Medium)
 
