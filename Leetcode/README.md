@@ -2115,6 +2115,10 @@ All the numbers with even factors will be off at last, left only those odd facto
 
 Enumerate how many digits we select from each array and merge them together. During merging, we should compare whole postfix subarray instead of two single digits.
 
+## 322. Coin Change (Medium)
+
+The classic packback problem.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
