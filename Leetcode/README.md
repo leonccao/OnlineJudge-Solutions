@@ -2120,6 +2120,15 @@ Enumerate how many digits we select from each array and merge them together. Dur
 
 The classic packback problem.
 
+
+## 324. Wiggle Sort II (Medium)
+
+### 1. Sort O(nlogn) + O(1)
+
+### 2. findKthNumber + 3Partition O(n) + O(n)
+
+### 3. findKthNumber + 3Partition + IndexMap O(n) + O(1)
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
