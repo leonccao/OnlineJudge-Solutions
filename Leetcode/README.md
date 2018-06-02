@@ -2129,6 +2129,21 @@ The classic packback problem.
 
 ### 3. findKthNumber + 3Partition + IndexMap O(n) + O(1)
 
+## 327. Count of Range Sum (Hard)
+
+Obviously, we first transfer the array into prefix sum array sum[]. Then what we want to find here is two index i, j (i < j) in sum[] such that sum[j] - sum[i] is in the required range.
+
+We solve this problem by merge sort.
+
+To merge sort sum[l, r], we first merge sort recursively the left half sum[l, mid] and right half sum[mid, r]. Then we need to count pair i, j than cross mid, which means i fall in [l, mid) and j falls in [mid, r). We only need to count such pairs because pairs with i, j within the same region have been counted when merge sorting each half.
+
+After count the pairs, merge left and right half together.
+
+### Faults:
+
+1. **[WA]** Sum may be long type.
+2. **[TLE]** It will cost too much time and memory if you new a whole array during merging. Just new the part of array you need.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
