@@ -2767,3 +2767,7 @@ Same as #306.
 ## 843. Guess the Word (Hard)
 
 Record all the tries and randomize.
+
+## 844. Backspace String Compare (Easy)
+
+Use a stack for the two strings, pop the top out when you run into backspaces.
