@@ -2771,3 +2771,8 @@ Record all the tries and randomize.
 ## 844. Backspace String Compare (Easy)
 
 Use a stack for the two strings, pop the top out when you run into backspaces.
+
+## 845. Longest Mountain in Array (Medium)
+
+For each element, calculate the longest ascending subarray on its left side and right side, then combine them together.
+
