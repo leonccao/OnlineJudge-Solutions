@@ -2780,3 +2780,12 @@ For each element, calculate the longest ascending subarray on its left side and 
 
 Use the sorted array to search what's the start of next group and hashmap to check if you still get some number left.
 
+## 847. Shortest Path Visiting All Nodes (Hard)
+
+State compression + dynamic programming.
+
+f[status][pos] means the least step to achieve status `status` with ending at node `pos`. How we describe the whole status in an integer? Notice than there are at most 12 nodes in the test cases. We could use each bit of the integer to show whether one node has been visited. Then an integer with 12 bits is enough for show all of the status.
+
+f[status][pos] may comes from f[status][posPre] or f[statusPre][posPre]. `posPre` and `pos` are connected and `statusPre = status xor (1 << pos)` which is the status than node `pos` has not been visited.
+
+Notice than you may revisit node within the same status which means the f[status] array maybe updated in different directions. The solution is keep this update loop until no update was made.
