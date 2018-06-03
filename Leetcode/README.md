@@ -2776,3 +2776,7 @@ Use a stack for the two strings, pop the top out when you run into backspaces.
 
 For each element, calculate the longest ascending subarray on its left side and right side, then combine them together.
 
+## 846. Hand of Straights (Medium)
+
+Use the sorted array to search what's the start of next group and hashmap to check if you still get some number left.
+
