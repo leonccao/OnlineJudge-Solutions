@@ -2144,6 +2144,10 @@ After count the pairs, merge left and right half together.
 1. **[WA]** Sum may be long type.
 2. **[TLE]** It will cost too much time and memory if you new a whole array during merging. Just new the part of array you need.
 
+## 328. Odd Even Linked List (Medium)
+
+Use two linked list head to store odd list nodes and even ones seperately, then combine them together.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
