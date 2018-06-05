@@ -2148,6 +2148,20 @@ After count the pairs, merge left and right half together.
 
 Use two linked list head to store odd list nodes and even ones seperately, then combine them together.
 
+## 329. Longest Increasing Path in a Matrix (Hard)
+
+### 1. Memory Search O(NM)
+
+But have the risk of stack overflow.
+
+### 2. Dynamic Programming O(NM*log(NM))
+
+Sort the elements and then do DP from the least to the largest.
+
+### Faults:
+
+1. **[RE]** `nums[i * col + j]` when you calculate the index of `matrix[i][j]` in 1-D array.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
