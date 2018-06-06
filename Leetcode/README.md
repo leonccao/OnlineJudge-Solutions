@@ -2162,6 +2162,12 @@ Sort the elements and then do DP from the least to the largest.
 
 1. **[RE]** `nums[i * col + j]` when you calculate the index of `matrix[i][j]` in 1-D array.
 
+## 331. Verify Preorder Serialization of a Binary Tree (Medium)
+
+Simulate the process by a stack or one integer.
+
+Notice that the tree maybe null.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
