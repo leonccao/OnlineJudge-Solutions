@@ -2162,6 +2162,14 @@ Sort the elements and then do DP from the least to the largest.
 
 1. **[RE]** `nums[i * col + j]` when you calculate the index of `matrix[i][j]` in 1-D array.
 
+## 330. Patching Array (Hard)
+
+We use one integer `found`, `found = i` indicates that 1 to i could all be made up. Then the next number we want to find is `found + 1`.
+
+The next element in `nums[]` is `k` (`nums[]` is sorted), if `k <= found + 1`, we could have 1 to `found + k` all be made up. Otherwise, we need to add `found + 1` into the group, then the range we could make up will be 1 to `2 * found + 1`.
+
+Why `found + 1`? If larger than `found + 1`, we still need one integer for `found + 1`. If less than `found + 1`, the range we get after insertion will be less.
+
 ## 331. Verify Preorder Serialization of a Binary Tree (Medium)
 
 Simulate the process by a stack or one integer.
