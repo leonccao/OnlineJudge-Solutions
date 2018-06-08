@@ -2176,6 +2176,14 @@ Simulate the process by a stack or one integer.
 
 Notice that the tree maybe null.
 
+## 332. Reconstruct Itinerary (Medium)
+
+What we need to do here is actually find the "Euler Path".
+
+We use a stack to find euler path. If the node at the top of stack has some edge that we have not visited, push the other end in. Otherwise, pop the top out, and push it into the answer list.
+
+Reverse the answer list, then you will get the path we want.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
