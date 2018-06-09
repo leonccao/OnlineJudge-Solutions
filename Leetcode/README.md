@@ -2184,6 +2184,12 @@ We use a stack to find euler path. If the node at the top of stack has some edge
 
 Reverse the answer list, then you will get the path we want.
 
+## 334. Increasing Triplet Subsequence (Medium)
+
+We use two variables to store the smallest element and second smallest during scanning. Update the `second` if element is bigger than `first` and smaller than `second`. But if element is smaller the `first`, we only update the `first`. 
+
+This is because we must make sure `first` appears before `second`, we will not update `second` until some new suitable element appears after new `first`.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
