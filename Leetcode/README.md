@@ -2848,3 +2848,9 @@ Shift the characters.
 
 Scan forwards and backwards.
 
+## 850. Rectangle Area II (Hard)
+
+Scan line.
+
+Scan the area vertically. For the y-axis that some rectangles appear or disappear, calculate the length of x-axis that has been covered. The length of covered x-axis multiples the y-axis without rectangle appears or disappears, will be the area in this part.
+
