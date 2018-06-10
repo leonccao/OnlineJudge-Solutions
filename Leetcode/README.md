@@ -2843,3 +2843,8 @@ Shift the characters.
 ### Faults:
 1. **[TLE]** You could not shift one character again and agian,  you should add all shifts together and do the shift in one time.
 2. **[RE]** The shift distance itself maybe too large, you should mod 26 during the adding.
+
+## 849. Maximize Distance to Closest Person (Easy)
+
+Scan forwards and backwards.
+
