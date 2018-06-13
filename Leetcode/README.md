@@ -2190,6 +2190,20 @@ We use two variables to store the smallest element and second smallest during sc
 
 This is because we must make sure `first` appears before `second`, we will not update `second` until some new suitable element appears after new `first`.
 
+## 335. Self Crossing (Hard)
+
+### 1. Queue and Intersect O(n) + O(1)
+
+Use queue to store the six newest edges and use cross to judge if the newly added one intersects with any of them.
+
+### 2. Improvement O(n) + O(1)
+
+Don't use queue and cross anymore, just use the length of edges to judge.
+
+### Faults:
+
+1. **[WA]** The edges may run to (0, 0) again.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
