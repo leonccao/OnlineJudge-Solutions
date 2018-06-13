@@ -2323,7 +2323,9 @@ Use an array to count the numbers of characters.
 
 ## 385.
 
-## 386.
+## 386. Lexicographical Numbers (Medium)
+
+DFS.
 
 ## 387. First Unique Character in a String
 
