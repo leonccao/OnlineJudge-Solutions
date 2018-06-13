@@ -2331,7 +2331,14 @@ DFS.
 
 Use an array to count the numbers of characters.
 
-## 388.
+## 388. Longest Absolute File Path (Medium)
+
+Use a stack to store the structure.
+
+Learn how to handle '\n' '\t' and '\\' in java.
+
+### Faults:
+1. **[WA]** The input is so disgusting that it mixed '\t' with "    ". And sometimes there maybe "    " in directory name.
 
 ## 389. Find the Difference
 
