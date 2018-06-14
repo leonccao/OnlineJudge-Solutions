@@ -2344,6 +2344,12 @@ Learn how to handle '\n' '\t' and '\\' in java.
 
 Use an array to count the numbers of characters.
 
+## 390. Elimination Game (Medium)
+
+Record the head position. Head position changes only when it is the odd turn or even turn but odd number of numbers left.
+
+Move head position for `shift`. `shift` doubles every turn.
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
