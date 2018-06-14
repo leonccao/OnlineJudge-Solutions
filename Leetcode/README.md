@@ -2350,6 +2350,48 @@ Record the head position. Head position changes only when it is the odd turn or 
 
 Move head position for `shift`. `shift` doubles every turn.
 
+## 391. Perfect Rectangle (Hard)
+
+I learnt so much from this problem !
+
+In order to check if it is perfectly covered, we need to make sure:
+1. The sum of all rectangles' area equals the covered area.
+2. No rectangles are intersected.
+
+The first condition is easy to check. To check the second condition, we have three solutions:
+
+### Scan O(N * N)
+
+Enumerate two rectangles are check if they are intersected.
+
+### Calculate the corners O(N)
+
+If the area is perfectly covered, then evey corner in this area is covered by even times. 
+We can use a set to record times. But how could we know two corner object equals? We could store their values in string.
+
+### Scan line O(N * log(N)) 
+
+Split each rectangle into two parts: the starting part and ending part. Sort all of them according to x value, insert the rectangle into treeset when you meet the starting part and remove when meet the ending part. If the y values of two rectangles intersect with each other, which means the rectangles themself intersect.
+
+#### Why TreeSet?
+
+TreeSet is like set but with order. We can compare two elements during adding. 
+
+#### Comparison method violates its general contract!
+
+In java7, TimSort is used in `Arrays.sort()`. There are three must be obeyed:
+
+> 1. The implementor must ensure that sgn(compare(x, y)) == -sgn(compare(y, x)) for all x and y.
+
+> 2. The implementor must also ensure that the relation is transitive: ((compare(x, y)>0) && (compare(y, z)>0)) implies compare(x, z)>0.
+
+> 3. Finally, the implementor must ensure that compare(x, y)==0 implies that sgn(compare(x, z))==sgn(compare(y, z)) for all z.
+
+### Faults:
+1. **[TLE]** Scan is not fast enough;
+2. **[RE]** Wrong comparator.
+3. **[WA]** Wrong ry calculation.
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
