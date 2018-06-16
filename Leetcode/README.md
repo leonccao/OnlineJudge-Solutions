@@ -2204,6 +2204,16 @@ Don't use queue and cross anymore, just use the length of edges to judge.
 
 1. **[WA]** The edges may run to (0, 0) again.
 
+## 336. Palindrome Pairs (Hard)
+
+### Enumerate two strings and test the combination O(N*N*L)
+
+### Enumerate one string and length of the other string O(N*L*L)
+
+### Faults:
+
+1. **[TLE]** Solution 1 is not fast enough.
+2. **[WA]** There maybe empty string in the input.
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
