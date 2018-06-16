@@ -2219,6 +2219,10 @@ Don't use queue and cross anymore, just use the length of edges to judge.
 
 TreeDP.
 
+## 338. Counting Bits (Medium)
+
+All the bits from (1 << k) to (1 << (k + 1) - 1) are the same as the bits from 0 to (1 << k - 1) except the highest bit.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
