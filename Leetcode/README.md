@@ -2959,3 +2959,21 @@ Calculate the final time of each car's arrival ignoring the car fleet condition.
 ## 854. K-Similar Strings (Hard)
 
 Iteritive Deepening DFS. Enumerate how many swap should be taken at least, then DFS within this limitation.
+
+## 855. Exam Room (Medium)
+
+The problem description doesn't hold water because even though the range of n is 10^4 which requires a O(n * log(n)) solution, the actual range is 10^3 and one can pass with a O(n * n) solution.
+
+### TreeSet O(n) Insert and O(log(n)) Remove
+
+Scan all existed students while inserting and use treeset's remove while leaving.
+
+### PriorityQueue without Map O(log(n)) Insert and O(n) Remove
+
+Sort the gaps in the PriorityQueue. Split one gap when inserting one student and merge two gaps together when one student leaves.
+
+The remove process here is O(n) because we don't have one map here the default remove in PriorityQueue is O(n).
+
+### PriorityQueue with Map O(log(n)) Insert and O(log(n)) Remove
+
+One HaspMap to map from the gap to its position in the PriorityQueue. Obviously we couldn't use the PriorityQueue provided by Java anymore and need to write by ourselves.
