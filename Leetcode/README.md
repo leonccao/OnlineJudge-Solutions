@@ -2223,6 +2223,13 @@ TreeDP.
 
 All the bits from (1 << k) to (1 << (k + 1) - 1) are the same as the bits from 0 to (1 << k - 1) except the highest bit.
 
+## 341. Flatten Nested List Iterator (Medium)
+
+Use stack to store elements. When list appears, the list should be opened to take out integer elements. As long as stack is not empty, there will be next element.
+
+### Faults:
+1. **[RE]** As there are empty lists, you should open the list before next `hasNext()` inquiry.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
