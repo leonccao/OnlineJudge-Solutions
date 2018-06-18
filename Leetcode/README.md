@@ -2947,3 +2947,7 @@ Scan the area vertically. For the y-axis that some rectangles appear or disappea
 ## 851. Loud and Rich (Medium)
 
 BFS.
+
+## 852. Peak Index in a Mountain Array (Easy)
+
+Scan.
