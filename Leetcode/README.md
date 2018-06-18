@@ -2955,3 +2955,7 @@ Scan.
 ## 853. Car Fleet (Medium)
 
 Calculate the final time of each car's arrival ignoring the car fleet condition. Then find the increasing sequence in the time table. Only when the arrival time is larger the largest time arrived, a new car fleet will start.
+
+## 854. K-Similar Strings (Hard)
+
+Iteritive Deepening DFS. Enumerate how many swap should be taken at least, then DFS within this limitation.
