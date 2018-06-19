@@ -2230,6 +2230,10 @@ Use stack to store elements. When list appears, the list should be opened to tak
 ### Faults:
 1. **[RE]** As there are empty lists, you should open the list before next `hasNext()` inquiry.
 
+## 343. Integer Break (Medium)
+
+Dynamic programming. The classic backpack problem.
+
 ## 344. Reverse String
 
 StringBuilder.reverse().toString()
