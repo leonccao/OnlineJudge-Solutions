@@ -2248,7 +2248,13 @@ Faults:
 
 ## 346.
 
-## 347.
+## 347. Top K Frequent Elements (Medium)
+
+The problems asks for a O(n) solution.
+
+The first step is all the same: calculate how many times each number appears which cost O(n).
+
+Sort them and get the top K ones are the key point here. If we sort it normally then the complexity will be O(nlogn). But we can use bucket sort here since the largest times here will be `nums.length`.
 
 ## 348.
 
