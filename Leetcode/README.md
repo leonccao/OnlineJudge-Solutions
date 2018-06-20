@@ -2254,7 +2254,7 @@ The problems asks for a O(n) solution.
 
 The first step is all the same: calculate how many times each number appears which cost O(n).
 
-Sort them and get the top K ones are the key point here. If we sort it normally then the complexity will be O(nlogn). But we can use bucket sort here since the largest times here will be `nums.length`.
+Sorting them and getting the top K ones is the key point here. If we sort it normally then the complexity will be O(nlogn). But we can use bucket sort here since the largest times here will be `nums.length`.
 
 ## 348.
 
@@ -2270,7 +2270,13 @@ Faults:
 
 ## 351.
 
-## 352.
+## 352. Data Stream as Disjoint Intervals (Hard)
+
+Union-Find.
+
+Every numbers' father points to itself at first. When some number `val` is taken, point its father to `val + 1`. 
+
+Start every number `val`, find its final father `fa`. If `fa == val` then it's empty. Else `[val, fa - 1]` will be an interval.
 
 ## 353.
 
