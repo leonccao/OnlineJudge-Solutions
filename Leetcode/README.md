@@ -2446,6 +2446,14 @@ One array `match[]`, `match[j] = k` means `s[0:k] could be the subsequence of t[
 
 1. **[RE]** S and T could be empty string.
 
+## 394. Decode String (Medium)
+
+Almost the same as #224.
+
+### Faults:
+
+1. **[WA]** The inputs include not only lower cases but also upper cases.
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
