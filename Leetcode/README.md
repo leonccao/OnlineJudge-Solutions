@@ -2462,6 +2462,14 @@ Almost the same as #224.
 
 1. **[WA]** The inputs include not only lower cases but also upper cases.
 
+## 395. Longest Substring with At Least K Repeating Characters (Medium)
+
+The two ends of the answer must be letters appears less than k times in some substring. So we first mark out all letters with apperance less than k times in string s and check the substrings between. If it is illegal, then allow it to compete for the best answer. If not, check the substrings of it recursively.
+
+### Faults:
+
+1. **[WA]** Forget to check the substring between last marked letter and `end`.
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
