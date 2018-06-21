@@ -2434,6 +2434,18 @@ In java7, TimSort is used in `Arrays.sort()`. There are three must be obeyed:
 2. **[RE]** Wrong comparator.
 3. **[WA]** Wrong ry calculation.
 
+## 392. Is Subsequence (Medium)
+
+One easy dynamic programming problem.
+
+One array `match[]`, `match[j] = k` means `s[0:k] could be the subsequence of t[0:j]`.
+
+`match[j] = match[j - 1] + 1` if `t[j] == s[match[j - 1] + 1]` else `match[j] = match[j - 1]`.
+
+### Faults:
+
+1. **[RE]** S and T could be empty string.
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
