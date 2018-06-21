@@ -2446,6 +2446,14 @@ One array `match[]`, `match[j] = k` means `s[0:k] could be the subsequence of t[
 
 1. **[RE]** S and T could be empty string.
 
+## 393. UTF-8 Validation (Medium)
+
+String manipulation.
+
+### Faults:
+
+1. **[WA]** The input array may contain more than one character.
+
 ## 394. Decode String (Medium)
 
 Almost the same as #224.
