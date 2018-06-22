@@ -2280,7 +2280,13 @@ Start every number `val`, find its final father `fa`. If `fa == val` then it's e
 
 ## 353.
 
-## 354.
+## 354. Russian Doll Envelopes (Hard)
+
+Sort the array accordig to widths increasingly then according to heights decreasingly. Then the problem is transfered into "finding the longest increasing subsequence" on heights dimension.
+
+### Improvements:
+1. `Arrays.sort(envelopes, new Comparator<int[]>(){});`
+2. `Arrays.binarySearch();`
 
 ## 355.
 
