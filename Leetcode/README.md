@@ -2490,6 +2490,19 @@ If you write down the process for several steps, you will find the pattern.
 F(p) = F(p - 1) + sum - n * A(n - p)
 ```
 
+## 397. Integer Replacement (Medium)
+
+Change the number `n` to binary. Then what we need to do now is to transfer this binary string to 1. 
+
+We do this in three steps:
+1. If the last bit is 0, divide number `n` by 2;
+2. If the last bit is 1 and the second last is also 1, add `n` by 1;
+3. If the last bit is 1 but the second last is 0, minus `n` by 1.
+
+### Faults:
+1. **[WA]** Number 3 is very special here.
+2. **[RE]** The number maybe larger than `Integer.MAX_VALUE` after add one.
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
