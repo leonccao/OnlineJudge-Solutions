@@ -2510,6 +2510,12 @@ Binary search the interval and random pick one from them.
 ### Faults:
 1. **[RE]** Out of range may happen if you override compare function by `a.val - b.val`.
 
+## 399. Evaluate Division (Medium)
+
+The equations are actually path and the queries are for the distance between two nodes.
+
+Use HashMap to store the paths and DFS to calculate the distance.
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
