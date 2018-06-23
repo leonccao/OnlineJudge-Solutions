@@ -2476,6 +2476,20 @@ The two ends of the answer must be letters appears less than k times in some sub
 
 1. **[WA]** Forget to check the substring between last marked letter and `end`.
 
+## 396. Rotate Function (Medium)
+
+If you write down the process for several steps, you will find the pattern.
+```
+    0 1 2 3 4
+    1 2 3 4 0
+    2 3 4 0 1
+    3 4 0 1 2
+    ...
+```
+```
+F(p) = F(p - 1) + sum - n * A(n - p)
+```
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
