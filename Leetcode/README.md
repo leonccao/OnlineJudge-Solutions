@@ -2503,6 +2503,13 @@ We do this in three steps:
 1. **[WA]** Number 3 is very special here.
 2. **[RE]** The number maybe larger than `Integer.MAX_VALUE` after add one.
 
+## 398. Random Pick Index (Medium)
+
+Binary search the interval and random pick one from them.
+
+### Faults:
+1. **[RE]** Out of range may happen if you override compare function by `a.val - b.val`.
+
 ## 400. Nth Digit
 
 There are 9 numbers with 1 bit, 90 with 2 bits, etc.
