@@ -3101,3 +3101,7 @@ When p increases, how to find the k smallest qualities quickly? Use PriorityQueu
 ## 858. Mirror Reflection (Medium)
 
 If the light hits on the wall between 1 and 2, it will reflect back. But imagine instead let the light reflect, we extend the room infinitely. Then the width that light will pass will be the lcm of p and q.
+
+## 859. Buddy Strings (Easy)
+
+Calculate different letters and check if they are the same.
