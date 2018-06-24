@@ -3087,3 +3087,13 @@ One HaspMap to map from the gap to its position in the PriorityQueue. Obviously 
 
 2-D for-loop.
 `f[p][q]` stands for the value from pos p to pos q. Its value is larger than 0 if it is valid, less than 0 if not.
+
+## 857. Minimum Cost to Hire K Workers (Hard)
+
+First we define ratio = wage / quality.
+
+What we want to achieve here is to find K workers so than the product of largest ratio and quality sum is the smallest.
+
+We can sort all workers by their ratios, then enumerate the ratio from smallest to largest. If the ratio now is ratio[p], then we need to find the smallest k qualities from 1-p.
+
+When p increases, how to find the k smallest qualities quickly? Use PriorityQueue.
