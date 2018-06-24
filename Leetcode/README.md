@@ -3082,3 +3082,8 @@ The remove process here is O(n) because we don't have one map here the default r
 ### PriorityQueue with Map O(log(n)) Insert and O(log(n)) Remove
 
 One HaspMap to map from the gap to its position in the PriorityQueue. Obviously we couldn't use the PriorityQueue provided by Java anymore and need to write by ourselves.
+
+## 856. Score of Parentheses (Medium)
+
+2-D for-loop.
+`f[p][q]` stands for the value from pos p to pos q. Its value is larger than 0 if it is valid, less than 0 if not.
