@@ -3097,3 +3097,7 @@ What we want to achieve here is to find K workers so than the product of largest
 We can sort all workers by their ratios, then enumerate the ratio from smallest to largest. If the ratio now is ratio[p], then we need to find the smallest k qualities from 1-p.
 
 When p increases, how to find the k smallest qualities quickly? Use PriorityQueue.
+
+## 858. Mirror Reflection (Medium)
+
+If the light hits on the wall between 1 and 2, it will reflect back. But imagine instead let the light reflect, we extend the room infinitely. Then the width that light will pass will be the lcm of p and q.
