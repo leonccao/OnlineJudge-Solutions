@@ -2524,7 +2524,9 @@ There are 9 numbers with 1 bit, 90 with 2 bits, etc.
 
 Enumerate all the time expression and calculate its bits.
 
-## 402.
+## 402. Remove K Digits (Medium)
+
+Use a stack to store the characters. If the new input one is less than top, then top could be popped out. Our answer could even be an empty string, so input another '0' by the end.
 
 ## 403. Frog Jump (Hard)
 
