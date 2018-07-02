@@ -3123,3 +3123,7 @@ So we must make sure the first bit of each row is 1. The we check column by colu
 As usual, we transfer then subarray problem to 'find two prefix sum'. Now the problem is finding two nearest index such that the difference between their prefix sum is larger than K.
 
 We use a stack to maintain an ascending array while scaning the values. Once we have a index with a smaller prefix sum, the index before with larger prefix sum will never be our best answer. Once we got this ascending array, we could use binary search to find the best answer.
+
+## 863. All Nodes Distance K in Binary Tree (Medium)
+
+Notice that n is very small (n <= 500), we could use DFS or BFS to find the distance of all nodes directly.
