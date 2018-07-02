@@ -3111,3 +3111,9 @@ Calculate different letters and check if they are the same.
 ## 860. Lemonade Change (Easy)
 
 Greedy problem. Each time use the largest possible bill for change.
+
+## 861. Score After Flipping Matrix (Medium)
+
+The leftest column is the most significant. The sum of all bits after the first bit is less than the one bit.
+
+So we must make sure the first bit of each row is 1. The we check column by column to see whether flip this column will bring us more 1s.
