@@ -3107,3 +3107,7 @@ If the light hits on the wall between 1 and 2, it will reflect back. But imagine
 ## 859. Buddy Strings (Easy)
 
 Calculate different letters and check if they are the same.
+
+## 860. Lemonade Change (Easy)
+
+Greedy problem. Each time use the largest possible bill for change.
