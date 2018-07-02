@@ -3117,3 +3117,9 @@ Greedy problem. Each time use the largest possible bill for change.
 The leftest column is the most significant. The sum of all bits after the first bit is less than the one bit.
 
 So we must make sure the first bit of each row is 1. The we check column by column to see whether flip this column will bring us more 1s.
+
+## 862. Shortest Subarray with Sum at Least K (Hard)
+
+As usual, we transfer then subarray problem to 'find two prefix sum'. Now the problem is finding two nearest index such that the difference between their prefix sum is larger than K.
+
+We use a stack to maintain an ascending array while scaning the values. Once we have a index with a smaller prefix sum, the index before with larger prefix sum will never be our best answer. Once we got this ascending array, we could use binary search to find the best answer.
