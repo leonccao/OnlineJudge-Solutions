@@ -3133,3 +3133,7 @@ Notice that n is very small (n <= 500), we could use DFS or BFS to find the dist
 ## 865. Shortest Path to Get All Keys (Hard)
 
 BFS with Status Compression.
+
+## 866. Smallest Subtree with all the Deepest Nodes (Medium)
+
+Two DFS, one to calculate the depth and another to return subtrees.
