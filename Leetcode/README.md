@@ -3127,3 +3127,9 @@ We use a stack to maintain an ascending array while scaning the values. Once we 
 ## 863. All Nodes Distance K in Binary Tree (Medium)
 
 Notice that n is very small (n <= 500), we could use DFS or BFS to find the distance of all nodes directly.
+
+## 864.
+
+## 865. Shortest Path to Get All Keys (Hard)
+
+BFS with Status Compression.
