@@ -3141,3 +3141,11 @@ Two DFS, one to calculate the depth and another to return subtrees.
 ## 867. Prime Palindrome (Medium)
 
 Enumerate length of the number, then enumerate the first half of it. Produce the whole number and check whether it is a prime.
+
+### Faults:
+1. **[WA]** Input maybe 1.
+1. **[WA]** Input maybe 2.
+
+## 868. Transpose Matrix (Easy)
+
+For-loop.
