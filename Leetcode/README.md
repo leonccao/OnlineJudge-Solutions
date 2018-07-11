@@ -3128,7 +3128,9 @@ We use a stack to maintain an ascending array while scaning the values. Once we 
 
 Notice that n is very small (n <= 500), we could use DFS or BFS to find the distance of all nodes directly.
 
-## 864.
+## 864. Random Pick with Blacklist (Hard)
+
+Suppose the range is [0, n) and m of them are in the black list. We use a map to map these m numbers to the last m numbers in n. The produce the random number in range [0, n - m).
 
 ## 865. Shortest Path to Get All Keys (Hard)
 
