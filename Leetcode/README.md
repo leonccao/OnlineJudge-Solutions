@@ -2288,7 +2288,15 @@ Sort the array accordig to widths increasingly then according to heights decreas
 1. `Arrays.sort(envelopes, new Comparator<int[]>(){});`
 2. `Arrays.binarySearch();`
 
-## 355.
+## 355. Design Twitter (Medium)
+
+One list to store all the tweets.
+One `Map<Integer, Set>` to store the maps from follower to followee.
+Scan the tweets list backwards and check if the author of that tweet is followed by the user in query.
+Remember to check if the user exists all the time.
+
+### Faults:
+1. **[WA]** User may unfollow himself in the input but his own tweet should always be showed.
 
 ## 356.
 
