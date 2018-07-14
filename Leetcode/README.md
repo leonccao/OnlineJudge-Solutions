@@ -2300,7 +2300,13 @@ Remember to check if the user exists all the time.
 
 ## 356.
 
-## 357.
+## 357. Count Numbers with Unique Digits (Medium)
+
+Permutation and combination.
+
+### Faults:
+
+1. **[WA]** The answer should be one when n equals zero.
 
 ## 358.
 
