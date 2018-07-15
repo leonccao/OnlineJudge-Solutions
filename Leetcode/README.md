@@ -3179,3 +3179,20 @@ Enumerate the power of 2 with the same length as input, then check if they have 
 Greedy solution.
 
 Sort array A and B seperately. For each element in B, find the smallest possible element in A which is larger. 
+
+## 871. Minimum Number of Refueling Stops (Hard)
+
+### DP O(N^3)
+
+`f[a][k] = max{f[b][k - 1] + fuel - dist}`, `f[a][k]` means we refuels at station a and we have refueled k times in total. Our last stop is station b.
+
+### DP O(N^2)
+
+`f[a][k][0] = f[a-1][k][0] or f[a-1][k][1] - dist`, `f[a][k][1] = f[a-1][k-1][0] or f[a-1][k][1] + fuel - dist`
+
+### Priority Queue (NlogN)
+
+We first dont refuel at any stop but push them into heap. When out fuel is not enough to get to the next stop, add the stop we have visited with the largest fuel into our answer.
+
+### Faults:
+1. **[TLE]** O(N^3) is not fast enough to pass.
