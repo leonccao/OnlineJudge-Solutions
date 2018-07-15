@@ -3170,7 +3170,9 @@ For-loop.
 
 Nothing to say here.
 
-## 869.
+## 869. Reordered Power of 2 (Medium)
+
+Enumerate the power of 2 with the same length as input, then check if they have the same digits.
 
 ## 870. Advantage Shuffle (Medium)
 
