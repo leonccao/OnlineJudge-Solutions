@@ -3142,19 +3142,19 @@ We use a stack to maintain an ascending array while scaning the values. Once we 
 
 Notice that n is very small (n <= 500), we could use DFS or BFS to find the distance of all nodes directly.
 
-## 864. Random Pick with Blacklist (Hard)
+## 864-. Random Pick with Blacklist (Hard)
 
 Suppose the range is [0, n) and m of them are in the black list. We use a map to map these m numbers to the last m numbers in n. The produce the random number in range [0, n - m).
 
-## 865. Shortest Path to Get All Keys (Hard)
+## 864. Shortest Path to Get All Keys (Hard)
 
 BFS with Status Compression.
 
-## 866. Smallest Subtree with all the Deepest Nodes (Medium)
+## 865. Smallest Subtree with all the Deepest Nodes (Medium)
 
 Two DFS, one to calculate the depth and another to return subtrees.
 
-## 867. Prime Palindrome (Medium)
+## 866. Prime Palindrome (Medium)
 
 Enumerate length of the number, then enumerate the first half of it. Produce the whole number and check whether it is a prime.
 
@@ -3162,6 +3162,16 @@ Enumerate length of the number, then enumerate the first half of it. Produce the
 1. **[WA]** Input maybe 1.
 1. **[WA]** Input maybe 2.
 
-## 868. Transpose Matrix (Easy)
+## 867. Transpose Matrix (Easy)
 
 For-loop.
+
+## 868.
+
+## 869.
+
+## 870. Advantage Shuffle (Medium)
+
+Greedy solution.
+
+Sort array A and B seperately. For each element in B, find the smallest possible element in A which is larger. 
