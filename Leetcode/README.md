@@ -3166,7 +3166,9 @@ Enumerate length of the number, then enumerate the first half of it. Produce the
 
 For-loop.
 
-## 868.
+## 868. Binary Gap (Easy)
+
+Nothing to say here.
 
 ## 869.
 
