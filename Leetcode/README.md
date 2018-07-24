@@ -2318,7 +2318,11 @@ Permutation and combination.
 
 ## 362.
 
-## 363.
+## 363. Max Sum of Rectangle No Larger Than K (Hard)
+
+As long as row numbers are much larger than column, we can enumerate the staring and ending column index of such rectangles. Then the sum of rectangle will become sum of 1-D array.
+
+The problem is then transferred into: for index i, finding index j such that prefix sum of i minus prefix sum of j is the largest smaller or equal to k. For such index i, we can to find the smallest sum(j) that `sum(j) >= sum(i) - k`. We can use one TreeSet and its method `TreeSet.ceiling(num)` to find this sum(j).
 
 ## 364.
 
