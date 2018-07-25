@@ -2570,7 +2570,9 @@ Faults:
 
 ## 405.
 
-## 406.
+## 406. Queue Reconstruction by Height (Medium)
+
+Sort elements with height as the first keyword and k as the second keyword. Then always try to insert the element a[j] to position a[j].k. If such place has already been taken, then move forward. 
 
 ## 407.
 
