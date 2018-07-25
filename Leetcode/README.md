@@ -2574,7 +2574,14 @@ Faults:
 
 Sort elements with height as the first keyword and k as the second keyword. Then always try to insert the element a[j] to position a[j].k. If such place has already been taken, then move forward. 
 
-## 407.
+## 407. Trapping Rain Water II (Hard)
+
+Priority Queue.
+
+The heap holds elements with their position and the height of water they can hold. Whenever you pop out the heap top `cur`, try to visit the elements next to it that has not been visited. If the neighbour's height is larger than `cur.hold`, then the neighbour's `hold` is its own height. Otherwise, its `hold` equals to `cur.hold` (becaused we have already visited all paths with a less hold, so `cur.hold` is the least `hold` path it could be reached).
+
+### Faults:
+1. **[RE]** Input matrix maybe empty.
 
 ## 408.
 
