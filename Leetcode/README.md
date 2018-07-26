@@ -2589,6 +2589,18 @@ The heap holds elements with their position and the height of water they can hol
 
 Calculate the number of letters.
 
+## 410. Split Array Largest Sum (Hard)
+
+Dynamic programming.
+
+`f[a][k]` means the minimum value of largest sum of the k subarrays until position a. Calculate the prefix sum beforehand, and you will get the equation:
+```
+f[a][k] = Min{f[c][k - 1] + sum[a] - sum[c]} (c < a)
+```
+
+### Faults
+1.**[WA]** The `Integer.MAX_VALUE` will appear in the input.
+
 ## 412. Fizz Buzz
 
 For-loop.
