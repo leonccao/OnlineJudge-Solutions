@@ -2326,7 +2326,19 @@ The problem is then transferred into: for index i, finding index j such that pre
 
 ## 364.
 
-## 365.
+## 365. Water and Jug Problem (Medium)
+
+### 1. BFS: Enumerate Jug X and Y Seperately (TLE)
+
+### 2. BFS: Enumerate the Sum of Jug X and Y
+
+### 3. Math Approach
+
+`ax + by = kd` which means all the answers could be made from x and y must be  multiple of d, the GCD of x and y.
+
+### Faults:
+
+1. **[TLE]** Solution 1 turns out TLE.
 
 ## 366.
 
