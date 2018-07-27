@@ -2351,7 +2351,9 @@ Faults:
 1. **[TLE]** r + 1 and num * num maybe out of range. So use long instead.
 
 
-## 368. 
+## 368. Largest Divisible Subset (Medium)
+
+Sort the array and the use quadratic DP.
 
 ## 369.
 
