@@ -2371,7 +2371,9 @@ One short but meaningful code.
         b = c << 1;
     }
 
-## 372.
+## 372. Super Pow (Medium)
+
+High precision and fast modular exponentiation.
 
 ## 373.
 
