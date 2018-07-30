@@ -2353,7 +2353,7 @@ Faults:
 
 ## 368. Largest Divisible Subset (Medium)
 
-Sort the array and the use quadratic DP.
+Sort the array and then use quadratic DP.
 
 ## 369.
 
@@ -3237,3 +3237,8 @@ We first dont refuel at any stop but push them into heap. When out fuel is not e
 
 ### Faults:
 1. **[TLE]** O(N^3) is not fast enough to pass.
+
+## 872. Leaf-Similar Trees (Easy)
+
+DFS.
+
