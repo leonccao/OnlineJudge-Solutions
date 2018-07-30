@@ -3252,3 +3252,7 @@ Simulation + HashMap.
 
 ### Faults:
 1. **[WA]** The problem wants the farthest distance from the origin, not the final position.
+
+## 875. Koko Eating Bananas (Medium)
+
+Binary search.
