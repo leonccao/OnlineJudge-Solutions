@@ -3245,3 +3245,10 @@ DFS.
 ## 873. Length of Longest Fibonacci Subsequence (Medium)
 
 DP + HashMap.
+
+## 874. Walking Robot Simulation (Medium)
+
+Simulation + HashMap.
+
+### Faults:
+1. **[WA]** The problem wants the farthest distance from the origin, not the final position.
