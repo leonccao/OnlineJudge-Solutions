@@ -3260,3 +3260,7 @@ Binary search.
 ## 876. Middle of the Linked List (Easy)
 
 Two node, one fast and one slow.
+
+## 877. Stone Game (Medium)
+
+Quadratic DP. Or just return true.
