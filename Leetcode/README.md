@@ -3264,3 +3264,14 @@ Two node, one fast and one slow.
 ## 877. Stone Game (Medium)
 
 Quadratic DP. Or just return true.
+
+## 878. Nth Magical Number (Hard)
+
+### Enumerate the madical number one by one (TLE)
+
+### LCM
+
+First calculate the LCM of A and B, and figure out k, the number of magical numbers in the range of LCM. Divide N by k, then we need that much LCM in the ans. Mod N by k, and enumerate the remaining part one by one, add that to the answer.
+
+### Faults:
+1. **[TLE]** Solution 1 will TLE.
