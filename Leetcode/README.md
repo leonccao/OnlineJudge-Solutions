@@ -3275,3 +3275,7 @@ First calculate the LCM of A and B, and figure out k, the number of magical numb
 
 ### Faults:
 1. **[TLE]** Solution 1 will TLE.
+
+## 879. Profitable Schemes (Hard)
+
+Classic backpack problem. Regard number of people and profit as the two dimension volume limitation.
