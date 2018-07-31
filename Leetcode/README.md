@@ -3256,3 +3256,7 @@ Simulation + HashMap.
 ## 875. Koko Eating Bananas (Medium)
 
 Binary search.
+
+## 876. Middle of the Linked List (Easy)
+
+Two node, one fast and one slow.
