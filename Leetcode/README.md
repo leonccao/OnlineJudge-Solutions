@@ -2375,7 +2375,9 @@ One short but meaningful code.
 
 High precision and fast modular exponentiation.
 
-## 373.
+## 373. Find K Pairs with Smallest Sums (Medium)
+
+(i, j) means index pair in this solution. Build a minimum Priority Queue, add all (i, 0) pairs into PQ. Whenever you poll (i, j) out of the Priority Queue, try to push (i, j + 1) into to the PQ (if j + 1 is valid).
 
 ## 374. Guess Number Higher or Lower
 
