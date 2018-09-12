@@ -2701,7 +2701,11 @@ Faults:
 
 Bit Manipulation.
 
+## 703. Kth Largest Element in a Stream
 
+Could be solved by all kinds of data structures.
+
+I used this problem to practice heap.
 
 ## 792. Number of Matching Subsequences
 
