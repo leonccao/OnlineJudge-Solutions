@@ -3344,3 +3344,24 @@ Enumerate a Integer, make a palindrome from it, get check wether the square of t
 Also, Long type would be enough to store those two inputs.
 
 The question would be a nice practice to check if you are clear about the conversion between number, string and stringbuilder.
+
+## 907. Sum of Subarray Minimus (Hard)
+
+### Corner Cases
+1. Input is empty.
+2. Only one element in input.
+3. All the elements in input are the same.
+
+### Bugs
+1. [WA] First time try to find out all `left[]` and `right[]` by one scan without any data structures.
+
+### Solutions
+#### Best Solution - Stack
+
+Actually, the problem is trying to find the range for each number, for every subarries in this range, the number will be the subarray's minimum.
+
+Then, the question is transferred into finding such `left[]` and `right[]` standing for the left and right side of each number's range, with the initial value the position of the number itself.
+
+We utilize a stack here, scan the array forwards. Before you push a new element in, pop out all elements greated than it. The farthest `left[]` of the elements it poped out will be its `left[]`.
+
+One special occasion is if there are duplicates in the array. The subarray including both of them should only be calculated once. The solution is: in one direction, we pop out all elements greater than new element in the stack; in the other direction, we pop out all elements greater than or equal to the new element.
