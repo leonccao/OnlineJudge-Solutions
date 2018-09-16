@@ -3286,7 +3286,7 @@ First calculate the LCM of A and B, and figure out k, the number of magical numb
 
 Classic backpack problem. Regard number of people and profit as the two dimension volume limitation.
 
-## 904. Fruit Into Baskets
+## 904. Fruit Into Baskets (Medium)
 
 ### Corner cases
 
@@ -3303,6 +3303,24 @@ Classic backpack problem. Regard number of people and profit as the two dimensio
 #### Best Solution
 
 The algorithm seems like LRU. Use pointers to record the two kind of fruits in your baskets and their recently visited position. When you facing a new tree, first check whether you already got this kind of fruit in you basket. If the answer is yes, increase your length and update recently visited position of this kind (basket). If the answer is no, clear the basket with the oldest recently visited position and put the new fruit in.
+
+- Time complexity: O(n)
+- Space complexity: O(1)
+
+## 905. Sort Array By Parity (Easy)
+
+### Corner Cases
+1. Input array is empty.
+2. All elements are odd or even.
+3. Only one element in array.
+
+### Bugs
+1. Nope.
+
+### Solution
+#### Best Solution
+
+One pointer i forwards and another pointer j backwards. Pointer i stops when it finds an odd number and pointer j stop when it find an even number. Swap elements at i and j. Continue.
 
 - Time complexity: O(n)
 - Space complexity: O(1)
