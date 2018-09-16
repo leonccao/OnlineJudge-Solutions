@@ -2707,10 +2707,44 @@ Could be solved by all kinds of data structures.
 
 I used this problem to practice heap.
 
+## 786. Kth Smallest Prime Fraction (Hard)
+
+This is a classic interview question from PonyAI.
+
+### Corner Cases
+1. Cases like [1, 3000] is strong enough.
+
+### Bugs
+1. Eps related operations are very delicated.
+2. `Math.floor()` and `Math.ceil()` operations.
+
+### Solutions
+#### 1. Sort
+
+N prime numbers in the array, then there will be at most n^2 fractions. Sort all of them and pick out the kth smallest one.
+
+- Time complexity: o(n^2 log(n^2))
+- Space complexity: o(n^2)
+
+### HeapSort
+
+Firstly add the smallest fraction into heap. Everytime you pop the top out of heap, push fractions next to it into the heap. Repeat this operation for K times.
+
+- Time complexity: O(K log(n^2))
+- Space complexity: O(n^2)
+
+### Binary Search + TreeSet
+
+Use binary search to enumerate the fractions from [0, 1], check if there is exactly K fractions from the array less than it (O(n) for each check). If so, find the greatest fractions less than it from the array. Such a operation could be done easily with the help of `TreeSet.floor()`.
+
+- Time complexity: O(n log(1 / eps)) (1 / eps is nearly 10^7)
+- Space complexity: O(n ^ 2)
+
 ## 792. Number of Matching Subsequences
 
 Subsequences matching.
 
+``` java
     public boolean match(String S, String str) {
         int i = 0, j = 0;
         while (i < S.length() && j < str.length()) {
@@ -2720,6 +2754,7 @@ Subsequences matching.
         }
         return j == str.length();
     }
+```
 
 ## 793. Preimage Size of Factorial Zeroes Function
 
