@@ -3324,3 +3324,23 @@ One pointer i forwards and another pointer j backwards. Pointer i stops when it 
 
 - Time complexity: O(n)
 - Space complexity: O(1)
+
+## 906. Super Palindromes (Hard)
+
+### Corner Cases
+1. Use [L, L] on some specific number to test your program.
+2. [1, 10^18 - 1] to test your time complexity.
+
+### Bugs
+1. [WA] `StringBuilder.reverse()` change the `StringBuilder` itself other than generate a new one.
+2. [WA] The same as `StringBuilder.append()`.
+3. Several trasfer functions between `String` and `Integer` does not support `StringBuilder` or `Long`.
+
+### Solution 
+#### Best Solution
+
+Enumerate a Integer, make a palindrome from it, get check wether the square of that palindrom is also a palindrome and falls into the right range. The range of square is [1, 10^18], so it would be enough for us to enumerate to 10^5.
+
+Also, Long type would be enough to store those two inputs.
+
+The question would be a nice practice to check if you are clear about the conversion between number, string and stringbuilder.
