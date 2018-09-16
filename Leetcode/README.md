@@ -3285,3 +3285,24 @@ First calculate the LCM of A and B, and figure out k, the number of magical numb
 ## 879. Profitable Schemes (Hard)
 
 Classic backpack problem. Regard number of people and profit as the two dimension volume limitation.
+
+## 904. Fruit Into Baskets
+
+### Corner cases
+
+1. Input maybe empty.
+2. Input may have only one tree.
+3. Input may have only one kind of trees.
+
+### Bugs
+
+1. [WA] After you clear one basket and put new fruit in, the new length should be the length of the subarray starting from last position of the eliminated fruit + 1 to the position now.
+
+### Solution
+
+#### Best Solution
+
+The algorithm seems like LRU. Use pointers to record the two kind of fruits in your baskets and their recently visited position. When you facing a new tree, first check whether you already got this kind of fruit in you basket. If the answer is yes, increase your length and update recently visited position of this kind (basket). If the answer is no, clear the basket with the oldest recently visited position and put the new fruit in.
+
+- Time complexity: O(n)
+- Space complexity: O(1)
