@@ -2019,13 +2019,26 @@ The classical optimization (nlog(n) by binary search) for longest increasing sub
 
 ## 301. Remove Invalid Parentheses (Hard)
 
-Dynamic programming.
+### Corner Cases
+1. The input string maybe valid itself.
+2. Input string maybe empty.
+3. There could be other characters in input.
 
-A valid string could be made up by two ways:
-1. (string)
-2. or  stringa + stringb
+### Bugs
+1. `int len = s.length()`
+2. Typo in variable names.
+3. Forget to add methods together when two answers are the same.
+4. Duplicate answers.
 
-Then use DP or DFS based on these two rules.
+### Solutions
+#### Best Solution:
+
+Dynamic prgramming. Every valid string could be made up by at most two ways: concatenate two valid strings together, or add ( and ) outside a valid string. We do DP based on these. 
+
+Several special occasions need handle:
+1. String length of one. If it is ( or ), we need to remove it. If it is other characters, we keep it and let the cost be 0.
+2. When we get the same cost from two different ways, we need to add answer collections together.
+3. There maybe duplicated in answers (e.g. "()()()"), so the collections should be stored in `HashSet`.
 
 ## 302.
 
@@ -2365,11 +2378,13 @@ Bit manipulation.
 
 One short but meaningful code.
 
+```
     while (b != 0) {
         int c = a & b;
         a ^= b;
         b = c << 1;
     }
+```
 
 ## 372. Super Pow (Medium)
 

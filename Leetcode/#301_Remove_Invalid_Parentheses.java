@@ -82,3 +82,73 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    
+    private class Match {
+        public int rm;
+        public Set<String> rec;
+        
+        public Match() {
+            rm = Integer.MAX_VALUE / 2;
+            rec = new HashSet<String>();
+        }
+    }
+    
+    public List<String> removeInvalidParentheses(String s) {
+        List<String> rtn = new LinkedList<String>();
+        if (s.length() == 0) {
+            rtn.add("");
+            return rtn;
+        }
+        
+        int len = s.length();
+        
+        Match[][] match = new Match[len][len];
+        
+        // when the length is 1
+        for (int i = 0; i < len; i ++) {
+            match[i][i] = new Match();
+            if (s.charAt(i) == '(' || s.charAt(i) == ')') {
+                match[i][i].rm = 1;
+                match[i][i].rec.add("");
+            } else {
+                match[i][i].rm = 0;
+                match[i][i].rec.add("" + s.charAt(i));
+            }
+        }
+        
+        // when the length is > 1
+        for (int i = len - 1; i >= 0 ; i --)
+            for (int j = i + 1; j < len; j ++) {
+                match[i][j] = new Match();
+                if (s.charAt(i) == '(' && s.charAt(j) == ')') {
+                    if (j - i > 1) {
+                        match[i][j].rm = match[i + 1][j - 1].rm;
+                        for (String st : match[i + 1][j - 1].rec) {
+                            match[i][j].rec.add("(" + st + ")");
+                        }
+                    } else {
+                        match[i][j].rm = 0;
+                        match[i][j].rec.add("()");
+                    }
+                }
+                for (int k = i; k < j; k ++) {
+                    if (match[i][k].rm + match[k + 1][j].rm < match[i][j].rm) {
+                        match[i][j].rm = match[i][k].rm + match[k + 1][j].rm;
+                        match[i][j].rec.clear();
+                    }
+                    if (match[i][k].rm + match[k + 1][j].rm == match[i][j].rm) {
+                        for (String tl : match[i][k].rec)
+                            for (String tr : match[k + 1][j].rec) {
+                                match[i][j].rec.add(tl + tr);
+                            }
+                    }
+                }
+            }
+        
+        for (String st : match[0][len - 1].rec)
+            rtn.add(st);
+        return rtn;
+    }
+}
