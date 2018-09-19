@@ -1885,13 +1885,17 @@ Xor 0~n with all numbers in nums, the number left will be the result.
 
 ## 273. Integer to English Words (Hard)
 
-Interpret it bit by bit ...
-Pay attention to special occasions like 11-19 or zero.
+### Corner cases
+1. Input maybe zero
+2. 11-19
+3. 1000
 
-One very useful method here:
-``` java
-    String.join("-", ans);
-```
+### Solution
+#### Best solution
+
+Nothing special. Some of my tricks:
+1. Write all the words in `final static`.
+2. Put all strings in list and use `String.join(" ", ans)` to connect them together without worry about spaces.
 
 ## 274. H-Index (Medium)
 
