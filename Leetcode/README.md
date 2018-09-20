@@ -1224,7 +1224,19 @@ Faults:
 
 ## 156.
 
-## 157.
+## 157. Read N Characters Given Read4 (Easy)
+
+### Corner cases
+1. Input is longer than n.
+2. Input is shorter than n.
+
+### Bugs
+1. How to represent an empty char? `Character.MIN_VALUE`;
+
+### Solution
+#### Best solution
+
+The most difficult part of this problem is the description itself. Actually the task is using function to read characters into buffer. You need to return the right `length` to control the length of answer.
 
 ## 158.
 
@@ -2035,7 +2047,12 @@ The classical optimization (nlog(n) by binary search) for longest increasing sub
 4. Duplicate answers.
 
 ### Solutions
-#### Best Solution:
+
+#### BFS:
+
+#### DFS:
+
+#### DP:
 
 Dynamic prgramming. Every valid string could be made up by at most two ways: concatenate two valid strings together, or add ( and ) outside a valid string. We do DP based on these. 
 
