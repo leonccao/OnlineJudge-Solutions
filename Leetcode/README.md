@@ -1238,7 +1238,20 @@ Faults:
 
 The most difficult part of this problem is the description itself. Actually the task is using function to read characters into buffer. You need to return the right `length` to control the length of answer.
 
-## 158.
+## 158. Read N Characters Given Read4 II - Call multiple times (Hard)
+
+### Corner cases
+1. Will the input be the same one or refreshed for different call?
+2. If you read too much last read(), you need to save them for next ones.
+3. You may cover all 4 read(1) with only one read4() operation.
+
+### Bugs
+1. How to store characters between reads? There are several choices here ...
+
+### Solution
+#### Best solution
+
+Still, the first trouble here is the description ... You continue reading on the same input string, but if you read too much in the previos read(), you need to save characters down for next queries.
 
 ## 159.
 
