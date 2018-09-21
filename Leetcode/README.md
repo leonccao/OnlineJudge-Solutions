@@ -1863,7 +1863,32 @@ ArrayList<Integer>[][] rec = (ArrayList<Integer>[][]) new ArrayList[len][len];
 
 Sort the intervals by start and record the farthest end by far, check if it overlap with next start.
 
-## 253.
+- Time complexity: O(n log(n))
+- Space complexity: O(1)
+
+## 253. Meeting Rooms II (Medium)
+
+### Corner cases
+1. Input maybe empty.
+
+### Bugs
+
+### Solutions
+#### Solution heap
+
+Use MinHeap to store the ending time for each rooms' meeting. The size of heap equals to the number of rooms we had. When the top is larger then the starting time of next task, increase room size (heap size) by one.
+
+- Time complexity: O(n log(n))
+- Space complexity: O(n)
+
+#### Solution two sorts
+
+In this solution, you don't care when one specific meeting starts or ends, you just care when some some meeting starts and when some meeting ends.
+
+Sort the starting times and ending times separately, one pointer for each. If the pointed starting time is less than ending point, means some new meeting start and we need to open a new room for it. When starting time is larger than ending time, it means one meeting is end and we have spare room for next meeting.
+
+- Time complexity: O(n log(n))
+- Space complexity: O(n)
 
 ## 254.
 
