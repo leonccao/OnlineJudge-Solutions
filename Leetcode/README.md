@@ -1846,7 +1846,22 @@ ArrayList<Integer>[][] rec = (ArrayList<Integer>[][]) new ArrayList[len][len];
 
 ## 251.
 
-## 252.
+## 252. Meeting Roome (Easy)
+
+### Corner cases
+1. What if input is empty?
+2. Could the intervals be reversed?
+(Not possible.)
+3. Of course the input is not guranteed with order.
+4. Could the time be negative?
+
+### Bugs
+1. `Arrays.sort(arr, Collections.reverseOrder());`
+
+### Solution
+#### Best solution
+
+Sort the intervals by start and record the farthest end by far, check if it overlap with next start.
 
 ## 253.
 
