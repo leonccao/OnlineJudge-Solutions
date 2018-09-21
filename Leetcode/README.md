@@ -2792,6 +2792,24 @@ Faults:
 
 1. **[WA]** If the sum is 0, you could not choose nothing.
 
+## 438. Find All Anagrams in a String (Easy)
+
+### Corner cases
+1. Could input string be empty?
+(No, input strings are non-empty.)
+2. Input p is one characters and string s consists of only character p.
+3. Two string s and p are the same.
+4. Upper case or lower case? 
+(Lower case letters only.)
+5. S is shorter than p.
+
+### Bugs
+
+### Solution
+#### Best solution: slide window
+
+Maintain a sliding window with size p.length(). One array head[] record the number of prefix characters to the end of this window, another array tail[] record prefix characters numbers before the slide window. Check if the difference equals to p.
+
 ## 461. Hamming Distance (Medium)
 
 Bit Manipulation.
