@@ -1238,6 +1238,9 @@ Faults:
 
 The most difficult part of this problem is the description itself. Actually the task is using function to read characters into buffer. You need to return the right `length` to control the length of answer.
 
+- Time complexity: O(n)
+- Space complexity: O(1)
+
 ## 158. Read N Characters Given Read4 II - Call multiple times (Hard)
 
 ### Corner cases
@@ -1252,6 +1255,9 @@ The most difficult part of this problem is the description itself. Actually the 
 #### Best solution
 
 Still, the first trouble here is the description ... You continue reading on the same input string, but if you read too much in the previos read(), you need to save characters down for next queries.
+
+- Time complexity: O(n)
+- Space complexity: O(1)
 
 ## 159.
 
@@ -2749,6 +2755,28 @@ Faults:
 ## 461. Hamming Distance (Medium)
 
 Bit Manipulation.
+
+## 621. Task Scheduler (Medium)
+
+### Corner cases
+1. One specific task has much more duplicates that it should be executed as soon as cooling is done.
+2. All kinds of interval should be done in turn though the waiting time between the same task is larger than cooling interval.
+3. Input is empty.
+
+### Bugs
+1. The cool interval is n, so when you calculate, you need to add (n + 1).
+
+### Solutions
+#### Solution scan
+
+Every time, choose the task which is available and with the largest amount left, put it in CPU and add (n + 1) to its next available time.
+
+- Time complexity: O(n)
+- Space complexity: O(1)
+
+#### Best solution
+
+Arrange the tasks with greatest amount by the cooling interval, and assume there will be less different than the interval length. If the assume is not possible, the length of tasks itself will become the answer. So return `Math.max(ans, tasks.length)` as the answer.
 
 ## 703. Kth Largest Element in a Stream
 
