@@ -2876,6 +2876,31 @@ Arrange the tasks with greatest amount by the cooling interval, and assume there
     i = 1, j = 2  (2, 2) or (1, 1)
     both true
 
+## 689. Maximum Sum of 3 Non-Overlapping Subarrays (Hard)
+
+### Corner cases
+1. nums.length < 3 * k
+2. nums[i] <= 0
+
+### Solution 
+1. DP
+    f[n][3] 
+    f[i][j] = Math.max(f[i - 1][j], f[i - k][j - 1] + sum[i] - sum[i - k])
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+
+### Bugs
+1. Return the result as a list of indices representing the starting position of each interval.
+2. If there are multiple answers, return the lexicographically smallest one.
+
+### Test cases
+1. 
+    
+    [1, 2, 1, 2, 6, 7, 5, 1]
+        3  3  3  8 13 13 13
+                6 11 16 21 21
+                    19 23 23
+
 ## 703. Kth Largest Element in a Stream
 
 Could be solved by all kinds of data structures.
