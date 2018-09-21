@@ -26,3 +26,17 @@ class Solution {
         return true;
     }
 }
+
+class Solution {
+    public boolean isPalindrome(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (char ch : s.toLowerCase().toCharArray()) {
+            if (Character.isLetterOrDigit(ch))
+                sb.append(ch);
+        }
+        String a = sb.toString();
+        String b = sb.reverse().toString();
+        if (!a.equals(b)) return false;
+        return true;
+    }
+}

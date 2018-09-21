@@ -908,11 +908,24 @@ Faults:
 
 ## 125. Valid Palindrome
 
-First change all characters to uppercase or lowercase, then check characters one by one.
+### Corner case
+1. Input string is empty.
+2. Input contains only one character.
+3. Input maybe odd or even.
 
-Faults:
+### Bugs
 
 1. **[WA]** Alphanumeric characters include both letters and numbers.
+2. `Character.isLetterOrDigit(ch)`
+
+### Solution
+#### Solution 1 - StringBuilder
+
+Append characters into StringBuilder and compare it with its reverse.
+
+#### Solution 2 - two pointers
+
+One forewards another backwards.
 
 ## 126. Word Ladder II (Hard)
 
@@ -2809,6 +2822,9 @@ Faults:
 #### Best solution: slide window
 
 Maintain a sliding window with size p.length(). One array head[] record the number of prefix characters to the end of this window, another array tail[] record prefix characters numbers before the slide window. Check if the difference equals to p.
+
+- Time complexity: O(n)
+- Space complexity: O(1)
 
 ## 461. Hamming Distance (Medium)
 
