@@ -2852,6 +2852,30 @@ Every time, choose the task which is available and with the largest amount left,
 
 Arrange the tasks with greatest amount by the cooling interval, and assume there will be less different than the interval length. If the assume is not possible, the length of tasks itself will become the answer. So return `Math.max(ans, tasks.length)` as the answer.
 
+## 680. Valid Palindrom II (Medium)
+
+### Corner cases
+1. Input string is palindrome
+2. Input string is empty
+3. Only two characters in input: "ab"
+4. Odd or even
+
+### Solutions
+1. ABA, check B (i, j): (i + 1, j) or (i, j - 1)
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+
+### Bugs
+1. `String.substring(int beginIndex, int endIndex)` with `endIndex` exclusive
+
+### Test cases
+1. "abac"
+    i = 0, j = 3  (1, 3) or (0, 2)
+    (0, 2) -> true
+2. "abca"
+    i = 1, j = 2  (2, 2) or (1, 1)
+    both true
+
 ## 703. Kth Largest Element in a Stream
 
 Could be solved by all kinds of data structures.
