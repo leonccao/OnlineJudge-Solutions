@@ -3002,6 +3002,29 @@ Could be solved by all kinds of data structures.
 
 I used this problem to practice heap.
 
+## 785. Is Graph Bipartite
+
+
+### Corner cases
+1. Only one point
+2. No self edge
+3. Some node may not be connected
+
+### Solution
+1. BFS
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+2. DFS
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+
+### Bugs
+
+### Test cases
+    0   false -> 1  true -> 3 true
+    1   true  -> 2  false-> 0 false
+    3   true  -> 2  false-> 0 false
+
 ## 786. Kth Smallest Prime Fraction (Hard)
 
 This is a classic interview question from PonyAI.
