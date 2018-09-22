@@ -3002,6 +3002,20 @@ Could be solved by all kinds of data structures.
 
 I used this problem to practice heap.
 
+## 721. Accounts Merge (Medium)
+
+### Corner cases
+1. Same name but two different people
+2. Same people but different name
+
+### Solution 
+1. Union-find, use HashMap to store parents
+
+### Bugs
+1. Alice mail1 mail2; Alice mail3 mail4; Alice mail2 mail3 <- should be only one person
+
+### Test cases
+
 ## 785. Is Graph Bipartite
 
 
