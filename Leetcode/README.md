@@ -2249,6 +2249,21 @@ The classic packback problem.
 
 ### 3. findKthNumber + 3Partition + IndexMap O(n) + O(1)
 
+## 325. Maximum Size Subarray Sum Equals k (Medium)
+
+### Corner cases
+1. Array element could be negative or zero
+2. Target could be negative or zero
+
+### Solution
+1. HashMap
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+
+### Bugs
+
+### Test cases
+
 ## 327. Count of Range Sum (Hard)
 
 Obviously, we first transfer the array into prefix sum array sum[]. Then what we want to find here is two index i, j (i < j) in sum[] such that sum[j] - sum[i] is in the required range.
@@ -2872,6 +2887,8 @@ Bit Manipulation.
 
 ### Solution
 1. We store the prefix sum mod k rather than prefix sum. When two prefix sum with the same remainder appears, we got our answer. In other word, if `nums.length > k` the answer is definitely true.
+- Time complexity: O(n)
+- Space complexity: O(k)
 
 ### Bugs
 1. Should check whether k is negative before `nums.length > k`.
