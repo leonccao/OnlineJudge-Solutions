@@ -2849,6 +2849,23 @@ Maintain a sliding window with size p.length(). One array head[] record the numb
 
 Bit Manipulation.
 
+## 543. Diameter of Binary Tree (Easy)
+
+### Corner case
+1. Input maybe empty
+2. Path may or may not go through the root
+3. Only one node: root
+
+### Solution
+1. Recursive
+    - Time complexity: O(n)
+    - Space complexity: O(1)
+
+### Bugs
+
+### Test cases
+
+
 ## 621. Task Scheduler (Medium)
 
 ### Corner cases
