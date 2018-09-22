@@ -2879,6 +2879,18 @@ Bit Manipulation.
 
 ### Test cases
 
+## 560. Subarray Sum Equals K (Medium)
+
+### Corner cases
+
+### Solution
+1. HashMap(prefixSum, times)
+
+### Bugs
+1. Add (0, 1) into map if subarray starts from the first element
+2. `Map.getOrDefault(Object key, V defaultValue)`
+
+### Test case
 
 ## 621. Task Scheduler (Medium)
 
