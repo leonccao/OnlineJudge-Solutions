@@ -2863,6 +2863,22 @@ Maintain a sliding window with size p.length(). One array head[] record the numb
 
 Bit Manipulation.
 
+## 523. Continuous Subarray Sum (Medium)
+
+### Corner cases
+1. Element maybe zero 
+2. Input could be empty
+3. K maybe zero or negative
+
+### Solution
+1. We store the prefix sum mod k rather than prefix sum. When two prefix sum with the same remainder appears, we got our answer. In other word, if `nums.length > k` the answer is definitely true.
+
+### Bugs
+1. Should check whether k is negative before `nums.length > k`.
+
+### Test cases
+
+
 ## 543. Diameter of Binary Tree (Easy)
 
 ### Corner case
