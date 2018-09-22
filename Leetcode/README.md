@@ -2770,7 +2770,26 @@ Faults:
 
 ## 425.
 
-## 426.
+## 426. Convert Binary Search Tree to Sorted Doubly Linked List (Medium)
+
+### Corner cases
+1. Input is empty
+2. Input has only one node (point to itself?)
+3. Is head the first or fakehead?
+
+### Solution
+1. Stack -> successor all the way down
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+2. DFS() with a node cur to record the last Node from left son
+    - Time complexity: O(n)
+    - Space complexity: O(1)
+
+### Bugs
+1. Input is empty! I wrote it in the corner cases but forget to test it.
+
+
+### Test cases
 
 ## 427.
 
