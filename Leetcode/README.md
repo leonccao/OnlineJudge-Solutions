@@ -1861,7 +1861,9 @@ ArrayList<Integer>[][] rec = (ArrayList<Integer>[][]) new ArrayList[len][len];
 
 ### Test case
 
-## 247.
+## 247. Strobogrammatic Number II (Medium)
+
+Done
 
 ## 248.
 
