@@ -1973,7 +1973,21 @@ Hold all ugly numbers we got in a list. Use three different pointers for 2, 3 an
 
 Xor 0~n with all numbers in nums, the number left will be the result.
 
-## 269.
+## 269. Alien Dictionary (Hard) 
+
+### Corner cases
+1. Input is empty
+2. There is no valid order
+
+### Solution
+1. Toposort: abstract the relationships from input, use toposort to construct the order string
+    - Time complexity: O(sl)
+    - Space complexity: O(1) (26 * 26)
+    
+### Bugs
+1. RE will happen if trying to remove key when visiting keySet
+
+### Test cases
 
 ## 270.
 
