@@ -3099,6 +3099,19 @@ Use binary search to enumerate the fractions from [0, 1], check if there is exac
 
 - Time complexity: O(n log(1 / eps)) (1 / eps is nearly 10^7)
 - Space complexity: O(n ^ 2)
+## 791. Custom Sort String (Medium)
+
+### Corner cases:
+1. Input S maybe empty
+2. T may have duplicate characters
+
+### Solution
+1. Toposort
+2. Just ... print according to characters' order in S
+
+### Bugs
+
+### Test cases
 
 ## 792. Number of Matching Subsequences
 
