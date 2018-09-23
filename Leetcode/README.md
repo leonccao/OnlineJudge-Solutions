@@ -2577,7 +2577,18 @@ Binary search.
 
 ## 380.
 
-## 381,
+## 381. Insert Delete GetRandom O(1) - Duplicates Allowed (Hard)
+
+### Corner cases
+
+### Solution
+1. ArrayList to store values and Map<Integer, Set<Integer>> to store their position in ArrayList. When deleting, swap the deleted value with the last one in ArrayList and then remove it.
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+
+### Bugs
+1. `pos = map.get(val).iterator().next();`
+2. `Random random = new Random(); random.nextInt(list.size());` 
 
 ## 382.
 
