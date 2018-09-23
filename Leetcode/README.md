@@ -1847,7 +1847,19 @@ ArrayList<Integer>[][] rec = (ArrayList<Integer>[][]) new ArrayList[len][len];
 
 ## 245.
 
-## 246.
+## 246. Strobogrammatic Number (Easy)
+
+### Corner cases
+1. When input is empty the answer is true
+
+### Solution
+
+### Bugs
+1. `setCharAt()` is only available in `StringBuilder`
+2. Case sentence
+3. 2 and 5 are not a pair
+
+### Test case
 
 ## 247.
 
