@@ -2251,6 +2251,23 @@ Sort numbers by them value and build binary indexed tree on there original index
 
 Scan backwards. If every character already appeared at least once starts from position P, then any position before P is avaliable for an answer. So try to find the smallest character before P to get the best answer. After fix the position of this character, call the solve function again to fix the other ones.
 
+## 317. Shortest Distance from All Buildings (Hard)
+
+### Corner cases
+1. Some building may could not be reached
+2. Some empty block may could not be reached
+
+### Solutions
+1. BFS
+    - Time complexity: O(m^2 n^2)
+    - Space complexity: O(mn)
+
+### Bugs
+1. `Map<String, Interger[][]>` the array should be exactly `Integer[][]`
+
+### Test cases
+
+
 ## 318. Maximum Product of Word Lengths (Medium)
 
 Use bit to stand wether one word contains some characters or not (26 bits which is less than 31 bits).
