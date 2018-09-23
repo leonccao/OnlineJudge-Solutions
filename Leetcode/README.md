@@ -2575,7 +2575,10 @@ Binary search.
 
 ## 379.
 
-## 380.
+## 380. Insert Delete GetRandom O(1) (Medium)
+
+### Solution
+1. Simple version of 381. We can save the set in map for each value only appears once.
 
 ## 381. Insert Delete GetRandom O(1) - Duplicates Allowed (Hard)
 
