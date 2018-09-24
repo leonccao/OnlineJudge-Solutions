@@ -2242,6 +2242,21 @@ nums[-1] and nums[n] would be helpful, add them in!
 ## 313. Super Ugly Number (Medium)
 
 The same as #264 but we got k primes here other than 3 primes. So instead of compare them by hand, we will use a priority queue to maintain the minimum next answer. Be careful will the duplicates.
+## 314. Binary Tree Vertical Order Traversal (Medium)
+
+### Corner cases
+1. Input maybe zero
+2. The leftest child of root maybe not be leftest of the tree, same with right child
+
+### Solution
+1. Find the width of the tree, BFS and insert val to ans according to degree: left -> degree - 1, right -> degree + 1
+    - Time complexity: O(n)
+    - Space complexity: O(1)
+
+### Bugs
+1. DFS may confused the layer or depth
+2. The leftest child of root maybe not be leftest of the tree, same with right child
+
 
 ## 315. Count of Smaller Numbers After Self (Hard)
 
