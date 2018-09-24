@@ -3144,6 +3144,21 @@ I used this problem to practice heap.
 
 ### Test cases
 
+## 772. Basic Calculator III (Hard)
+
+### Corner cases
+1. The integer division should truncate toward zero: positive or negative?
+
+### Solution
+1. Transform the midfix expression to suffix expression then calculate the value
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+    
+### Bugs
+1. The description said division truncates toward zero, however it is not. Division truncates to the floor.
+2. Although intermediate value will be in the range of Integer, input value maybe out of range.
+
+
 ## 785. Is Graph Bipartite
 
 
