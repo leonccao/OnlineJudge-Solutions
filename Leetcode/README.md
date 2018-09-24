@@ -2962,6 +2962,9 @@ Bit Manipulation.
 ### Solution
 1. DFS
 
+### Bugs
+1. `clone()` is shallow copy, use `addAll()` instead
+
 ## 493. Reverse Pairs (Hard)
 
 ### Solutions
@@ -3046,6 +3049,22 @@ Every time, choose the task which is available and with the largest amount left,
 #### Best solution
 
 Arrange the tasks with greatest amount by the cooling interval, and assume there will be less different than the interval length. If the assume is not possible, the length of tasks itself will become the answer. So return `Math.max(ans, tasks.length)` as the answer.
+
+## 636. Exclusive Time of Functions (Medium)
+
+### Corner cases
+1. No stop command to some task in the stack
+
+### Solution
+1. Stack
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+
+### Bugs
+1. Typo
+
+### Test cases
+
 
 ## 680. Valid Palindrom II (Medium)
 
