@@ -2968,6 +2968,22 @@ Maintain a sliding window with size p.length(). One array head[] record the numb
 
 Bit Manipulation.
 
+## 489. Robot Room Cleaner (Hard)
+
+### Corner cases
+
+### Solution
+1. DFS with HashSet
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+
+### Bugs
+1. typo
+2. `robot.clean()`
+
+### Test cases
+
+
 ## 491. Increasing Subsequences (Medium)
 
 ### Solution
