@@ -2089,7 +2089,11 @@ When you do peek(), just do next(), but use a variable to store the value. Keep 
 
 ## 285.
 
-## 286.
+## 286. Walls and Gates (Medium)
+
+### Solution
+1. BFS
+2. DFS
 
 ## 287. Find the Duplicate Number (Medium)
 
