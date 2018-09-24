@@ -2982,6 +2982,10 @@ Maintain a sliding window with size p.length(). One array head[] record the numb
 - Time complexity: O(n)
 - Space complexity: O(1)
 
+## 449. Serialize and Deserialize BST
+
+Same as #297.
+
 ## 461. Hamming Distance (Medium)
 
 Bit Manipulation.
