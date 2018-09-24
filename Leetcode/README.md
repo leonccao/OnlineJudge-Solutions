@@ -1286,7 +1286,18 @@ But a better solution here is use two pointer and start for the same length left
 1. **[WA]** Two lists should not be changed.
 1. **[CE]**
 
-## 161.
+## 161. One Edit Distance (Medium)
+
+### Corner cases
+1. Same -> false
+2. Length difference larger than 1
+3. S and t contains the same one character
+
+### Solution
+1. Match from left to right and from right to left, check if the sum is larger or equal to the longer length minus 1
+    - Time complexity: O(n)
+    - Space complexity: O(1)
+
 
 ## 162. Find Peak Element (Medium)
 
