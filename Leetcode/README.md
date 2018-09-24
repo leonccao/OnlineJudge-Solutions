@@ -2185,6 +2185,17 @@ Prefix sum array.
 
 Including excluding principle.
 
+## 305. Number of Islands II (Hard)
+
+### Corner case
+1. One new addLand connect two old land together
+
+### Solution
+1. Union-find. Increase count by one every time add a new land, check whether new land connect to some old land. Decrease count by one every time combination happens.
+    - Time complexity: O(k log(mn))
+    - Space complexity: O(mn)
+
+
 ## 306. Additive Number (Medium)
 
 These methods are all very useful here:
