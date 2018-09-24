@@ -2451,7 +2451,12 @@ The first step is all the same: calculate how many times each number appears whi
 
 Sorting them and getting the top K ones is the key point here. If we sort it normally then the complexity will be O(nlogn). But we can use bucket sort here since the largest times here will be `nums.length`.
 
-## 348.
+## 348. Design Tic-Tac-Toe (Medium)
+
+### Corner cases
+
+### Solution
+1. Use rows[], cols[], dig and ndig to store number of checkers. If it is player 1 playing, num ++; Otherwise, num --. When abs(num) == n, game is over. 
 
 ## 349. Intersection of Two Arrays
 Use HashSet.
