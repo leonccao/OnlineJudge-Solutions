@@ -3151,6 +3151,17 @@ Arrange the tasks with greatest amount by the cooling interval, and assume there
                 6 11 16 21 21
                     19 23 23
 
+## 692. Top K Frequent Words (Medium)
+
+### Solution
+1. HashMap + PriorityQueue
+    - Time complexity: O(n log(n))
+    - Space complexity: O(n)
+    
+### Bugs
+1. `String.compareTo(String)`
+
+
 ## 703. Kth Largest Element in a Stream
 
 Could be solved by all kinds of data structures.
