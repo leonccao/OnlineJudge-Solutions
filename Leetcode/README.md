@@ -2952,6 +2952,11 @@ Maintain a sliding window with size p.length(). One array head[] record the numb
 
 Bit Manipulation.
 
+## 491. Increasing Subsequences (Medium)
+
+### Solution
+1. DFS
+
 ## 493. Reverse Pairs (Hard)
 
 ### Solutions
