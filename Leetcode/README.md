@@ -2952,6 +2952,22 @@ Maintain a sliding window with size p.length(). One array head[] record the numb
 
 Bit Manipulation.
 
+## 493. Reverse Pairs (Hard)
+
+### Solutions
+1. Binary indexed tree
+    - Time complexity: O(nlog(n))
+    - Space complexity: O(n)
+2. Mergesort
+    - Time complexity: O(nlog(n))
+    - Space complexity: O(n)
+
+### Bugs
+1. (Integer - Integer) maybe larger than Integer during qsort
+2. -5 * 2 < -5
+3. Negative div direction is different
+4. Integer * 2 maybe larger than Integer
+
 ## 523. Continuous Subarray Sum (Medium)
 
 ### Corner cases
