@@ -2456,7 +2456,10 @@ Faults:
 
 1. **[WA]** Forgot to minus the back pointer after swapping.
 
-## 346.
+## 346. Moving Average from Data Stream (Easy)
+
+### Solution 
+1. Queue
 
 ## 347. Top K Frequent Elements (Medium)
 
