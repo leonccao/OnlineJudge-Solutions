@@ -3041,6 +3041,20 @@ Bit Manipulation.
 3. Negative div direction is different
 4. Integer * 2 maybe larger than Integer
 
+## 498. Diagonal Traverse (Medium)
+
+### Corner cases
+1. Input is empty
+2. Only one row or column
+
+### Solution 
+1. Enumerate (m + n)
+    - Time complexity: O((m + n) ^ 2)
+    - Space complexity: O(1)
+2. Iteratr through
+    - Time complexity: O(mn)
+    - Space complexity: O(1)
+
 ## 523. Continuous Subarray Sum (Medium)
 
 ### Corner cases
