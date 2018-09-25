@@ -2074,7 +2074,10 @@ ans[k] = Math.min(ans[k], ans[k - j * j] + 1)
 
 ## 280.
 
-## 281.
+## 281. Zigzag Iterator (Medium)
+
+### Solution
+1. According to the followup, better way here is using a list to hold iterators.
 
 ## 282. Expression Add Operators (Hard)
 
