@@ -2000,7 +2000,10 @@ Xor 0~n with all numbers in nums, the number left will be the result.
 
 ### Test cases
 
-## 270.
+## 270. Closest Binary Search Tree Value (Easy)
+
+### Solution 
+1. DFS. If `target < root.val` search left child else search right child.
 
 ## 271.
 
