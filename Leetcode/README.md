@@ -2541,7 +2541,18 @@ Permutation and combination.
 
 ## 359.
 
-## 360.
+## 360. Sort Transformed Array (Medium)
+
+### Corner cases
+1. a == 0 -> b > 0; b < 0; b == 0
+2. -b/2a < nums[0] or > nums[length - 1]
+3. a < 0
+
+### Solution
+1. Calculate (-b / 2a), then two pointer one forewards another backwards. When a < 0, the pointers should start from head and tail to the middle.
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+
 
 ## 361.
 
