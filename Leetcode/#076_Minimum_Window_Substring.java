@@ -42,3 +42,33 @@ class Solution {
         return s.substring(pos - result + 1, pos + 1);
     }
 }
+
+class Solution {
+    
+    final static int CNT = 128;
+    
+    public String minWindow(String s, String t) {
+        if (t.length() == 0 || t.equals(null))
+            return "";
+        
+        int ctbits = 0, j = 0, pos = -1, len = Integer.MAX_VALUE;
+        int[] ct = new int[CNT];
+        int[] cs = new int[CNT];
+        for (char ch : t.toCharArray())
+            if (ct[ch] ++ == 0) ++ ctbits;
+        
+        
+        for (int i = 0; i < s.length(); i ++) {
+            if (++ cs[s.charAt(i)] == ct[s.charAt(i)]) -- ctbits;
+            while (j < s.length() && cs[s.charAt(j)] > ct[s.charAt(j)]) 
+                -- cs[s.charAt(j ++)];
+            
+            if (ctbits == 0 && i - j + 1 < len) {
+                len = i - j + 1;
+                pos = j;
+            }
+        }
+        
+        return pos == -1 ? "" : s.substring(pos, pos + len); 
+    }
+}
