@@ -35,3 +35,35 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    
+    final static int CNT = 26;
+    
+    public List<Integer> findAnagrams(String s, String p) {
+        int[] cp = new int[CNT];
+        int[] cs = new int[CNT];
+        int bits = 0, tail = 0;
+        for (char ch : p.toCharArray()) 
+            if (cp[ch - 'a'] ++ == 0) bits ++;
+        
+        List<Integer> ans = new ArrayList<Integer>(); 
+        for (int head = 0; head < s.length(); head ++) {
+            
+            int tmp = s.charAt(head) - 'a';
+            if (++ cs[tmp] == cp[tmp]) bits --;
+            
+            tmp = s.charAt(tail) - 'a';
+            while (tail < s.length() && cs[tmp] > cp[tmp]) {
+                cs[tmp] --;
+                if (++ tail < s.length())
+                    tmp = s.charAt(tail) - 'a';
+            }
+            
+            if (bits == 0 && head - tail + 1 == p.length()) {
+                ans.add(tail);
+            }
+        }
+        return ans;
+    }
+}
