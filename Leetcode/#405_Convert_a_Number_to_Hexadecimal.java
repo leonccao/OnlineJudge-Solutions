@@ -13,3 +13,19 @@ class Solution {
         return result.reverse().toString();
     }
 }
+
+class Solution {
+    public String toHex(int num) {
+        if (num == 0) return "0";
+        
+        StringBuilder sb = new StringBuilder();
+        while (num != 0) {
+            int tmp = num & 15;
+            char ch = tmp > 9 ? (char)('a' + tmp - 10) : (char)('0' + tmp);
+            sb.append(ch);
+            num >>>= 4;
+        }
+        return sb.reverse().toString();
+        
+    }
+}
