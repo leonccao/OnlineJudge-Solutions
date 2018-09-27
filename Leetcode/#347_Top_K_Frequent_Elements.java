@@ -28,3 +28,29 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    public List<Integer> topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int maxn = 0;
+        for (int num : nums) {
+            int tmp = map.getOrDefault(num, 0) + 1;
+            maxn = Math.max(maxn, tmp);
+            map.put(num, tmp);
+        }
+        
+        List<Integer>[] bucket = new List[maxn + 1];
+        for (int i = 0; i <= maxn; i ++)
+            bucket[i] = new ArrayList<Integer>();
+        for (int key : map.keySet())
+            bucket[map.get(key)].add(key);
+        
+        List<Integer> ans = new ArrayList<Integer>();
+        for (int i = maxn; i > 0; i --)
+            for (int j = 0; j < bucket[i].size(); j ++) {
+                ans.add(bucket[i].get(j));
+                if (-- k == 0) return ans;
+            }
+        return ans;
+    }
+}
