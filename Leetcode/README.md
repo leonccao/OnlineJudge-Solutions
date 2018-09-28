@@ -3154,6 +3154,10 @@ Arrange the tasks with greatest amount by the cooling interval, and assume there
 
 ### Test cases
 
+## 658. Find K Closest Elements (Medium)
+
+### Solution
+1. Binary Search
 
 ## 680. Valid Palindrom II (Medium)
 
