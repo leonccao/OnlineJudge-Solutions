@@ -94,3 +94,46 @@ class Solution {
         return head;
     }
 }
+
+/*
+// Definition for a Node.
+class Node {
+    public int val;
+    public Node left;
+    public Node right;
+
+    public Node() {}
+
+    public Node(int _val,Node _left,Node _right) {
+        val = _val;
+        left = _left;
+        right = _right;
+    }
+};
+*/
+class Solution {
+    
+    Node tail;
+    
+    public Node treeToDoublyList(Node root) {
+        if (root == null) return null;
+        
+        Node dummy = new Node(0, null, null);
+        tail = dummy;
+        buildTree(root);
+        
+        tail.right = dummy.right;
+        dummy.right.left = tail;
+        return dummy.right;
+    }
+    
+    private void buildTree(Node root) {
+        if (root.left != null)
+            buildTree(root.left);
+        tail.right = root;
+        root.left = tail;
+        tail = root;
+        if (root.right != null)
+            buildTree(root.right);
+    }
+}
