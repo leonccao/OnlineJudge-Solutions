@@ -93,3 +93,51 @@ class Solution {
         return String.join(" ", ans);
     }
 }
+
+class Solution {
+    final static String[] HUNDS = {"Hundred", "Thousand", "Million", "Billion"};
+    final static String[] ONES  = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+    final static String[] TENS = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+    
+    public String numberToWords(int num) {
+        if (num == 0) return "Zero";
+        
+        long number = num;
+        boolean minus = false;
+        if (num < 0) {
+            minus = true;
+            number = -number;
+        }
+        
+        List<String> ans = new ArrayList<String>();
+        for (int cnt = 0; number > 0; cnt ++) {
+            int hund = (int)(number % 1000);
+            if (hund > 0) {
+                if (cnt > 0) ans.add(HUNDS[cnt]);
+                
+                // one and ten bits
+                int ten = hund % 100;
+                if (ten > 0) {
+                    if (ten < 20) ans.add(ONES[ten]);
+                    else {
+                        if (ten % 10 > 0)
+                            ans.add(ONES[ten % 10]);
+                        ans.add(TENS[ten / 10]);
+                    }
+                }
+
+                // hundred bit
+                if (hund > 99) {
+                    ans.add(HUNDS[0]);
+                    ans.add(ONES[hund / 100]);
+                }
+            }
+            
+            number /= 1000;
+        }
+        
+        if (minus) ans.add("Negative");
+        Collections.reverse(ans);
+        return String.join(" ", ans);
+    }
+}
