@@ -9,13 +9,14 @@ class Solution {
         
         int l = 0, r = nums.length;
         while (l < r - 1) {
-            int mid = (l + r) / 2;
+            //System.out.println(l + " " + r);
+            int mid = (l + r) >> 1;
             if (nums[mid] == target) return mid;
             if (nums[l] < nums[mid]) { 
                 if (target >= nums[l] && target < nums[mid])
                     r = mid;
                 else l = mid;
-            } else if (nums[mid] <= nums[r - 1]) { // !
+            } else if (nums[l] > nums[mid]) {
                 if (target > nums[mid] && target <= nums[r - 1])
                     l = mid;
                 else r = mid;

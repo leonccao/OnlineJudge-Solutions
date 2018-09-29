@@ -31,3 +31,24 @@ class Solution {
         return false;
     }
 }
+
+class Solution {
+    public boolean search(int[] nums, int target) {
+        int l = 0, r = nums.length;
+        while (l < r - 1) {
+            int mid = (l + r) / 2;
+            if (nums[mid] == target) return true;
+            if (nums[l] < nums[mid]) {
+                if (target >= nums[l] && target < nums[mid])
+                    r = mid;
+                else l = mid;
+            } else if (nums[mid] <= nums[r - 1]) {
+                if (target > nums[mid] && target <= nums[r - 1])
+                    l = mid;
+                else r = mid;
+            } else l ++;
+        }
+        if (nums[l] == target) return true;
+        return false;
+    }
+}
