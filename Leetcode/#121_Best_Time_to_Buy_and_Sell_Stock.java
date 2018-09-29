@@ -10,3 +10,14 @@ class Solution {
         return maxProfit;
     }
 }
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        int maxs = 0, minp = Integer.MAX_VALUE / 2;
+        for (int price : prices) {
+            maxs = Math.max(maxs, price - minp);
+            minp = Math.min(minp, price);
+        }
+        return maxs;
+    }
+}
