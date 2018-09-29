@@ -2951,7 +2951,15 @@ Faults:
 
 ## 429.
 
-## 430.
+## 430. Flatten a Multilevel Doubly Linked List (Medium)
+
+### Solution
+1. Stack
+    - Time complexity: O(n)
+    - Space complexity: O(n)
+2. Node
+    - Time complexity: O(n)
+    - Space complexity: O(1)
 
 ## 431.
 
