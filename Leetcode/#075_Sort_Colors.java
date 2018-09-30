@@ -28,3 +28,23 @@ class Solution {
         }
     }
 }
+
+class Solution {
+    public void sortColors(int[] nums) {
+        int i = 0, j = nums.length - 1;
+        for (int k = 0; k <= j; k ++) {
+            while (i <= j && nums[i] == 0) ++ i;
+            while (i <= j && nums[j] == 2) -- j;
+            if (k < i) k = i;
+            if (k > j) break;
+            if (nums[k] == 0) swap(nums, i, k --);
+            else if (nums[k] == 2) swap(nums, k --, j);
+        }
+    }
+    
+    private void swap(int[] nums, int a, int b) {
+        int tmp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = tmp;
+    }
+}
