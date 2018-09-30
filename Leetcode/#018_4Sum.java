@@ -22,3 +22,36 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    class Pair {
+        int l, r;
+        Pair(int l, int r) {
+            this.l = l;
+            this.r = r;
+        }
+    }
+    
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        Map<Integer, List<Pair>> map = new HashMap<Integer, List<Pair>>();
+        Set<List<Integer>> set = new HashSet<List<Integer>>();
+        for (int i = 0; i < nums.length; i ++)
+        for (int j = i + 1; j < nums.length; j ++) {
+            int sum = nums[i] + nums[j];
+            int want = target - sum;
+            if (map.containsKey(want)) {
+                List<Pair> pairs = map.get(want);
+                for (Pair pair : pairs) {
+                    if (pair.r >= i) continue;
+                    List<Integer> tmp = Arrays.asList(nums[pair.l], nums[pair.r], nums[i], nums[j]);
+                    Collections.sort(tmp);
+                    set.add(tmp);
+                }
+            }
+            List<Pair> tmp = map.getOrDefault(sum, new ArrayList<Pair>());
+            tmp.add(new Pair(i, j));
+            map.put(sum, tmp);
+        }
+        return new ArrayList<List<Integer>>(set);
+    }
+}
