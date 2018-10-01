@@ -92,3 +92,34 @@ class Solution {
         return ans;
     }
 }
+
+
+class Solution {
+    public List<String> addOperators(String num, int target) {
+        if (num == null || num.length() == 0)
+            return Collections.emptyList();
+        List<String> ans = new ArrayList<String>();
+        search(0, 0, target, 0, "", num, ans);
+        return ans;
+    }
+    
+    private void search(int index, long sum, int target, long last, String prefix, String dict, List<String> ans) {
+        if (index == dict.length()) {
+            if (sum == target) ans.add(prefix);
+            return;
+        }
+        
+        long cur = 0;
+        for (int i = index; i < dict.length(); i ++) {
+            cur = cur * 10 + dict.charAt(i) - '0';
+            if (index == 0)
+                search(i + 1, cur, target, cur, "" + cur, dict, ans);
+            else {
+                search(i + 1, sum + cur, target,  cur, prefix + "+" + cur, dict, ans);
+                search(i + 1, sum - cur, target, -cur, prefix + "-" + cur, dict, ans);
+                search(i + 1, sum - last + last * cur, target, last * cur, prefix + "*" + cur, dict, ans);
+            }
+            if (cur == 0) break;
+        }
+    }
+}
