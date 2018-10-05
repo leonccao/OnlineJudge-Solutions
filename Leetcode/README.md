@@ -1355,7 +1355,12 @@ for (int num : nums)
     else cnt --;
 ```
 
-## 170.
+## 170. Two Sum III - Data Structure Design (Easy)
+
+### Solution
+1. Use HashMap to store the value. Return false directly if value is less than min * 2 or larger than max * 2.
+    - Time complexity: O(n)
+    - Space complexity: O(n)
 
 ## 171. Excel Sheet Column Number
 
