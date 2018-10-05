@@ -3007,6 +3007,16 @@ Maintain a sliding window with size p.length(). One array head[] record the numb
 - Time complexity: O(n)
 - Space complexity: O(1)
 
+## 446. Arithmertic Slices II - Subsequence (Hard)
+
+### Solution
+1. DP + HashMap
+
+Enumerate the last two element nums[i] and nums[j], calculate their difference diff, find (i, diff) and store it in (j, diff).
+
+### Bugs
+1. The diff maybe larger than Integer, but we can skip these circumstances.
+
 ## 449. Serialize and Deserialize BST
 
 Same as #297.
