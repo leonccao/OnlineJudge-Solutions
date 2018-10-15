@@ -3101,6 +3101,22 @@ Bit Manipulation.
 
 ### Test cases
 
+## 528. Random Pick with Weight (Medium)
+
+### Test cases:
+1. [1]
+2. [1, 1]
+3. [1, 2]
+4. Sum will be very large
+
+### Solution:
+1. Prefix sum + Binary Search
+    - Time complexity: O(klogn)
+    - Space complexity: O(n)
+2. TreeMap
+    - Time complexity: O(klogn)
+    - Space complexity: O(n)
+
 
 ## 543. Diameter of Binary Tree (Easy)
 
