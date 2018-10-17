@@ -45,3 +45,30 @@ class Solution {
  * Solution obj = new Solution(w);
  * int param_1 = obj.pickIndex();
  */
+
+class Solution {
+
+    TreeMap<Integer, Integer> map;
+    Random rand;
+    
+    public Solution(int[] w) {
+        map = new TreeMap<Integer, Integer>();
+        int sum = 0;
+        for (int i = 0; i < w.length; i ++) {
+            sum += w[i];
+            map.put(sum, i);
+        }
+        rand = new Random();
+    }
+    
+    public int pickIndex() {
+        int target = rand.nextInt(map.lastKey());
+        return map.higherEntry(target).getValue();
+    }
+}
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(w);
+ * int param_1 = obj.pickIndex();
+ */
