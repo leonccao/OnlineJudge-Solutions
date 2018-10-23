@@ -21,3 +21,23 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    public int lengthOfLIS(int[] nums) {
+        List<Integer> rec = new ArrayList<Integer>();
+        rec.add(Integer.MIN_VALUE);
+        for (int num : nums) {
+            int l = 0, r = rec.size();
+            while (l < r - 1) {
+                int mid = l + (r - l) / 2;
+                if (rec.get(mid) < num) l = mid;
+                else r = mid;
+            }
+            if (++ l < rec.size()) {
+                if (num < rec.get(l))
+                    rec.set(l, num);
+            } else rec.add(num);
+        }
+        return rec.size() - 1;
+    }
+}
