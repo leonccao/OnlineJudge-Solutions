@@ -123,3 +123,40 @@ class Solution {
         }
     }
 }
+
+class Solution {
+    public List<String> addOperators(String num, int target) {
+        List<String> ans = new ArrayList<String>();
+        search(0, 0, 0, target, new StringBuilder(), num, ans);
+        return ans;
+    }
+    
+    private void search(int index, long last, long sum, int target, StringBuilder prefix, String s, List<String> ans) {
+        if (index == s.length()) {
+            if (sum == target)
+                ans.add(prefix.toString());
+            return;
+        }
+        
+        int len = prefix.length();
+        long num = 0;
+        for (int i = index; i < s.length(); i ++) {
+            num = num * 10 + s.charAt(i) - '0';
+            if (index == 0) {
+                search(i + 1, num, num, target, prefix.append(num), s, ans);
+                prefix.setLength(len);
+            } else {
+                prefix.append('+'); prefix.append(num);
+                search(i + 1,  num, sum + num, target, prefix, s, ans);
+                prefix.setLength(len);
+                prefix.append('-'); prefix.append(num);
+                search(i + 1, -num, sum - num, target, prefix, s, ans);
+                prefix.setLength(len);
+                prefix.append('*'); prefix.append(num);
+                search(i + 1, last * num, sum - last + last * num, target, prefix, s, ans);
+                prefix.setLength(len);
+            }
+            if (num == 0) break;
+        }
+    }
+}
