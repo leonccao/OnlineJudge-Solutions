@@ -152,3 +152,41 @@ class Solution {
         return rtn;
     }
 }
+
+class Solution {
+    public List<String> removeInvalidParentheses(String s) {
+        int l = 0, r = 0;
+        for (char ch : s.toCharArray())
+            if (ch == '(') l ++;
+            else if (ch == ')') {
+                if (l > 0) l --;
+                else r ++;
+            }
+        Set<String> ans = new HashSet<String>();
+        removeHelper(0, l, r, 0, s, new StringBuilder(), ans);
+        List<String> rtn = new ArrayList<String>();
+        rtn.addAll(ans);
+        return rtn;
+    }
+    
+    private void removeHelper(int index, int l, int r, int open, String s, StringBuilder prefix, Set<String> ans) {
+        if (l < 0 || r < 0 || open < 0) return;
+        
+        if (index == s.length()) {
+            if (l + r == 0)
+                ans.add(prefix.toString());
+            return;
+        }
+        
+        char ch = s.charAt(index);
+        if (ch == '(') {
+            removeHelper(index + 1, l - 1, r, open, s, prefix, ans);
+            removeHelper(index + 1, l, r, open + 1, s, prefix.append(ch), ans);
+        } else if (ch == ')') {
+            removeHelper(index + 1, l, r - 1, open, s, prefix, ans);
+            removeHelper(index + 1, l, r, open - 1, s, prefix.append(ch), ans);
+        } else removeHelper(index + 1, l, r, open, s, prefix.append(ch), ans);
+        
+        prefix.setLength(prefix.length() - 1);
+    }
+}
