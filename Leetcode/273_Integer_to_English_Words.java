@@ -182,3 +182,33 @@ class Solution {
         return String.join(" ", ans);
     }
 }
+
+class Solution {
+    final static int[] POW10 = {1, 10, 100, 1000, 0, 0, 1000000, 0, 0, 1000000000};
+    final static String[] ONES  = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+    final static String[] TENS = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+    
+    public String numberToWords(int num) {
+        if (num == 0) return "Zero";
+        boolean negative = false;
+        long n = num;
+        if (num < 0) {
+            negative = true;
+            n = -n;
+        }
+        
+        String rtn = helper(n);
+        return negative ? "Negative " + rtn : rtn;
+    }
+    
+    private String helper(long n) {
+        String rtn = "";
+        if (n < 20) rtn = ONES[(int)n];
+        else if (n < POW10[2]) rtn = TENS[(int)n / POW10[1]] + " " + ONES[(int)n % POW10[1]];
+        else if (n < POW10[3]) rtn = ONES[(int)n / POW10[2]] + " Hundred " + helper(n % POW10[2]);
+        else if (n < POW10[6]) rtn = helper(n / POW10[3]) + " Thousand " + helper(n % POW10[3]);
+        else if (n < POW10[9]) rtn = helper(n / POW10[6]) + " Million " + helper(n % POW10[6]);
+        else rtn = helper(n / POW10[9]) + " Billion " + helper(n % POW10[9]);
+        return rtn.trim();
+    }
+}
