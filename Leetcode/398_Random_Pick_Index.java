@@ -47,12 +47,6 @@ class Solution {
     }
 }
 
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(nums);
- * int param_1 = obj.pick(target);
- */
-
 class Solution {
 
     Random random;
@@ -74,8 +68,44 @@ class Solution {
     }
 }
 
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(nums);
- * int param_1 = obj.pick(target);
- */
+class Solution {
+
+    Map<Integer, List<Integer>> map;
+    Random rand;
+    
+    public Solution(int[] nums) {
+        map = new HashMap<>();
+        for (int i = 0; i < nums.length; i ++) {
+            List<Integer> list = map.getOrDefault(nums[i], new ArrayList<>());
+            list.add(i);
+            map.put(nums[i], list);
+        }
+        rand = new Random();
+    }
+    
+    public int pick(int target) {
+        int index = rand.nextInt(map.get(target).size());
+        return map.get(target).get(index);
+    }
+}
+
+class Solution {
+
+    int[] nums;
+    Random rand;
+    
+    public Solution(int[] nums) {
+        this.nums = nums;
+        rand = new Random();
+    }
+    
+    public int pick(int target) {
+        int count = 0, rtn = -1;
+        for (int i = 0; i < nums.length; i ++) {
+            if (nums[i] == target)
+                if (rand.nextInt(++ count) == 0)
+                    rtn = i;
+        }
+        return rtn;
+    }
+}
