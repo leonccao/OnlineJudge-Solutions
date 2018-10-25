@@ -1,3 +1,4 @@
+// old
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         Map<Integer, Integer> hash  = new HashMap<Integer, Integer>();
@@ -19,6 +20,7 @@ class Solution {
     }
 }
 
+// old two pointer
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         List<Integer> ans = new ArrayList<Integer>();
@@ -41,6 +43,7 @@ class Solution {
     }
 }
 
+// HashMap
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -59,6 +62,7 @@ class Solution {
     }
 }
 
+// TwoPointer
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
