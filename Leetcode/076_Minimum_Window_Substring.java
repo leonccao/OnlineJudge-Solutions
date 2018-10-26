@@ -72,3 +72,29 @@ class Solution {
         return pos == -1 ? "" : s.substring(pos, pos + len); 
     }
 }
+
+class Solution {
+    public String minWindow(String s, String t) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (char ch : t.toCharArray())
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        int count = map.size();
+        
+        int j = 0, ans = Integer.MAX_VALUE, pos = -1;
+        for (int i = 0; i < s.length(); i ++) {
+            char ch = s.charAt(i);
+            map.put(ch, map.getOrDefault(ch, 0) - 1);
+            if (map.get(ch) == 0) count --;
+            while (j <= i && map.get(s.charAt(j)) < 0) {
+                map.put(s.charAt(j), map.get(s.charAt(j)) + 1);
+                j ++;
+            }
+            if (count == 0 && i - j + 1 < ans) {
+                ans = i - j + 1;
+                pos = j;
+            }
+        }
+        if (ans == Integer.MAX_VALUE) return "";
+        return s.substring(pos, pos + ans);
+    }
+}
