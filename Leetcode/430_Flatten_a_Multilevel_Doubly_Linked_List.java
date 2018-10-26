@@ -1,21 +1,4 @@
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public Node prev;
-    public Node next;
-    public Node child;
 
-    public Node() {}
-
-    public Node(int _val,Node _prev,Node _next,Node _child) {
-        val = _val;
-        prev = _prev;
-        next = _next;
-        child = _child;
-    }
-};
-*/
 class Solution {
     public Node flatten(Node head) {
         if (head == null) return null;
@@ -41,24 +24,6 @@ class Solution {
     }
 }
 
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public Node prev;
-    public Node next;
-    public Node child;
-
-    public Node() {}
-
-    public Node(int _val,Node _prev,Node _next,Node _child) {
-        val = _val;
-        prev = _prev;
-        next = _next;
-        child = _child;
-    }
-};
-*/
 class Solution {
     public Node flatten(Node head) {
         for (Node cur = head; cur != null; cur = cur.next) {
@@ -72,6 +37,24 @@ class Solution {
             cur.next = cur.child;
             cur.child.prev = cur;
             cur.child = null;
+        }
+        return head;
+    }
+}
+
+// new 
+class Solution {
+    public Node flatten(Node head) {
+        for (Node cur = head; cur != null; cur = cur.next) {
+            if (cur.child != null) {
+                Node tmp = null;
+                for (tmp = cur.child; tmp.next != null; tmp = tmp.next);
+                tmp.next = cur.next;
+                if (tmp.next != null) tmp.next.prev = tmp;
+                cur.next = cur.child;
+                cur.next.prev = cur;
+                cur.child = null;
+            }
         }
         return head;
     }
