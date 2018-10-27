@@ -52,3 +52,23 @@ class Solution {
         return false;
     }
 }
+
+// new
+class Solution {
+    public boolean search(int[] nums, int target) {
+        int l = 0, r = nums.length;
+        while (l < r - 1) {
+            int mid = l + (r - l) / 2;
+            if (nums[mid] == target) return true;
+            if (nums[l] < nums[mid]) {
+                if (target >= nums[l] && target < nums[mid]) r = mid;
+                else l = mid + 1;
+            } else if (nums[l] > nums[mid]) {
+                if (target > nums[mid] && target <= nums[r - 1]) l = mid + 1;
+                else r = mid;
+            } else l ++;
+        }
+        if (l >= nums.length || nums[l] != target) return false;
+        return true;
+    }
+}
