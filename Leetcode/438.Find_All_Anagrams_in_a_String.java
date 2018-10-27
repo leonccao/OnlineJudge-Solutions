@@ -67,3 +67,25 @@ class Solution {
         return ans;
     }
 }
+
+// new
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        int[] cnt = new int[26];
+        int count = 0;
+        for (char ch : p.toCharArray())
+            if (++ cnt[ch - 'a'] == 1)
+                count ++;
+        
+        List<Integer> ans = new ArrayList<>();
+        for (int i = 0; i < s.length(); i ++) {
+            char ch = s.charAt(i);
+            if (-- cnt[ch - 'a'] == 0) count --;
+            if (i - p.length() >= 0)
+                if (++ cnt[s.charAt(i - p.length()) - 'a'] == 1)
+                    count ++;
+            if (count == 0) ans.add(i - p.length() + 1);
+        }
+        return ans;
+    }
+}
