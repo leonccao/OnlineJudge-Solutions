@@ -63,3 +63,29 @@ public class Solution extends Reader4 {
         return pos;
     }
 }
+
+// new
+public class Solution extends Reader4 {
+    /**
+     * @param buf Destination buffer
+     * @param n   Maximum number of characters to read
+     * @return    The number of characters read
+     */
+    
+    int bufSize = 0, bufPos = 0;
+    char[] buffer = new char[4];
+    
+    public int read(char[] buf, int n) {
+        int cnt = 0;
+        while (cnt < n) {
+            if (bufPos == bufSize) {
+                bufSize = read4(buffer);
+                bufPos = 0;
+            }
+            if (bufSize == 0) return cnt;
+            while (cnt < n && bufPos < bufSize) 
+                buf[cnt ++] = buffer[bufPos ++];
+        }
+        return n;
+    }
+}
