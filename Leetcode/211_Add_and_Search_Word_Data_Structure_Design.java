@@ -82,13 +82,6 @@ class WordDictionary {
     }
 }
 
-/**
- * Your WordDictionary object will be instantiated and called as such:
- * WordDictionary obj = new WordDictionary();
- * obj.addWord(word);
- * boolean param_2 = obj.search(word);
- */
-
 class WordDictionary {
     
     class TrieNode {
@@ -141,12 +134,7 @@ class WordDictionary {
     }
 }
 
-/**
- * Your WordDictionary object will be instantiated and called as such:
- * WordDictionary obj = new WordDictionary();
- * obj.addWord(word);
- * boolean param_2 = obj.search(word);
- */
+// follow up speed up search
 
 class WordDictionary {
     
@@ -198,9 +186,53 @@ class WordDictionary {
     }
 }
 
-/**
- * Your WordDictionary object will be instantiated and called as such:
- * WordDictionary obj = new WordDictionary();
- * obj.addWord(word);
- * boolean param_2 = obj.search(word);
- */
+// new 
+class WordDictionary {
+    
+    class TrieNode {
+        boolean finished;
+        TrieNode[] children;
+        TrieNode() {
+            finished = false;
+            children = new TrieNode[26];
+        }
+    }
+
+    TrieNode root;
+    
+    /** Initialize your data structure here. */
+    public WordDictionary() {
+        root = new TrieNode();
+    }
+    
+    /** Adds a word into the data structure. */
+    public void addWord(String word) {
+        TrieNode cur = root;
+        for (char ch : word.toCharArray()) {
+            if (cur.children[ch - 'a'] == null)
+                cur.children[ch - 'a'] = new TrieNode();
+            cur = cur.children[ch - 'a'];
+        }
+        cur.finished = true;
+    }
+    
+    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+    public boolean search(String word) {
+        return searchHelper(root, 0, word);
+    }
+    
+    private boolean searchHelper(TrieNode root, int index, String word) {
+        if (index == word.length()) return root.finished;
+        char ch = word.charAt(index);
+        if (ch != '.') {
+            if (root.children[ch - 'a'] == null) return false;
+            return searchHelper(root.children[ch - 'a'], index + 1, word);
+        } else {
+            for (int i = 0; i < 26; i ++)
+                if (root.children[i] != null)
+                    if (searchHelper(root.children[i], index + 1, word))
+                        return true;
+            return false;
+        }
+    }
+}
