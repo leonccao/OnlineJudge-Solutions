@@ -95,22 +95,6 @@ class Solution {
     }
 }
 
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public Node left;
-    public Node right;
-
-    public Node() {}
-
-    public Node(int _val,Node _left,Node _right) {
-        val = _val;
-        left = _left;
-        right = _right;
-    }
-};
-*/
 class Solution {
     
     Node tail;
@@ -135,5 +119,33 @@ class Solution {
         tail = root;
         if (root.right != null)
             buildTree(root.right);
+    }
+}
+
+// new 
+
+class Solution {
+    
+    Node last = null;
+    
+    public Node treeToDoublyList(Node root) {
+        if (root == null) return null;
+        
+        Node head = new Node();
+        last = head;
+        helper(root);
+        
+        head.right.left = last;
+        last.right = head.right;
+        return head.right;
+    }
+    
+    private void helper(Node root) {
+        if (root == null) return;
+        helper(root.left);
+        root.left  = last;
+        last.right = root;
+        last = root;
+        helper(root.right);
     }
 }
