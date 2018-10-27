@@ -40,3 +40,19 @@ class Solution {
         return true;
     }
 }
+
+// Two pointers
+class Solution {
+    public boolean isPalindrome(String s) {
+        if (s == null || s.length() == 0) return true;
+        
+        s = s.trim().toLowerCase();
+        int l = 0, r = s.length() - 1;
+        while (l < r) {
+            while (l < r && !Character.isLetterOrDigit(s.charAt(l))) l ++;
+            while (l < r && !Character.isLetterOrDigit(s.charAt(r))) r --;
+            if (l < r && s.charAt(l ++) != s.charAt(r --)) return false;
+        }
+        return true;
+    }
+}
