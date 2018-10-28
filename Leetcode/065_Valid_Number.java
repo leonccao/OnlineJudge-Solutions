@@ -82,3 +82,31 @@ class Solution {
     }
     
 }
+
+class Solution {
+    public boolean isNumber(String s) {
+        
+        s = s.trim();
+        
+        boolean e = false, point = false, num = false, numAfterE = false;
+        
+        for (int i = 0; i < s.length(); i ++) {
+            char ch = s.charAt(i);
+            
+            if (Character.isDigit(ch)) {
+                num = true;
+                numAfterE = true;
+            } else if (ch == 'e') {
+                if (e || !num) return false;
+                numAfterE = false;
+                e = true;
+            } else if (ch == '.') {
+                if (point || e) return false;
+                point = true;
+            } else if (ch == '+' || ch == '-') {
+                if (i != 0 && s.charAt(i - 1) != 'e') return false;
+            } else return false;
+        }
+        return num & numAfterE;
+    }
+}
