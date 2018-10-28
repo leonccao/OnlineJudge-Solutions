@@ -61,3 +61,33 @@ class Solution {
         return rec[nums.length - 1][3];
     }
 }
+
+class Solution {
+    public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
+        int sum = 0;
+        int[] max = new int[3];
+        int[][] rec = new int[3][3];
+        
+        int[] sumk = new int[nums.length];
+        for (int i = 0; i < nums.length; i ++) {
+            sum += i - k >= 0 ? nums[i] - nums[i - k] : nums[i];
+            sumk[i] = sum;
+            
+            if (i >= 3 * k - 1) {
+                if (sumk[i - 2 * k] > max[0]) {
+                    max[0] = sumk[i - 2 * k];
+                    rec[0] = new int[]{i - 3 * k + 1, 0, 0};
+                }
+                if (sumk[i - k] + max[0] > max[1]) {
+                    max[1] = sumk[i - k] + max[0];
+                    rec[1] = new int[]{rec[0][0], i - 2 * k + 1, 0};
+                }
+                if (sumk[i] + max[1] > max[2]) {
+                    max[2] = sumk[i] + max[1];
+                    rec[2] = new int[]{rec[1][0], rec[1][1], i - k + 1};
+                }
+            }
+        }
+        return rec[2];
+    }
+}
