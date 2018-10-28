@@ -64,3 +64,45 @@ class Solution {
         return ans;
     }
 }
+
+//new BFS+Map
+class Solution {
+    
+    private class QueueNode {
+        public TreeNode node;
+        public int depth;
+        public QueueNode(TreeNode node, int depth) {
+            this.node = node;
+            this.depth = depth;
+        }
+    }
+    
+    public List<List<Integer>> verticalOrder(TreeNode root) {
+        if (root == null) return Collections.emptyList();
+        
+        Queue<QueueNode> queue = new LinkedList<>();
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        queue.add(new QueueNode(root, 0));
+        
+        int min = 0, max = 0;
+        while (!queue.isEmpty()) {
+            TreeNode cur = queue.peek().node;
+            int depth = queue.poll().depth;
+            if (!map.containsKey(depth)) 
+                map.put(depth, new ArrayList<>());
+            map.get(depth).add(cur.val);
+            min = Math.min(min, depth);
+            max = Math.max(max, depth);
+            
+            if (cur.left  != null)
+                queue.add(new QueueNode(cur.left,  depth - 1));
+            if (cur.right != null)
+                queue.add(new QueueNode(cur.right, depth + 1));
+        }
+        
+        List<List<Integer>> ans = new ArrayList<>();
+        for (int i = min; i <= max; i ++)
+            ans.add(map.get(i));
+        return ans;
+    }
+}
