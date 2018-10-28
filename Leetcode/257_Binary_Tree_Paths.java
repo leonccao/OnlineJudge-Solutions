@@ -30,3 +30,17 @@ class Solution {
         return;
     }
 }
+
+// new 
+class Solution {
+    public List<String> binaryTreePaths(TreeNode root) {
+        if (root == null) return Collections.emptyList();
+        List<String> list = new ArrayList<>();
+        list.addAll(binaryTreePaths(root.left));
+        list.addAll(binaryTreePaths(root.right));
+        for (int i = 0; i < list.size(); i ++)
+            list.set(i, root.val + "->" + list.get(i));
+        if (list.isEmpty()) list.add("" + root.val);
+        return list;
+    }
+}
