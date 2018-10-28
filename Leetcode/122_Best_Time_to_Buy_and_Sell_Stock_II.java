@@ -7,3 +7,15 @@ class Solution {
         return sum;
     }
 }
+
+// new 
+class Solution {
+    public int maxProfit(int[] prices) {
+        int hold = Integer.MIN_VALUE, sold = 0;
+        for (int price : prices) {
+            sold = Math.max(sold, hold + price);
+            hold = Math.max(hold, sold - price);
+        }
+        return sold;
+    }
+}
