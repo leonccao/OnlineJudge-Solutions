@@ -11,3 +11,19 @@ class Solution {
         return release2;
     }
 }
+
+// new 
+class Solution {
+    public int maxProfit(int[] prices) {
+        int hold1, sold1, hold2, sold2;
+        hold1 = hold2 = Integer.MIN_VALUE;
+        sold1 = sold2 = 0;
+        for (int price : prices) {
+            sold2 = Math.max(sold2, hold2 + price);
+            hold2 = Math.max(hold2, sold1 - price);
+            sold1 = Math.max(sold1, hold1 + price);
+            hold1 = Math.max(hold1,       - price);
+        }
+        return sold2;
+    }
+}
