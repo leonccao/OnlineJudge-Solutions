@@ -31,3 +31,33 @@ class Solution {
             swap(nums, i + j, nums.length - j - 1);
     }
 }
+
+// new
+class Solution {
+    public void nextPermutation(int[] nums) {
+        int index = nums.length - 1;
+        while (index > 0 && nums[index - 1] >= nums[index]) index --;
+        if (index > 0) {
+            int tmp = binarySearch(nums, index, nums.length - 1, nums[index - 1]);
+            swap(nums, index - 1, tmp);
+        }
+        for (int i = index; i <= (index + nums.length - 1) / 2; i ++)
+            swap(nums, i, index + nums.length - i - 1);
+    }
+    
+    private int binarySearch(int[] nums, int start, int end, int target) {
+        int l = start, r = end + 1;
+        while (l < r - 1) {
+            int mid = l + (r - l) / 2;
+            if (nums[mid] > target) l = mid;
+            else r = mid;
+        }
+        return l;
+    }
+    
+    private void swap(int[] nums, int a, int b) {
+        int tmp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = tmp;
+    }
+}
