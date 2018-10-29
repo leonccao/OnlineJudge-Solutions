@@ -127,9 +127,64 @@ class LRUCache {
     }
 }
 
-/**
- * Your LRUCache object will be instantiated and called as such:
- * LRUCache obj = new LRUCache(capacity);
- * int param_1 = obj.get(key);
- * obj.put(key,value);
- */
+
+class LRUCache {
+
+    class DDLNode {
+        int key, val;
+        DDLNode prev, next;
+        DDLNode(int key, int val) {
+            this.key = key;
+            this.val = val;
+            prev = next = null;
+        }
+    }
+    
+    private void insert(DDLNode node) {
+        node.prev = tail.prev;
+        node.next = tail;
+        node.prev.next = node;
+        node.next.prev = node;
+    }
+    
+    private void remove(DDLNode node) {
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+    }
+    
+    int capacity;
+    DDLNode head, tail;
+    Map<Integer, DDLNode> map;
+    
+    public LRUCache(int capacity) {
+        map = new HashMap<>();
+        this.capacity = capacity;
+        head = new DDLNode(0, 0);
+        tail = new DDLNode(0, 0);
+        head.next = tail;
+        tail.prev = head;
+    }
+    
+    public int get(int key) {
+        if (!map.containsKey(key)) return -1;
+        DDLNode cur = map.get(key);
+        remove(cur); insert(cur);
+        return cur.val;
+    }
+    
+    public void put(int key, int value) {
+        if (map.containsKey(key)) {
+            DDLNode cur = map.get(key);
+            remove(cur); insert(cur);
+            cur.val = value;
+        } else {
+            if (map.size() == capacity) {
+                map.remove(head.next.key);
+                remove(head.next);
+            }
+            DDLNode cur = new DDLNode(key, value);
+            insert(cur);
+            map.put(key, cur);
+        }
+    }
+}
