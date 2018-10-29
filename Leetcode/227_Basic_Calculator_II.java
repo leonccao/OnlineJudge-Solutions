@@ -76,3 +76,45 @@ class Solution {
         return operands.pop();
     }
 }
+
+// new O(n) O(1)
+/*
+1. Overflow
+2. 3 2
+3. / 0
+4. two signs
+5. empty string
+6. -4+5 5++
+*/
+class Solution {
+    public int calculate(String s) {
+        int result = 0, last = 0, buffer = 0;
+        char sign = '$';
+        s = s + "$";
+        for (char ch : s.toCharArray()) {
+            if (ch == ' ') continue;
+            if (Character.isDigit(ch)) {
+                buffer = buffer * 10 + ch - '0';
+            } else {
+                if (sign == '$') {
+                    result = last = buffer;
+                } else if (sign == '+') {
+                    result += buffer;
+                    last = buffer;
+                } else if (sign == '-') {
+                    result -= buffer;
+                    last = -buffer;
+                } else if (sign == '*') {
+                    result = result - last + last * buffer;
+                    last *= buffer;
+                } else if (sign == '/') {
+                    result = result - last + last / buffer;
+                    last /= buffer;
+                }
+                
+                sign = ch; buffer = 0;
+            }
+        }
+        return result;
+    }
+}
