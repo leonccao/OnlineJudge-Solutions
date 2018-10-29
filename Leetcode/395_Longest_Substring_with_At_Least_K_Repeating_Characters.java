@@ -33,3 +33,25 @@ class Solution {
         return rtn;
     }
 }
+
+// TLE brute-force
+class Solution {
+    public int longestSubstring(String s, int k) {
+        int ans = 0;
+        for (int i = 0; i < s.length(); i ++) {
+            Map<Character, Integer> map = new HashMap<>();
+            if (s.length() - i <= ans) break;
+            
+            INNER_LOOP:
+            for (int j = i; j < s.length(); j ++) {
+                char ch = s.charAt(j);
+                map.put(ch, map.getOrDefault(ch, 0) + 1);
+                for (char key : map.keySet())
+                    if (map.get(key) < k)
+                        continue INNER_LOOP;
+                ans = Math.max(ans, j - i + 1);
+            }
+        }
+        return ans;
+    }
+}
