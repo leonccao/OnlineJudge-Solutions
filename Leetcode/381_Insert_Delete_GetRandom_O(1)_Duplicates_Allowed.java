@@ -54,10 +54,48 @@ class RandomizedCollection {
     }
 }
 
-/**
- * Your RandomizedCollection object will be instantiated and called as such:
- * RandomizedCollection obj = new RandomizedCollection();
- * boolean param_1 = obj.insert(val);
- * boolean param_2 = obj.remove(val);
- * int param_3 = obj.getRandom();
- */
+// new
+class RandomizedCollection {
+
+    List<Integer> list;
+    Map<Integer, Set<Integer>> map;
+    Random rand;
+    
+    /** Initialize your data structure here. */
+    public RandomizedCollection() {
+        list = new ArrayList<>();
+        map = new HashMap<>();
+        rand = new Random();
+    }
+    
+    /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
+    public boolean insert(int val) {
+        boolean rtn = !map.containsKey(val);
+        list.add(val);
+        if (!map.containsKey(val)) map.put(val, new HashSet<>());
+        map.get(val).add(list.size() - 1);
+        return rtn;
+    }
+    
+    /** Removes a value from the collection. Returns true if the collection contained the specified element. */
+    public boolean remove(int val) {
+        if (!map.containsKey(val)) return false;
+        int swapee = list.get(list.size() - 1);
+        if (swapee != val) {
+            int swaperPos = map.get(val).iterator().next();
+            list.set(swaperPos, swapee);
+            map.get(val).remove(swaperPos);
+            map.get(swapee).add(swaperPos);
+        }
+        map.get(swapee).remove(list.size() - 1);
+        if (map.get(val).isEmpty()) map.remove(val);
+        list.remove(list.size() - 1);
+        return true;
+    }
+    
+    /** Get a random element from the collection. */
+    public int getRandom() {
+        int index = rand.nextInt(list.size());
+        return list.get(index);
+    }
+}
