@@ -35,3 +35,21 @@ class Solution {
         return false;
     }
 }
+
+// new
+class Solution {
+    public boolean checkSubarraySum(int[] nums, int k) {
+        k = k == 0 ? Integer.MAX_VALUE : (k < 0 ? -k : k);
+        if (nums.length > k) return true;
+        
+        Set<Integer> set = new HashSet<>();
+        int last = 0;
+        for (int num : nums) {
+            int cur = (last + num) % k;
+            if (set.contains(cur)) return true;
+            set.add(last);
+            last = cur;
+        }
+        return false;
+    }
+}
