@@ -45,3 +45,37 @@ class Solution {
         return ans + 1;
     }
 }
+
+// new 
+class Solution {
+    
+    final static int[][] move = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
+    
+    public int longestIncreasingPath(int[][] matrix) {
+        if (matrix.length == 0) return 0;
+        Map<String, Integer> visited = new HashMap<>();
+        
+        int ans = 0;
+        for (int i = 0; i < matrix.length; i ++)
+            for (int j = 0; j < matrix[0].length; j ++)
+                ans = Math.max(ans, helper(i, j, matrix, visited));
+        return ans;
+    }
+    
+    private int helper(int x, int y, int[][] matrix, Map<String, Integer> visited) {
+        String cur = x + " " + y;
+        if (visited.containsKey(cur)) 
+            return visited.get(cur);
+        
+        int result = 1;
+        for (int[] mv : move) {
+            int i = x + mv[0], j = y + mv[1];
+            if (i < 0 || i == matrix.length)    continue;
+            if (j < 0 || j == matrix[0].length) continue;
+            if (matrix[i][j] >= matrix[x][y])   continue;
+            result = Math.max(result, helper(i, j, matrix, visited) + 1);
+        }
+        visited.put(cur, result);
+        return result;
+    }
+}
