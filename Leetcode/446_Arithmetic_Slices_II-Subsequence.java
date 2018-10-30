@@ -21,3 +21,25 @@ class Solution {
         return ans;
     }
 }
+
+// new 
+class Solution {
+    public int numberOfArithmeticSlices(int[] A) {
+        HashMap<Integer, Integer>[] rec = new HashMap[A.length];
+        for (int i = 0; i < A.length; i ++)
+            rec[i] = new HashMap<Integer, Integer>();
+            
+        int ans = 0;
+        for (int j = 0; j < A.length; j ++)
+            for (int i = 0; i < j; i ++) {
+                long d = (long)A[j] - A[i];
+                if (d <= Integer.MIN_VALUE || d > Integer.MAX_VALUE) continue;
+                int diff = (int)d;
+                int tmp = rec[i].getOrDefault(diff, 0);
+                ans += tmp;
+                rec[j].put(diff, rec[j].getOrDefault(diff, 0) + tmp + 1);
+            }
+        
+        return ans;
+    }
+}
