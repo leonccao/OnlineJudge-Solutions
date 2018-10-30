@@ -23,3 +23,20 @@ class Solution {
         return view;
     }
 }
+
+// new 
+class Solution {
+    public void DFS(TreeNode root, int h, List<Integer> view) {
+        if (root == null) return;
+        if (view.size() < h + 1)
+            view.add(root.val);
+        DFS(root.right, h + 1, view);
+        DFS(root.left,  h + 1, view);
+    }
+    
+    public List<Integer> rightSideView(TreeNode root) {
+        List<Integer> view = new ArrayList<Integer>();
+        DFS(root, 0, view);
+        return view;
+    }
+}
