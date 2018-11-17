@@ -1,2 +1,5 @@
-.DS_Store
-untag/.DS_Store
+*.DS_Store
+*.class
+*.exe
+*.swp
+/ACM-ICPC/docs
