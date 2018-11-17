@@ -3,53 +3,52 @@ import java.util.*;
 public class Main {
 
     private static int n, k;
+
     private static int[][] s;
-    private static boolean[][] col, row;
+    private static boolean[][] cols;
+    private static boolean[] visited;
 
     private static boolean input() {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         k = sc.nextInt();
         s = new int[n][n];
-        col = new boolean[n][n + 1];
+        cols = new boolean[n][n + 1];
         for (int i = 0; i < k; i ++) {
             boolean[] row = new boolean[n + 1];
             for (int j = 0; j < n; j ++) {
-                int tmp = sc.nextInt();
-                s[i][j] = tmp;
-                if (col[j][tmp]) return false;
-                col[j][tmp] = true;
-                if (row[tmp]) return false;
-                row[tmp] = true;
+                s[i][j] = sc.nextInt();
+                if (cols[j][s[i][j]]) return false;
+                if (row[s[i][j]]) return false;
+                cols[j][s[i][j]] = true;
+                row[s[i][j]] = true;
             }
         }
         return true;
     }
 
-    private static boolean dfs(int r, int c) {
-        if (r == n) return true;
-        for (int i = 1; i <= n; i ++) {
-            if (col[c][i]) continue;
-            if (row[r][i]) continue;
-            // System.out.println(r + " " + c + " " + i);
-            col[c][i] = true;
-            row[r][i] = true;
-            // System.out.println(row[3][4]);
-            s[r][c] = i;
-            if (dfs(r + 1, c)) return true;
-            s[r][c] = 0;
-            col[c][i] = false;
-            row[r][i] = false;
+    private static boolean hungarian(int r, int num) {
+        for (int i = 0; i < n; i ++) {
+            if (cols[i][num] || visited[i]) continue;
+            visited[i] = true;
+            if (s[r][i] == 0 || hungarian(r, s[r][i])) {
+                if (s[r][i] > 0) cols[i][s[r][i]] = false;
+                s[r][i] = num;
+                cols[i][num] = true;
+                return true;
+            }
         }
         return false;
     }
 
-    private static void search(int cur) {
-        dfs(k, cur);
+    private static void match(int r) {
+        for (int i = 1; i <= n; i ++) {
+            visited = new boolean[n + 1];
+            hungarian(r, i);
+        }
     }
 
     private static void output() {
-        System.out.println(n);
         for (int i = 0; i < n; i ++) {
             for (int j = 0; j < n - 1; j ++)
                 System.out.print(s[i][j] + " ");
@@ -58,13 +57,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        if (!input()) {
+        if (input()) System.out.println("yes");
+        else {
             System.out.println("no");
             return;
-        } else System.out.println("yes");
-        row = new boolean[n][n + 1];
-        for (int i = 0; i < n; i ++)
-            search(i);
+        }
+        for (int i = k; i < n; i ++) match(i);
         output();
     }
 }
