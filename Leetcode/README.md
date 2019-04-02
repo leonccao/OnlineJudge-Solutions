@@ -3278,6 +3278,16 @@ I used this problem to practice heap.
 
 ### Test cases
 
+## 760. Find Anagram Mappings (Easy)
+
+### Corner Cases
+
+Array may contain duplicates. However under such circumstances, any answer is okay.
+
+### Solution
+
+Just use HashMap.
+
 ## 772. Basic Calculator III (Hard)
 
 ### Corner cases
