@@ -4032,3 +4032,12 @@ Then, the question is transferred into finding such `left[]` and `right[]` stand
 We utilize a stack here, scan the array forwards. Before you push a new element in, pop out all elements greated than it. The farthest `left[]` of the elements it poped out will be its `left[]`.
 
 One special occasion is if there are duplicates in the array. The subarray including both of them should only be calculated once. The solution is: in one direction, we pop out all elements greater than new element in the stack; in the other direction, we pop out all elements greater than or equal to the new element.
+
+## 929. Unique Email Addresses (Easy)
+
+### Corner Cases
+
+'+' and '.' after '@' should not be ignored.
+
+### Solutions
+String processing. Use HashSet to filter duplicates.
