@@ -2919,7 +2919,10 @@ Faults:
 
 ## 420.
 
-## 421.
+## 421. Maximum XOR of Two Numbers in an Array (Medium)
+
+### Solution 
+Enumerate the bits from highest to lowest, then use a HashSet to check whether such an answer could be made up under O(n) time.
 
 ## 422.
 
