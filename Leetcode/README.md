@@ -3025,6 +3025,12 @@ Enumerate the last two element nums[i] and nums[j], calculate their difference d
 ### Bugs
 1. The diff maybe larger than Integer, but we can skip these circumstances.
 
+## 448. Find All Numbers Disappeared in an Array (Easy)
+
+### Solution
+
+Two scan. First scan swap the numbers to their own slot, second scan find out which slot does not hold its own.
+
 ## 449. Serialize and Deserialize BST
 
 Same as #297.
