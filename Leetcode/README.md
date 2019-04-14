@@ -3126,6 +3126,10 @@ Bit Manipulation.
     - Time complexity: O(klogn)
     - Space complexity: O(n)
 
+## 535. Encode and Decode TinyURL (Medium)
+
+### Solution:
+1. HashMap: Use a map to store the map from hash code to whole url. Many ways to get the hash code.
 
 ## 543. Diameter of Binary Tree (Easy)
 
