@@ -3206,6 +3206,11 @@ Arrange the tasks with greatest amount by the cooling interval, and assume there
 
 ### Test cases
 
+## 657. Robot Return to Origin (Easy)
+
+### Solution
+1. Switch case
+
 ## 658. Find K Closest Elements (Medium)
 
 ### Solution
