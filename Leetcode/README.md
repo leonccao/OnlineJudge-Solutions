@@ -3296,6 +3296,11 @@ I used this problem to practice heap.
 
 ### Test cases
 
+## 739. Daily Temperatures (Medium)
+
+## Solution
+1. Stack holding descending temperatures backwards.
+
 ## 760. Find Anagram Mappings (Easy)
 
 ### Corner Cases
