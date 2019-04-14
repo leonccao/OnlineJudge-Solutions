@@ -1235,7 +1235,10 @@ Faults:
 
 1. **[WA]** Should update the min value if it is the same as the coming letter. Whether you could not tell if the coming number changes min.
 
-## 156.
+## 156. Binary Tree Upside Down (Medium)
+
+## Solution:
+1. Recursion
 
 ## 157. Read N Characters Given Read4 (Easy)
 
