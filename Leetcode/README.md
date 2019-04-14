@@ -1306,7 +1306,14 @@ But a better solution here is use two pointer and start for the same length left
 
 Binary Search.
 
-## 163.
+## 163. Missing Ranges (Medium)
+
+### Corner cases
+1. Input array maybe empty.
+2. The input range maybe very large (Integer.MIN_VALUE ~ Integer.MAX_VALUE).
+
+### Solution
+1. for-loop and interval manipulations.
 
 ## 164. Maximum Gap (Hard)
 
