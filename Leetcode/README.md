@@ -1867,7 +1867,10 @@ ArrayList<Integer>[][] rec = (ArrayList<Integer>[][]) new ArrayList[len][len];
 
 ## 242.
 
-## 243.
+## 243. Shortest Word Distance (Easy)
+
+### Solution
+1. For-loop. Always record the latest position of word1 and word2, try to update the ans by their distance. 
 
 ## 244.
 
