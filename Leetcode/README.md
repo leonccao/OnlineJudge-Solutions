@@ -4082,6 +4082,7 @@ String processing. Use HashSet to filter duplicates.
 
 ### Solutions
 1. DP
+2. Greedy: Sort people by (costA - costB), then send first N people to place A and last N people to place B.
 
 ## 1030. Matrix Cells in Distance Order (Easy)
 
