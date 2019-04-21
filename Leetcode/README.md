@@ -4078,6 +4078,11 @@ One special occasion is if there are duplicates in the array. The subarray inclu
 ### Solutions
 String processing. Use HashSet to filter duplicates.
 
+## 1029. Two City Scheduling (Easy)
+
+### Solutions
+1. DP
+
 ## 1030. Matrix Cells in Distance Order (Easy)
 
 ### Solutions
