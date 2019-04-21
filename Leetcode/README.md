@@ -4087,20 +4087,25 @@ String processing. Use HashSet to filter duplicates.
 ## 1030. Matrix Cells in Distance Order (Easy)
 
 ### Solutions
-1. BFS
+1. BFS: int[] could be used as element in Queue
+``` java
+Queue<int[]> queue = new LinkedList<>();
+        queue.offer(new int[]{r0, c0});
+```
+
 2. Arrays.sort()
 
 ```` java
-    public class Point {
-        int x, y, dist;
-        public Point(int x, int y, int r0, int c0) {
-            this.x = x;
-            this.y = y;
-            dist = Math.abs(x - r0) + Math.abs(y - c0);
-        }
+public class Point {
+    int x, y, dist;
+    public Point(int x, int y, int r0, int c0) {
+        this.x = x;
+        this.y = y;
+        dist = Math.abs(x - r0) + Math.abs(y - c0);
     }
+}
 
-    Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
+Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 ````
 
 ## 1031. Maximum Sum of Two Non-Overlapping Subarrays (Medium)
