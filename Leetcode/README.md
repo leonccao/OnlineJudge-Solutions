@@ -4107,3 +4107,8 @@ String processing. Use HashSet to filter duplicates.
 ### Solutions
 1. O(N ^ 2) brute-force
 2. O(N)
+
+## 1032. Stream of Characters (Hard)
+
+### Solutions
+1. Trie. Insert reversed words instead of original ones into Trie. When do querying, start from the root, one more characters goes one more deeper. Whenever an end flag appears, return true.
