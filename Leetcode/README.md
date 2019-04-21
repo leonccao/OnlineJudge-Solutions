@@ -4077,3 +4077,22 @@ One special occasion is if there are duplicates in the array. The subarray inclu
 
 ### Solutions
 String processing. Use HashSet to filter duplicates.
+
+## 1030. Matrix Cells in Distance Order (Easy)
+
+### Solutions
+1. BFS
+2. Arrays.sort()
+
+```` java
+    public class Point {
+        int x, y, dist;
+        public Point(int x, int y, int r0, int c0) {
+            this.x = x;
+            this.y = y;
+            dist = Math.abs(x - r0) + Math.abs(y - c0);
+        }
+    }
+
+    Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
+````
