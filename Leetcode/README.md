@@ -1896,7 +1896,14 @@ Done
 
 ## 248.
 
-## 249.
+## 249. Group Shifted Strings (Medium)
+
+### Corner cases
+1. The shift is actually a cycle, so when you calculate the pattern, the difference should be mod.
+
+### Solutions
+1. Calculate the pattern (the difference of each two adjacent characters), then sort.
+2. Same way to calculate the pattern, but use HashMap to group the words instead.
 
 ## 250.
 
