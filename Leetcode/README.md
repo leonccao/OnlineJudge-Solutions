@@ -4134,3 +4134,15 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 
 ### Solutions
 1. Simulation
+
+## 1034. Coloring A Border (Medium)
+
+### Corner Cases
+1. Only one block in the connected component.
+2. Think about whether change the original array or use another array to record.
+
+### Solutions
+1. BFS
+
+### Notes
+1. `int[]` could be used in Queue but can not be matched in Set.
