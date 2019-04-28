@@ -4125,3 +4125,12 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 
 ### Solutions
 1. Trie. Insert reversed words instead of original ones into Trie. When do querying, start from the root, one more characters goes one more deeper. Whenever an end flag appears, return true.
+
+## 1033. Moving Stones Until Consecutive (Easy) 
+
+### Corner cases
+1. Stones maybe next to each other
+2. [1, 3, 5] = 1
+
+### Solutions
+1. Simulation
