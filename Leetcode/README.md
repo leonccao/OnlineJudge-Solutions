@@ -4146,3 +4146,8 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 
 ### Notes
 1. `int[]` could be used in Queue but can not be matched in Set.
+
+## 1035. Uncrossed Lines (Medium)
+
+### Solutions
+1. Dynamic Programming. A easy version of 44. Wildcard Matching or 10. Regular Expression Matching.
