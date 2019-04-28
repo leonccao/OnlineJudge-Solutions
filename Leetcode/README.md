@@ -4151,3 +4151,26 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 
 ### Solutions
 1. Dynamic Programming. A easy version of 44. Wildcard Matching or 10. Regular Expression Matching.
+
+## 1036. Escape a Large Maze (Hard)
+
+### Solutions
+1. Bidirectional BFS. Same as 126. Word Ladder II and follow up of a knight checker related question which appeared in Facebook's interview. You can just return true when searched so many layers without ending.
+
+### Notes
+1. When you want to use your own defined class in HashSet, override `hashCode()` instead of `equals()`:
+
+    ``` java
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Point))
+            eturn false;
+        Point p = (Point)o;
+        return x == p.x && y == p.y;
+    }
+
+    @Override   
+    public int hashCode() {
+        return sign.hashCode();
+    }
+    ```
