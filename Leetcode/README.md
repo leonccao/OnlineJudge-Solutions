@@ -4179,3 +4179,8 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 
 ### Solutions:
 1. `(y2 - y0) * (x1 - x0) == (y1 - y0) * (x2 - x0)`
+
+## 1038. Binary Search Tree to Greater Sum Tree (Medium)
+
+### Solutions:
+1. DFS
