@@ -4174,3 +4174,8 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
         return sign.hashCode();
     }
     ```
+
+## 1037. Valid Boomerang (Easy)
+
+### Solutions:
+1. `(y2 - y0) * (x1 - x0) == (y1 - y0) * (x2 - x0)`
