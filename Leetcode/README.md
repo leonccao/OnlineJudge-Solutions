@@ -4184,3 +4184,10 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 
 ### Solutions:
 1. DFS
+
+## 1039. Minimum Score Triangulation of Polygon (Medium)
+
+### Solutions:
+1. https://www.cnblogs.com/Jason-Damon/p/3298172.html
+
+###
