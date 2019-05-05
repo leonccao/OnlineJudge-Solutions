@@ -4190,4 +4190,7 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 ### Solutions:
 1. https://www.cnblogs.com/Jason-Damon/p/3298172.html
 
-###
+## 1040. Moving Stones Until Consecutive II (Medium)
+
+### Solutions:
+1. Simulation
