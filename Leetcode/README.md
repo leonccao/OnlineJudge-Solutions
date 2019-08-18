@@ -3139,6 +3139,12 @@ Bit Manipulation.
 
 ### Test cases
 
+## 524. Longest Word in Dictionary through Deleting (Medium)
+
+1. Loop through all strings, check each string to see if it satisfies the requirements.
+    Two ways to check: a. Two pointers. b. String.indexOf(char, fromIndex).
+    Time O(nl) Space O(1)
+
 ## 528. Random Pick with Weight (Medium)
 
 ### Test cases:
