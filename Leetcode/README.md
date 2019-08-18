@@ -2577,7 +2577,9 @@ Permutation and combination.
 
 ## 359. Logger Rate Limiter (Easy)
 
-1. HashMap - Time O(n) Space O(n)
+1. HashMap - Time O(1) Space O(n)
+2. Queue - Time O(1) Space O(1) 
+    Maintain a queue contains the logging message from last 10 secs
 
 ## 360. Sort Transformed Array (Medium)
 
