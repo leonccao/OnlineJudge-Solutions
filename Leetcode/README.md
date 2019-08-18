@@ -2575,7 +2575,9 @@ Permutation and combination.
 
 ## 358.
 
-## 359.
+## 359. Logger Rate Limiter (Easy)
+
+1. HashMap - Time O(n) Space O(n)
 
 ## 360. Sort Transformed Array (Medium)
 
