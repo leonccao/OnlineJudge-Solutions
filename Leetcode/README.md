@@ -3226,6 +3226,10 @@ Every time, choose the task which is available and with the largest amount left,
 
 Arrange the tasks with greatest amount by the cooling interval, and assume there will be less different than the interval length. If the assume is not possible, the length of tasks itself will become the answer. So return `Math.max(ans, tasks.length)` as the answer.
 
+## 624. Design Search Autocomplete System (Hard) 
+
+1. Trie + Heap
+
 ## 636. Exclusive Time of Functions (Medium)
 
 ### Corner cases
