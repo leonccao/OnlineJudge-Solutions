@@ -4221,3 +4221,7 @@ Use a char variable to record last letter. Do calculation for each consecutive s
 ## 1181. Before and After Puzzle (Medium)
 
 For-loop, compare head and tail.
+
+## 1182. Shortest Distance to Target Color (Medium)
+
+Two scan. One for the nearest color 1-3 on its left, the other for its right.
