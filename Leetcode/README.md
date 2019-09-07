@@ -4213,3 +4213,7 @@ Arrays.sort(points, (Point a, Point b) -> a.dist - b.dist);
 
 ### Solutions:
 1. Simulation
+
+## 1180. Count Substrings with Only One Distinct Letter (Easy)
+
+Use a char variable to record last letter. Do calculation for each consecutive same letter substrings.
