@@ -4231,3 +4231,8 @@ Two scan. One for the nearest color 1-3 on its left, the other for its right.
 The key point is: assume the whole matrix is made up by repeating the pattern of the size sideLength * sideLength. Then only if we make sure the 1s in this pattern meets maxOnes, the whole matrix will meet the requirement.
 
 Next, pick the top maxOnes most repeated blocks from this pattern matrix.
+
+## 5181. Distance Between Bus Stops (Easy)
+
+Prefix sum.
+
