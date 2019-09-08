@@ -4246,3 +4246,15 @@ Enumerate the midpoint (break point) of the subarray, and add two maximum subarr
 LocalDate localDate = LocalDate.of(year, month, day);
 DayOfWeek dayOfWeek = localDate.getDayOfWeek();
 ```
+
+## 5184. Make Array Strictly Increasing (Hard)
+
+DP.
+
+f[i][j] means when j operations have been done in the first i-th numbers in array, what is the minimum number the i-th number could be?
+
+**not change arr1[i]**
+f[i][j] = arr1[i] if f[i - 1][j] < arr1[i]
+or
+**change arr1[i]**
+f[i][j] = the smallest number in arr2 that num > f[i - 1][j - 1] (This search could be done by binary search or TreeSet)
