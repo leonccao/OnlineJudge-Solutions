@@ -4236,3 +4236,6 @@ Next, pick the top maxOnes most repeated blocks from this pattern matrix.
 
 Prefix sum.
 
+## 5182. Maximum Subarray Sum with One Deletion (Medium)
+
+Enumerate the midpoint (break point) of the subarray, and add two maximum subarray together.
