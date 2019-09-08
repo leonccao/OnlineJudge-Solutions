@@ -4239,3 +4239,10 @@ Prefix sum.
 ## 5182. Maximum Subarray Sum with One Deletion (Medium)
 
 Enumerate the midpoint (break point) of the subarray, and add two maximum subarray together.
+
+## 5183. Day of the Week (Easy)
+
+```java
+LocalDate localDate = LocalDate.of(year, month, day);
+DayOfWeek dayOfWeek = localDate.getDayOfWeek();
+```
