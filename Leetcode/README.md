@@ -4104,6 +4104,30 @@ One special occasion is if there are duplicates in the array. The subarray inclu
 ### Solutions
 String processing. Use HashSet to filter duplicates.
 
+## 981. Time Based Key-Value Store (Medium)
+
+### Solutions
+
+#### HashMap + BinarySearch
+
+Store pairs of (timestamp, value) in HashMap as values, and key as keys. Since timestamps are ascending, we could later search for a specific timestamp with binary search.
+
+- Time: set operation O(1) each, get operation O(logN) each, O(MlogN) in total
+- Space: O(N)
+
+#### HashMap + TreeMap
+
+Use TreeMap to replace BinarySearch in the previous approach.
+
+- Time: set operation O(logN) each, get operation O(logN) each, O(MlogN) in total
+- Space: O(N)
+
+### Notes
+
+1. `Collections.binarySearhc(list, key, comparator)`
+2. `pair = new Pair(key, value)`
+3. `TreeMap`
+
 ## 1029. Two City Scheduling (Easy)
 
 ### Solutions
