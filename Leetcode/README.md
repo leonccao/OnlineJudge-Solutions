@@ -1141,11 +1141,13 @@ Stack with some modification.
 
 ## 146. LRU Cache (Hard)
 
+Just refreshed my memory of LRU. Ran into some Engineer who is dedicated about LRU, and has been using LRU in his interviews for years. He said whether able to explain and implement LRU clearly in 30 mins was his standard for a mature Engineer.
+
 ### 1. HashMap + Queue
 
-This is my solution. Record the number of operations on the side. 
+This is my solution. Record the number of operations on the side.
 
-Whenever you do some operation, update the element in the HashMap to show when this element was visited lately, and push this key into the queue. 
+Whenever you do some operation, update the element in the HashMap to show when this element was visited lately, and push this key into the queue.
 
 When the space is not enough and you poll one key out of the queue, check whether the time stamp is the latest. If so, set the value of the key to -1.
 
@@ -1155,7 +1157,7 @@ Use HashMap to store the map from key to  node in double linked list. If you vis
 
 ### 3. LinkedHashMap
 
-https://leetcode.com/problems/lru-cache/discuss/45939/Laziest-implementation:-Java's-LinkedHashMap-takes-care-of-everything
+<https://leetcode.com/problems/lru-cache/discuss/45939/> Laziest implementation: Java's LinkedHashMap takes care of everything. Although this is definitely not what your interviewer is looking for, showing the knowledge of such container gonna be a bonus for your performance.
 
 ## 147. Insertion Sort List (Medium)
 

@@ -1,4 +1,123 @@
 class LRUCache {
+    
+    private class LRUList {
+        public class ListNode {
+            public int key, value;
+            protected ListNode prev, next;
+            
+            public ListNode(int key, int value) {
+                this.key = key;
+                this.value = value;
+                this.prev = null;
+                this.next = null;
+            }
+            
+            public ListNode(int key, int value, ListNode prev, ListNode next) {
+                this.key = key;
+                this.value = value;
+                this.prev = prev;
+                this.next = next;
+            }
+        }
+        
+        // head -- Most Recently Used
+        // tail -- Lease Recently Used
+        private ListNode head, tail;
+        private int size, capacity;
+        
+        public LRUList(int capacity) {
+            head = new ListNode(-1, -1);
+            tail = new ListNode(-1, -1);
+            head.next = tail;
+            tail.prev = head;
+            size = 0;
+            // if capacity < 1 throw error
+            this.capacity = capacity;
+        }
+        
+        public void update(ListNode node) {
+            if (node == head || node == tail) {
+                // Throw some error here
+                return;
+            }
+            if (node.prev == head) {
+                // Already at the head
+                return;
+            }
+            remove(node);
+            addToHead(node);
+        }
+        
+        // Not pretty fond of passing map in here
+        public ListNode insert(int key, int value, Map<Integer, ListNode> map) {
+            if (size >= capacity) {
+                ListNode lruNode = tail.prev;
+                remove(lruNode);
+                map.remove(lruNode.key);
+            }
+            
+            ListNode node = new ListNode(key, value, head, head.next);
+            addToHead(node);
+            return node;
+        }
+        
+        private void addToHead(ListNode node) {
+            size++;
+            
+            node.next = head.next;
+            node.prev = head;
+            
+            node.prev.next = node; // head
+            node.next.prev = node; // original head.next
+        }
+        
+        private void remove(ListNode node) {
+            size--;
+            
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
+        }
+    }
+    
+    
+    Map<Integer, LRUList.ListNode> map;
+    LRUList list;
+
+    public LRUCache(int capacity) {
+        map = new HashMap<>();
+        list = new LRUList(capacity);
+    }
+    
+    public int get(int key) {
+        LRUList.ListNode node = map.get(key);
+        if (node == null) {
+            return -1;
+        }
+        list.update(node);
+        return node.value;
+    }
+    
+    public void put(int key, int value) {
+        LRUList.ListNode node = map.get(key);
+        if (node == null) {
+            node = list.insert(key, value, map);
+            map.put(key, node);
+        } else {
+            node.value = value;
+            list.update(node);
+        }
+    }
+}
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
+
+
+class LRUCache {
 
     class Block {
         int val, visit;
