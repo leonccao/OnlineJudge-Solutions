@@ -4258,6 +4258,26 @@ The key point is: assume the whole matrix is made up by repeating the pattern of
 
 Next, pick the top maxOnes most repeated blocks from this pattern matrix.
 
+## 2278. Percentage of Letter in String (Easy)
+
+Easy.
+
+## 2279. Maximum Bags With Full Capacity of Rocks (Medium)
+
+Sorting.
+
+## 2280. Minimum Lines to Represent a Line Chart (Medium)
+
+Slope calculation. Sometimes the precision comparison is problematic, better to use mulplication to replace division.
+
+## 2281. Sum of Total Strength of Wizards (Hard)
+
+Better to use Deque instead of stack.
+
+```
+Deque<Integer> stack = new ArrayDeque<Integer>();
+```
+
 ## 5181. Distance Between Bus Stops (Easy)
 
 Prefix sum.
