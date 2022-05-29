@@ -4274,7 +4274,7 @@ Slope calculation. Sometimes the precision comparison is problematic, better to 
 
 Better to use Deque instead of stack.
 
-```
+```java
 Deque<Integer> stack = new ArrayDeque<Integer>();
 ```
 
@@ -4282,7 +4282,7 @@ Deque<Integer> stack = new ArrayDeque<Integer>();
 
 String operation.
 
-```
+```java
 for (char ch : s.toCharArray()) {
     ca[ch - 'a']++;
 }
@@ -4294,7 +4294,7 @@ String from/to Long/Double conversion.
 
 Validate whether String is double or integer/long:
 
-```
+```java
 try {
     return Long.parseLong(word.substring(1, word.length()));
     // Double.parseDouble()
@@ -4305,7 +4305,7 @@ try {
 
 Convert double to string:
 
-```
+```java
 String priceDisStr = "$" + String.format("%.2f", priceDis);
 ```
 
@@ -4321,7 +4321,7 @@ Refreshed memory of HashMap and PriorityQueue.
 
 Use int[] as PriorityQueue element:
 
-```
+```java
 PriorityQueue<int[]> pq= new PriorityQueue<>(
     (a, b) -> a[2] - b[2]
 );
@@ -4330,7 +4330,7 @@ pq.offer(new int[]{0, 0, 0});
 
 Use int[] as HashMap key? Array could not directly be used as key, must be converted to String: `Arrays.toString(new int[]{0, 0})`
 
-```
+```java
 Map<String, Integer> dist = new HashMap<>();
 dist.put(Arrays.toString(new int[]{0, 0}), 0);
 ```
