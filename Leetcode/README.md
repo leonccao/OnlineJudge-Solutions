@@ -4278,6 +4278,63 @@ Better to use Deque instead of stack.
 Deque<Integer> stack = new ArrayDeque<Integer>();
 ```
 
+## 2287. Rearrange Characters to Make Target String (Easy)
+
+String operation.
+
+```
+for (char ch : s.toCharArray()) {
+    ca[ch - 'a']++;
+}
+```
+
+## 2288. Apply Discount to Prices (Medium)
+
+String from/to Long/Double conversion.
+
+Validate whether String is double or integer/long:
+
+```
+try {
+    return Long.parseLong(word.substring(1, word.length()));
+    // Double.parseDouble()
+} catch (NumberFormatException e) {
+    return -1;
+}
+```
+
+Convert double to string:
+
+```
+String priceDisStr = "$" + String.format("%.2f", priceDis);
+```
+
+## 2289. Steps to Make Array Non-decreasing (Medium)
+
+Good problem.
+
+## 2290. Minimum Obstacle Removal to Reach Corner (Hard)
+
+Typical shortest path problem, solved by Dijkstra + PriorityQueue.
+
+Refreshed memory of HashMap and PriorityQueue. 
+
+Use int[] as PriorityQueue element:
+
+```
+PriorityQueue<int[]> pq= new PriorityQueue<>(
+    (a, b) -> a[2] - b[2]
+);
+pq.offer(new int[]{0, 0, 0});
+```
+
+Use int[] as HashMap key? Array could not directly be used as key, must be converted to String: `Arrays.toString(new int[]{0, 0})`
+
+```
+Map<String, Integer> dist = new HashMap<>();
+dist.put(Arrays.toString(new int[]{0, 0}), 0);
+```
+
 ## 5181. Distance Between Bus Stops (Easy)
 
 Prefix sum.
