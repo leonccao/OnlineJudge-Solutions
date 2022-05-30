@@ -3002,7 +3002,9 @@ Enumerate the bits from highest to lowest, then use a HashSet to check whether s
 
 ## 431.
 
-## 432.
+## 432. All O`one Data Structure (Hard)
+
+Double linked list + HashSet.
 
 ## 433.
 
