@@ -3066,6 +3066,12 @@ Two scan. First scan swap the numbers to their own slot, second scan find out wh
 
 Same as #297.
 
+## 460. LFU Cache (Hard)
+
+Upgrade version of LRU cache.
+
+Use a HashMap to hold LRU double linked lists for each usage count.
+
 ## 461. Hamming Distance (Medium)
 
 Bit Manipulation.
