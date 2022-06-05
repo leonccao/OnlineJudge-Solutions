@@ -4286,6 +4286,23 @@ Better to use Deque instead of stack.
 Deque<Integer> stack = new ArrayDeque<Integer>();
 ```
 
+## 2283. Check if Number Has Equal Digit Count and Digit Value (Easy)
+
+Easy.
+
+## 2284. Sender With Largest Word Count (Medium)
+
+HashMap.
+
+## 2285. Maximum Total Importance of Roads (Medium)
+
+Sorting.
+
+## 2286. Booking Concert Tickets in Groups (Hard)
+
+Segment tree with lazy updating.
+
+
 ## 2287. Rearrange Characters to Make Target String (Easy)
 
 String operation.
