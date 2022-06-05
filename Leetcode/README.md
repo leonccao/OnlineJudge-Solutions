@@ -4386,3 +4386,19 @@ Use int[] as HashMap key? Array could not directly be used as key, must be conve
 Map<String, Integer> dist = new HashMap<>();
 dist.put(Arrays.toString(new int[]{0, 0}), 0);
 ```
+
+## 2293. Min Max Game (Easy)
+
+Easy.
+
+## 2294. Partition Array Such That Maximum Difference Is K (Medium)
+
+Sorting.
+
+## 2295. Replace Elements in an Array (Medium)
+
+HashMap.
+
+## 2296. Design a Text Editor (Hard)
+
+Double linked list or StringBuilder.
