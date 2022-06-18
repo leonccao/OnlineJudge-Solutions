@@ -4402,3 +4402,19 @@ HashMap.
 ## 2296. Design a Text Editor (Hard)
 
 Double linked list or StringBuilder.
+
+## 2303. Calculate Amount Paid in Taxes (Easy)
+
+Traversing.
+
+## 2304. Minimum Path Cost in a Grid (Medium)
+
+DP.
+
+## 2305. Fair Distribution of Cookies (Medium)
+
+DFS.
+
+## 2306. Naming a Company (Hard)
+
+Separate and store names as HashMap(first letter, HashSet(substring)). Enumerate different first letter pairs, any two substrings that didn't appear in the other letter's HashSet can make a new name.
