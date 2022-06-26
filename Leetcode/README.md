@@ -4418,3 +4418,21 @@ DFS.
 ## 2306. Naming a Company (Hard)
 
 Separate and store names as HashMap(first letter, HashSet(substring)). Enumerate different first letter pairs, any two substrings that didn't appear in the other letter's HashSet can make a new name.
+
+## 2309. Greatest English Letter in Upper and Lower Case (Easy)
+
+Iteration.
+
+## 2310. Sum of Numbers With Units Digit K (Medium)
+
+Module.
+
+## 2311. Longest Binary Subsequence Less Than or Equal to K (Medium)
+
+DP.
+
+## 2312. Selling Pieces of Wood (Hard)
+
+DP.
+
+maxs[i][j] stands for the max value could be earned by matrix with size i x j.
