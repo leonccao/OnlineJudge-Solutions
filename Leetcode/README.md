@@ -4436,3 +4436,25 @@ DP.
 DP.
 
 maxs[i][j] stands for the max value could be earned by matrix with size i x j.
+
+## 2319. Check if Matrix Is X-Matrix (Easy)
+
+Iteration.
+
+## 2320. Count Number of Ways to Place Houses (Medium)
+
+DP.
+ways[i][0] - number of ways by i if a house is not placed on i-th position.
+ways[i][1] - number of ways by i if a house is placed on i-th position.
+
+## 2321. Maximum Score Of Spliced Array (Hard)
+
+DP.
+ 
+Transformed the two input arraies to an array of difference for elements at the same position. This problem now converted into finding a consecutive array with the max sum.
+
+## 2322. Minimum Score After Removals on a Tree (Hard)
+
+Calculate the score of two ends for each edge in advance. 
+
+Enurmerating the two edges and calculate the total score.
