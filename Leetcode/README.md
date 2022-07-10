@@ -4458,3 +4458,21 @@ Transformed the two input arraies to an array of difference for elements at the 
 Calculate the score of two ends for each edge in advance. 
 
 Enurmerating the two edges and calculate the total score.
+
+## 2325. Decode the Message (Easy)
+
+String manipulation.
+
+## 2326. Spiral Matrix IV (Medium)
+
+Iteration.
+
+## 2327. Number of People Aware of a Secret (Medium)
+
+Iteration.
+
+## 2328. Number of Increasing Paths in a Grid (Hard)
+
+DP.
+
+Sort grids by value in advance.
