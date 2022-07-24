@@ -4506,3 +4506,23 @@ Then it becomes the repetition combination problem -- stars and bars.
 Hard problem is how to calculate combination with module. Could be solved by:
 
 C(n, k) = C(n - 1, k) + C(n - 1, k - 1)
+
+## 2341. Maximum Number of Pairs in Array (Easy)
+
+Easy.
+
+## 2342. Max Sum of a Pair With Equal Sum of Digits (Medium)
+
+Sort by: (1) digit sum (2) num value.
+
+Note to my self: 
+
+When overriding the comparator of Arrays.sort(), the array type has to be Integer instead of int.
+
+## 2343. Query Kth Smallest Trimmed Number (Medium)
+
+Sort by trimmed string.
+
+## 2344. Minimum Deletions to Make Array Divisible (Hard)
+
+Find GCD for all numsDivide. Sort nums and find the smallest value that could divide GCD.
