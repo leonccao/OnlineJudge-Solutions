@@ -4476,3 +4476,33 @@ Iteration.
 DP.
 
 Sort grids by value in advance.
+
+## 2335. Minimum Amount of Time to Fill Cups (Easy)
+
+Easy.
+
+## 2336. Smallest Number in Infinite Set (Medium)
+
+HashSet.
+Use java steam to find the first element.
+
+## 2337. Move Pieces to Obtain a String (Medium)
+
+String manipulation.
+
+## 2338. Count the Number of Ideal Arrays (Hard)
+
+Enumerate between 1 and maxValue, do prime factorization for each. 
+
+The ideal array which be a distribution of the prime factors.
+
+e.g. n = 2, lastNum = 4 = 2 ^ 2.
+1 (1) 1 (2 * 2) 4
+1 (2 * 2) 4 (1) 4
+1 (2) 2 (2) 4
+
+Then it becomes the repetition combination problem -- stars and bars.
+
+Hard problem is how to calculate combination with module. Could be solved by:
+
+C(n, k) = C(n - 1, k) + C(n - 1, k - 1)
