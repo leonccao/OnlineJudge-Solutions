@@ -4526,3 +4526,29 @@ Sort by trimmed string.
 ## 2344. Minimum Deletions to Make Array Divisible (Hard)
 
 Find GCD for all numsDivide. Sort nums and find the smallest value that could divide GCD.
+
+## 2351. First Letter to Appear Twice (Easy)
+
+Easy, HashSet.
+
+## 2352. Equal Row and Column Pairs (Medium)
+
+Easy, enumerating.
+
+## 2353. Design a Food Rating System (Medium)
+
+A simple version of 146. LRU Cache.
+
+Class + HashMap + PriorityQueue.
+
+First HashMap to store mapping from food name to food object.
+
+Second HashMap to store mapping from cuisine to Priority Queues.
+
+When updating, retrieve food object from first HashMap, remove it from PQ, update and add it back.
+
+## 2354. Number of Excellent Pairs (Hard)
+
+First thing need to realize, sum of AND + OR = sum of digits, which means we are looking forward to two nums that sum of binary digits > k.
+
+Then it became the classic 2-sum problem.
