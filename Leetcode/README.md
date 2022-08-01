@@ -2940,7 +2940,15 @@ Faults:
 
 1. **[RE]** When the length of the two strings are not the same, index out of range may happen.
 
-## 416.
+## 416. Partition Equal Subset Sum (Medium)
+
+Classic DP problem.
+
+Learnings:
+
+- `int sum = accumulate(nums.begin(), nums.end(), 0);`
+- Use (num & 1) to check odd
+- bitset<10001> f (1);
 
 ## 417.
 
