@@ -2950,7 +2950,15 @@ Learnings:
 - Use (num & 1) to check odd
 - bitset<10001> f (1);
 
-## 417.
+## 417. Pacific Atlantic Water Flow (Medium)
+
+DFS or BFS.
+
+Learnings:
+
+- `vector<vector<bool>> atl(m, vector<bool>(n, false));`
+- `queue<pair<int, int>> q; q.push({x, y}); q.front().first; q.front.second();`
+- q.pop() return void
 
 ## 418.
 
