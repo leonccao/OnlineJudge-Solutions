@@ -2962,7 +2962,9 @@ Learnings:
 
 ## 418.
 
-## 419.
+## 419. Battleships in a Board (Medium)
+
+Counting top left cell will be easier than counting right bottom cell.
 
 ## 420.
 
