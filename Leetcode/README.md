@@ -4588,3 +4588,21 @@ BFS.
 ## 2360. Longest Cycle in a Graph (Hard)
 
 BFS and dye.
+
+## 2367. Number of Arithmetic Triplets (Easy)
+
+For-loops.
+
+## 2368. Reachable Nodes With Restrictions (Medium)
+
+BFS.
+
+## 2369. Check if There is a Valid Partition For The Array (Medium)
+
+Easy DP.
+
+## 2370. Longest Ideal Subsequence (Medium)
+
+DP.
+
+f[i][j] - Length of the longest subsequnce by index i and the last letter as j.
