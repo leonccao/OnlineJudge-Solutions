@@ -4572,3 +4572,19 @@ When updating, retrieve food object from first HashMap, remove it from PQ, updat
 First thing need to realize, sum of AND + OR = sum of digits, which means we are looking forward to two nums that sum of binary digits > k.
 
 Then it became the classic 2-sum problem.
+
+## 2357. Make Array Zero by Subtracting Equal Amounts (Easy)
+
+Easy.
+
+## 2358. Maximum Number of Groups Entering a Competition (Medium)
+
+Sorting.
+
+## 2359. Find Closest Node to Given Two Nodes （Medium）
+
+BFS.
+
+## 2360. Longest Cycle in a Graph (Hard)
+
+BFS and dye.
