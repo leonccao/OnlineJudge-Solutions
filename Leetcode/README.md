@@ -2977,7 +2977,9 @@ Enumerate the bits from highest to lowest, then use a HashSet to check whether s
 
 ## 423.
 
-## 424.
+## 424. Longest Repeating Character Replacement (Medium)
+
+Sliding window.
 
 ## 425.
 
