@@ -4606,3 +4606,21 @@ Easy DP.
 DP.
 
 f[i][j] - Length of the longest subsequnce by index i and the last letter as j.
+
+## 2373. Largest Local Values in a Matrix (Easy)
+
+Easy.
+
+## 2374. Node With Highest Edge Score (Medium)
+
+Count. 
+
+The tricky part is count maybe larger than integer, and needs long.
+
+## 2375. Construct Smallest Number From DI String (Medium)
+
+DFS.
+
+## 2376. Count Special Integers (Hard)
+
+Math or Digit DP.
