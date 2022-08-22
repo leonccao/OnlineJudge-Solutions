@@ -4640,3 +4640,19 @@ MOD.
 ## 2382. Maximum Segment Sum After Removals (Hard)
 
 Union-find. Inserting the elements backwardsly.
+
+## 2383. Minimum Hours of Training to Win a Competition (Easy)
+
+Brute-force.
+
+## 2384. Largest Palindromic Number (Medium)
+
+Brute-force. Java string builder.
+
+## 2385. Amount of Time for Binary Tree to Be Infected (Medium)
+
+Build tree and BFS.
+
+## 2386. Find the K-Sum of an Array (Hard)
+
+Priority Queue.
