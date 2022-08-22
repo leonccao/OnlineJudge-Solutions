@@ -4624,3 +4624,19 @@ DFS.
 ## 2376. Count Special Integers (Hard)
 
 Math or Digit DP.
+
+## 2379. Minimum Recolors to Get K Consecutive Black Blocks (Easy)
+
+Iteration.
+
+## 2380. Time Needed to Rearrange a Binary String (Medium)
+
+O(N^2) brute-force.
+
+## 2381. Shifting Letters II (Medium)
+
+MOD.
+
+## 2382. Maximum Segment Sum After Removals (Hard)
+
+Union-find. Inserting the elements backwardsly.
