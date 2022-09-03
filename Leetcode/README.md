@@ -4656,3 +4656,29 @@ Build tree and BFS.
 ## 2386. Find the K-Sum of an Array (Hard)
 
 Priority Queue.
+
+## 2389. Longest Subsequence With Limited Sum (Easy)
+
+Solutions:
+
+1. Enumeration - O(N^2)
+2. Binary Search - O(Nlog(N))
+
+## 2390. Removing Stars From a String (Medium)
+
+ Solutions:
+ 1. Stack - O(N)
+    - If the current character is '*' and stack top is a letter, pop the top.
+ 2. Double linked list - O(N)
+
+ ## 2391. Minimum Amount of Time to Collect Garbage (Medium)
+
+Prefix sum arrays.
+
+## 2392. Build a Matrix With Conditions (Hard)
+
+Do Topological Sort separately on rows and cols.
+
+If pair (a, b) appears, then build an edge from a to b. We cannot visit node b until all nodes that has an edge to b have been visited. 
+
+If Topo Sort cannot finish, means there is a cycle. Return empty result instead.
