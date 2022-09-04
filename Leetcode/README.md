@@ -4700,3 +4700,29 @@ Enumerate combinations and calculate the results.
 Sliding windows.
 
 Use linear queue to maintain the `max(chargeTimes)` and variable to maintain `sum(runningCosts)`.
+
+## 2399. Check Distances Between Same Letters (Easy)
+
+HashMap.
+
+## 2400. Number of Ways to Reach a Position After Exactly k Steps (Medium)
+
+The core of this question is how to calculate combination.
+
+Solutions:
+
+1. Iteration by C(m, n) = C(m - 1, n - 1) + C(m - 1, n)
+2. Inverse (Still not sure how to do this yet)
+
+## 2401. Longest Nice Subarray (Medium)
+
+Sliding window.
+
+## 2402. Meeting Rooms III (Hard)
+
+Two priority queues:
+
+1. Priority queue to maintain the earliest ending time of occupied meeting rooms.
+2. Priority queue to maintain the smallest number of available meeting rooms.
+
+Hint: Even though meeting time is within 100000, but considering the total number of meetings (also 100000) and meeting delays, the calculation will be in `LongInt` range.
