@@ -4682,3 +4682,21 @@ Do Topological Sort separately on rows and cols.
 If pair (a, b) appears, then build an edge from a to b. We cannot visit node b until all nodes that has an edge to b have been visited. 
 
 If Topo Sort cannot finish, means there is a cycle. Return empty result instead.
+
+## 2395. Find Subarrays With Equal Sum (Easy)
+
+Enumeration.
+
+## 2396. Strictly Palindromic Number (Medium)
+
+Enumeration.
+
+## 2397. Maximum Rows Covered by Columns (Medium)
+
+Enumerate combinations and calculate the results.
+
+## 2398. Maximum Number of Robots Within Budget (Hard)
+
+Sliding windows.
+
+Use linear queue to maintain the `max(chargeTimes)` and variable to maintain `sum(runningCosts)`.
