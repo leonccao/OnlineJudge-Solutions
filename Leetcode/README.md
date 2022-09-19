@@ -4726,3 +4726,19 @@ Two priority queues:
 2. Priority queue to maintain the smallest number of available meeting rooms.
 
 Hint: Even though meeting time is within 100000, but considering the total number of meetings (also 100000) and meeting delays, the calculation will be in `LongInt` range.
+
+## 2404. Most Frequent Even Element (Easy)
+
+Iteration.
+
+## 2405. Optimal Partition of String (Medium)
+
+HashSet as sliding window.
+
+## 2406. Divide Intervals Into Minimum Number of Groups (Medium)
+
+Scan line.
+
+## 2407. Longest Increasing Subsequence II (Hard)
+
+Segment tree to query range max value.
