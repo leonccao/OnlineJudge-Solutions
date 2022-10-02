@@ -4774,3 +4774,19 @@ BFS.
 ## 2416. Sum of Prefix Scores of Strings (Hard)
 
 TrieTree.
+
+## 2418. Sort the People (Easy)
+
+Sorting.
+
+## 2419. Longest Subarray With Maximum Bitwise AND (Medium)
+
+Sliding window.
+
+## 2420. Find All Good Indices (Medium)
+
+Sliding window.
+
+## 2421. Number of Good Paths (Hard)
+
+Union-find.
