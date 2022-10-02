@@ -4806,3 +4806,19 @@ Iteration.
 ## 2426. Number of Pairs Satisfying Inequality (Hard)
 
 Range sum query.
+
+## 2427. Number of Common Factors (Easy)
+
+Iteration.
+
+## 2428. Maximum Sum of an Hourglass (Medium)
+
+Iteration.
+
+## 2429. Minimize XOR (Medium)
+
+Count bits.
+
+## 2430. Maximum Deletions on a String (Hard)
+
+Dynamic programming.
