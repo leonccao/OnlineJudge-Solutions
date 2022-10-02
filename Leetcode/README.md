@@ -4790,3 +4790,19 @@ Sliding window.
 ## 2421. Number of Good Paths (Hard)
 
 Union-find.
+
+## 2423. Remove Letter To Equalize Frequency (Easy)
+
+Counting.
+
+## 2424. Longest Uploaded Prefix (Medium)
+
+Union-find.
+
+## 2425. Bitwise XOR of All Pairings (Medium)
+
+Iteration.
+
+## 2426. Number of Pairs Satisfying Inequality (Hard)
+
+Range sum query.
