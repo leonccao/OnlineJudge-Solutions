@@ -4822,3 +4822,21 @@ Count bits.
 ## 2430. Maximum Deletions on a String (Hard)
 
 Dynamic programming.
+
+## 2432. The Employee That Worked on the Longest Task (Easy)
+
+Iteration.
+
+## 2433. Find The Original Array of Prefix Xor (Medium)
+
+Xor calculation.
+
+## 2434. Using a Robot to Print the Lexicographically Smallest String (Medium)
+
+Stack. Pop out when there is no smaller letter coming after it.
+
+## 2435. Paths in Matrix Whose Sum Is Divisible by K (Hard)
+
+Easy DP.
+
+f[i][j][r] - Count of paths that end at grid[i][j] and reminder is r when divided by k.
