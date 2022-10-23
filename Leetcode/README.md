@@ -4856,3 +4856,25 @@ Reverse string.
 ## 2444. Count Subarrays With Fixed Bounds (Hard)
 
 Sliding window. 
+
+## 2446. Determine if Two Events Have Conflict (Easy)
+
+Intersection calculation.
+
+## 2447. Number of Subarrays With GCD Equal to K (Medium)
+
+GCD.
+
+```java
+import java.math.BigInteger;
+
+gcd = BigInteger.valueOf(gcd).gcd(BigInteger.valueOf(nums[j])).intValue();
+```
+
+## 2448. Minimum Cost to Make Array Equal (Hard)
+
+Prefix sum.
+
+## 2449. Minimum Number of Operations to Make Arrays Similar (Hard)
+
+Split arrays into even and odd, then sort.
