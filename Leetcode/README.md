@@ -4840,3 +4840,19 @@ Stack. Pop out when there is no smaller letter coming after it.
 Easy DP.
 
 f[i][j][r] - Count of paths that end at grid[i][j] and reminder is r when divided by k.
+
+## 2441. Largest Positive Integer That Exists With Its Negative (Easy)
+
+HashSet.
+
+## 2442. Count Number of Distinct Integers After Reverse Operations (Medium)
+
+Reverse string.
+
+## 2443. Sum of Number and Its Reverse (Medium)
+
+Reverse string.
+
+## 2444. Count Subarrays With Fixed Bounds (Hard)
+
+Sliding window. 
