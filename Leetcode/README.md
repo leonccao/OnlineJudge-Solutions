@@ -4878,3 +4878,28 @@ Prefix sum.
 ## 2449. Minimum Number of Operations to Make Arrays Similar (Hard)
 
 Split arrays into even and odd, then sort.
+
+## 2455. Average Value of Even Numbers That Are Divisible by Three (Easy)
+
+Easy.
+
+## 2456. Most Popular Video Creator (Medium)
+
+HashMap.
+
+## 2457. Minimum Addition to Make Integer Beautiful (Medium)
+
+Remove the digits from last to first.
+
+Since the input has at most 12 digits, we could re-calculate the sum of digits each time.
+
+## 2458. Height of Binary Tree After Subtree Removal Queries (Hard)
+
+Good problem.
+
+Tree DP.
+
+For each TreeNode, there will be 2 possibilities with the tree depth after remove it:
+1. The longest path will pass its brother: ans(curNode) = dist(root, parent) + depth(brother) + 1
+2. The longest path will not pass its parent: ans(curNode) = ans(parent)
+
