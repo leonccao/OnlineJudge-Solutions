@@ -5,10 +5,10 @@ class Solution {
         int n = creators.length;
         
         List<List<String>> ans = new ArrayList<>();
-        int maxSum = 0;
+        int maxSum = -1;
         for (int i = 0; i < n; i ++) {
-            int count = countMap.getOrDefault(creators[i], 0);
-            count += views[i];
+            int countOld = countMap.getOrDefault(creators[i], -1);
+            int count = Math.max(0, countOld) + views[i];
             countMap.put(creators[i], count);
             
             int maxViewIdx = maxViewMap.getOrDefault(creators[i], i);
@@ -18,15 +18,17 @@ class Solution {
             }
             maxViewMap.put(creators[i], maxViewIdx);
             
-            if (count > maxSum) {
+            if (count >= maxSum) {
+                if (count > maxSum) {
+                    ans.clear();
+                }
+                if (count > maxSum || count > countOld) {
+                    List<String> cur = new ArrayList<>();
+                    cur.add(creators[i]);
+                    cur.add(ids[maxViewIdx]);
+                    ans.add(cur);
+                }
                 maxSum = count;
-                ans.clear();
-            }
-            if (count == maxSum) {
-                List<String> cur = new ArrayList<>();
-                cur.add(creators[i]);
-                cur.add(ids[maxViewIdx]);
-                ans.add(cur);
             }
         }
         return ans;
