@@ -4903,3 +4903,23 @@ For each TreeNode, there will be 2 possibilities with the tree depth after remov
 1. The longest path will pass its brother: ans(curNode) = dist(root, parent) + depth(brother) + 1
 2. The longest path will not pass its parent: ans(curNode) = ans(parent)
 
+## 2460. Apply Operations to an Array (Easy)
+
+Iteration.
+
+## 2461. Maximum Sum of Distinct Subarrays With Length K (Medium)
+
+Sliding window.
+
+## 2462. Total Cost to Hire K Workers (Medium)
+
+Deque + Priority Queue.
+
+## 2463. Minimum Total Distance Traveled (Hard)
+
+Dynamic programming. 
+
+dp[i][j] (If fixed first j robots with first i factories, the minimum sum of distance as cost)
+
+dp[i][j] = min{dp[i - 1][k] + cost(k + 1, j)}
+(j - k) has to be not larger than factory[i].limit
